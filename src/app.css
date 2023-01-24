@@ -1,0 +1,11 @@
+:root {
+    --color-light: #fff;
+    --color-dark: #000;
+    --color-pink: hsl(0, 100%, 75%);
+}
+
+body {
+    padding: 0 3vw;
+    margin: 0;
+    background-color: var(--color-dark);
+}
