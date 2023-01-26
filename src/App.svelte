@@ -1,6 +1,9 @@
 <script lang="ts">
     import Aside from "./lib/Aside.svelte";
+    import Image from "./lib/Image.svelte";
     import Welcome from "./lib/Welcome.svelte";
+
+    const IMAGE_URL_ROOT = "/assets/";
 </script>
 
 <main>
@@ -8,15 +11,19 @@
 
     <div class="articles">
         <section class="article">
-            <Aside index="02" title="title1" />
+            <div class="aside">
+                <Aside index="02" title="title1" />
+            </div>
             <div class="section">
-
+                <Image url="{IMAGE_URL_ROOT + "technology-earth1.jpg"}" description="Technology Earth" />
             </div>
         </section>
         <section class="article">
-            <Aside index="01." title="title2" />
+            <div class="aside">
+                <Aside index="01." title="title2" />
+            </div>
             <div class="section">
-
+                <Image url="{IMAGE_URL_ROOT + "technology-earth2.jpg"}" description="Technology Earth" />
             </div>
         </section>
     </div>
@@ -26,19 +33,36 @@
     .articles {
         display: flex;
         flex-direction: column;
+        padding-inline: var(--horizontal-padding);
     }
 
     .article {
         display: flex;
         justify-content: space-between;
-        height: 100vh;
-        padding-block: 50px;
+        padding-block: var(--vertical-gap);;
         box-sizing: border-box;
         border-bottom: 2px dotted #fff;
     }
 
+    .aside {
+        width: 30%;
+        /* background-color: blue; */
+    }
+
     .section {
-        flex-basis: 60%;
-        background-color: red;
+        width: 60%;
+        /* height: 100vh; */
+        /* background-color: red; */
+    }
+
+    @media (max-width: 800px) {
+        .article {
+            flex-direction: column;
+            gap: var(--vertical-gap);
+        }
+
+        .aside, .section {
+            width: 100%;
+        }
     }
 </style>

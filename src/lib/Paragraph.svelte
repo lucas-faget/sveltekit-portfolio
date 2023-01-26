@@ -1,6 +1,6 @@
 <script lang="ts">
     export let text: string;
-    export let fontSize: number;
+    export let fontSize: number; // in pixels
 </script>
 
 <p class="paragraph" style:font-size="{fontSize}px">
