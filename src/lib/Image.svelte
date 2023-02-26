@@ -1,9 +1,9 @@
 <script lang="ts">
-    export let url: string;
+    export let src: string;
     export let description: string;
 </script>
 
-<img src="{url}" alt="{description}">
+<img src="{src}" alt="{description}">
 
 <style>
     img {
