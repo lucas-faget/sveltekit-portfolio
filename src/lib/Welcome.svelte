@@ -1,18 +1,26 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
+    import { onMount, onDestroy } from 'svelte';
     import Paragraph from "./Paragraph.svelte";
 
-    const maxFontSize = 100;
+    const maxFontSize = 150;
 
-    let text: string;
+    let text: string[];
     let fontSize = maxFontSize;
+    let animateText: boolean = true;
     updateFontSize();
 
     onMount(() => {
         window.addEventListener("resize", updateFontSize);
+        window.addEventListener('scroll', handleScroll);
     });
 
-    function updateFontSize() {
+    onDestroy(() => {
+        window.removeEventListener("resize", updateFontSize);
+        window.removeEventListener('scroll', handleScroll);
+    });
+
+    function updateFontSize(): void 
+    {
         let screenWidth = window.innerWidth;
         if (screenWidth <= 600)
             fontSize = 0.5 * maxFontSize;
@@ -22,13 +30,35 @@
             else
                 fontSize = maxFontSize;
     }
-    export { text, fontSize };
+
+    function getLateralMoveClass(lineIndex: number): string 
+    {
+        return lineIndex % 2 === 0 ? 'from-right-lateral-move' : 'from-left-lateral-move'
+    }
+
+    function handleScroll() 
+    {
+        const windowHeight = window.innerHeight;
+        const scrollTop = document.documentElement.scrollTop;
+
+        if (scrollTop < windowHeight) {
+            animateText = true;
+        } else {
+            animateText = false;
+        }
+    }
+
+    export { text, fontSize, animateText };
 
 </script>
 
 <section class="welcome" on:resize={updateFontSize}>
     <div class="title">
-        <Paragraph text={text} fontSize={fontSize} />
+        {#each text as line, index}
+            <div class="{animateText ? getLateralMoveClass(index) : ''}">
+                <Paragraph text={line} fontSize={fontSize} />
+            </div>
+        {/each}
     </div>
 </section>
 
@@ -37,9 +67,12 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding-block: var(--vertical-gap);
+        padding-top: calc(100px + var(--vertical-gap));
+        padding-bottom: var(--vertical-gap);
         box-sizing: border-box;
         border-bottom: 2px dotted #fff;
+        line-height: 1.1;
+        font-family: 'Anton', sans-serif;
     }
 
     .title {
@@ -48,13 +81,33 @@
 
     @media (min-width: 800px) {
         .welcome {
-            height: 100vh;
+            min-height: 100vh;
         }
     }
 
-    @media (max-width: 800px) {
-        .welcome {
-            padding-top: calc(100px + var(--vertical-gap));
+    .from-left-lateral-move {
+        animation: 2s ease-in-out from-left-lateral-move;
+    }
+
+    .from-right-lateral-move {
+        animation: 2s ease-in-out from-right-lateral-move;
+    }
+
+    @keyframes from-left-lateral-move {
+        from {
+            transform: translateX(-100px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes from-right-lateral-move {
+        from {
+            transform: translateX(100px);
+        }
+        to {
+            transform: translateX(0px);
         }
     }
 </style>

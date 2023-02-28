@@ -2,7 +2,6 @@
     import Aside from "../lib/Aside.svelte";
     import Image from "../lib/Image.svelte";
     import ListWithImage from "../lib/ListWithImage.svelte";
-    import Navbar from "../lib/Navbar.svelte";
     import Welcome from "../lib/Welcome.svelte";
 
     const ASSETS = "/assets/";
@@ -10,7 +9,7 @@
 </script>
 
 <main>
-    <Welcome text="#Lucas #Faget. 25 yo. Web developer. Welcome to my portfolio."/>
+    <Welcome text={["#Lucas #Faget.", "Web developer.", "Welcome to my portfolio."]}/>
 
     <div class="articles">
         <section class="article">
