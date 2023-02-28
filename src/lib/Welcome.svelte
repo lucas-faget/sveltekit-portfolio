@@ -54,11 +54,7 @@
 
     @media (max-width: 800px) {
         .welcome {
-            padding-top: 100px;
-
-            background-image: url("/assets/technology-earth2.jpg");
-            background-size: cover;
-            background-position: center;
+            padding-top: calc(100px + var(--vertical-gap));
         }
     }
 </style>
