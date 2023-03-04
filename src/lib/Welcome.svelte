@@ -6,17 +6,22 @@
 
     let text: string[];
     let fontSize = maxFontSize;
-    let animateText: boolean = true;
+    let isVisible: boolean = false;
+    let element: HTMLElement;
     updateFontSize();
+
+    const observer = new IntersectionObserver((entries) => {
+        isVisible = entries.some(entry => entry.isIntersecting);
+    });
 
     onMount(() => {
         window.addEventListener("resize", updateFontSize);
-        window.addEventListener('scroll', handleScroll);
+        observer.observe(element);
     });
 
     onDestroy(() => {
         window.removeEventListener("resize", updateFontSize);
-        window.removeEventListener('scroll', handleScroll);
+        observer.unobserve(element);
     });
 
     function updateFontSize(): void 
@@ -36,26 +41,14 @@
         return lineIndex % 2 === 0 ? 'from-right-lateral-move' : 'from-left-lateral-move'
     }
 
-    function handleScroll() 
-    {
-        const windowHeight = window.innerHeight;
-        const scrollTop = document.documentElement.scrollTop;
-
-        if (scrollTop < windowHeight) {
-            animateText = true;
-        } else {
-            animateText = false;
-        }
-    }
-
-    export { text, fontSize, animateText };
+    export { text, fontSize, isVisible };
 
 </script>
 
 <section class="welcome" on:resize={updateFontSize}>
-    <div class="title">
+    <div class="title" bind:this={element}>
         {#each text as line, index}
-            <div class="{animateText ? getLateralMoveClass(index) : ''}">
+            <div class={isVisible ? getLateralMoveClass(index) : ''}>
                 <Paragraph text={line} fontSize={fontSize} />
             </div>
         {/each}

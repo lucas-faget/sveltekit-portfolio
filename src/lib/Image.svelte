@@ -3,7 +3,7 @@
     export let description: string;
 </script>
 
-<img src="{src}" alt="{description}">
+<img src={src} alt={description}>
 
 <style>
     img {
