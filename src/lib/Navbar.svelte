@@ -1,28 +1,50 @@
 <script lang="ts">
     import { Router, Link, Route } from "svelte-routing";
     import Home from "../views/Home.svelte";
+    import MobileNavToogle from "./MobileNavToogle.svelte";
   
-    export let url: string = "";
-    
-    let navClass = 'nav-dark';
+    let isColoredDark: boolean = true;
+    let navClass: string = 'nav-dark';
+    let isMobileNavOpen: boolean = false;
+
+    function toogleMobileNav() {
+        isMobileNavOpen = !isMobileNavOpen;
+    }
+
+    function handleKeyDown(event: KeyboardEvent) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            toogleMobileNav();
+        }
+    };
 
     window.addEventListener('scroll', () => {
-        var nav = document.querySelector('nav');
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-        navClass = (scrollTop < (50 * viewportHeight) / 100) ? 'nav-dark' : 'nav-light';
+
+        if (scrollTop < (50 * viewportHeight) / 100) {
+            isColoredDark = true;
+            navClass = "nav-dark";
+        } else {
+            isColoredDark = false;
+            navClass = "nav-light";
+        }
     });
 </script>
 
-<Router url="{url}">
+<Router>
     <nav class={navClass}>
         <Link to="/" style="text-decoration: none;">
             <div class="logo">Lucas Faget</div>  
         </Link>
-        <ul class="menu">
-            <Link to="/" style="text-decoration: none; height: 100%"><li>Home</li></Link>
-            <Link to="/" style="text-decoration: none; height: 100%"><li>Home</li></Link>
-            <Link to="/" style="text-decoration: none; height: 100%"><li>Home</li></Link>
+
+        <div on:click={toogleMobileNav} on:keydown={handleKeyDown}>
+            <MobileNavToogle isColoredDark={!isColoredDark} isMobileNavOpen={isMobileNavOpen} />
+        </div>
+        
+        <ul aria-expanded={isMobileNavOpen}>
+            <Link to="/" style="height: 100%; text-decoration: none"><li>Home</li></Link>
+            <Link to="/" style="height: 100%; text-decoration: none"><li>Home</li></Link>
+            <Link to="/" style="height: 100%; text-decoration: none"><li>Home</li></Link>
         </ul>
     </nav>
     <div>
@@ -52,9 +74,9 @@
     }
 
     .nav-dark {
+        background-color: #000;
         position: absolute;
         height: 100px;
-        background-color: #000;
     }
 
     .nav-light {
@@ -68,18 +90,24 @@
     nav ul {
         display: flex;
         align-items: center;
-        gap: 15px;
-        height: 100%;
         padding: 0;
         margin: 0;
         list-style: none;
+    }
+
+    .nav-dark ul {
+        background-color: #000;
+    }
+
+    .nav-light ul {
+        background-color: #fff;
     }
 
     nav ul li {
         display: flex;
         align-items: center;
         height: 100%;
-        padding-inline: 20px;
+        border-radius: 20px 0 20px 0;
         font-size: 20px;
         cursor: pointer;
     }
@@ -117,6 +145,47 @@
         }
         100% {
             top: 0;
+        }
+    }
+
+    @media only screen and (min-width: 601px)
+    {
+        nav ul {
+            gap: 15px;
+            height: 100%;
+        }
+
+        nav ul li {
+            padding-inline: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 600px)
+    {
+        nav ul[aria-expanded="false"] {
+            display: none;
+        }
+
+        nav ul {
+            position: absolute;
+            top: 0;
+            left: 0;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .nav-dark ul {
+            margin-top: 100px;
+        }
+
+        .nav-light ul {
+            margin-top: 60px;
+        }
+
+        nav ul li {
+            padding-inline: 50px;
+            padding-block: 20px;
         }
     }
 </style>

@@ -12,5 +12,23 @@ body {
     margin: 0;
     background-color: var(--color-dark);
     overflow-x: hidden;
+    overflow-y: scroll;
     font-family: Roboto Mono, monospace;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 90%);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 50%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-pink);
 }
