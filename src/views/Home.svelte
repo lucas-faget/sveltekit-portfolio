@@ -58,10 +58,16 @@
 </main>
 
 <style>
+    main {
+        background-color: var(--color-dark);
+        border-radius: 0 0 0 80px;
+    }
+
     .articles {
         display: flex;
         flex-direction: column;
         padding-inline: var(--horizontal-padding);
+        padding-bottom: 80px;
     }
 
     .article {
@@ -69,7 +75,7 @@
         justify-content: space-between;
         padding-block: var(--vertical-gap);
         box-sizing: border-box;
-        border-bottom: 2px dotted #fff;
+        border-bottom: 2px dotted var(--color-light);
     }
 
     .aside {

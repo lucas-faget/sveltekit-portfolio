@@ -133,6 +133,7 @@
     .logo {
         color: #fff;
         font-size: 25px;
+        font-family: 'Anton', sans-serif;
     }
 
     .nav-light .logo {
@@ -162,8 +163,12 @@
 
     @media only screen and (max-width: 600px)
     {
+        nav ul[aria-expanded="true"] {
+            animation: 0.5s ease-in-out down-move;
+        }
+
         nav ul[aria-expanded="false"] {
-            display: none;
+            animation: 0.5s ease-in-out up-move;
         }
 
         nav ul {
@@ -186,6 +191,24 @@
         nav ul li {
             padding-inline: 50px;
             padding-block: 20px;
+        }
+    }
+
+    @keyframes down-move {
+        from {
+            top: calc(-100% - 100px);
+        }
+        to {
+            top: 0;
+        }
+    }
+
+    @keyframes up-move {
+        from {
+            top: 0;;
+        }
+        to {
+            top: calc(-100% - 100px);
         }
     }
 </style>
