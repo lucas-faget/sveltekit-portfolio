@@ -56,11 +56,6 @@
 </Router>
   
 <style>
-    .link {
-        text-decoration: none;
-        height: 100%;
-    }
-
     nav {
         top: 0;
         left: 0;
@@ -132,8 +127,10 @@
     
     .logo {
         color: #fff;
+        position: relative;
         font-size: 25px;
         font-family: 'Anton', sans-serif;
+        z-index: 1000;
     }
 
     .nav-light .logo {
@@ -164,11 +161,11 @@
     @media only screen and (max-width: 600px)
     {
         nav ul[aria-expanded="true"] {
-            animation: 0.5s ease-in-out down-move;
+            top: 0;
         }
 
         nav ul[aria-expanded="false"] {
-            animation: 0.5s ease-in-out up-move;
+            top: -100vh;
         }
 
         nav ul {
@@ -178,6 +175,8 @@
             flex-direction: column;
             align-items: flex-start;
             width: 100%;
+            transition: top 0.5s ease-in-out;
+            z-index: 10;
         }
 
         .nav-dark ul {
@@ -191,24 +190,6 @@
         nav ul li {
             padding-inline: 50px;
             padding-block: 20px;
-        }
-    }
-
-    @keyframes down-move {
-        from {
-            top: calc(-100% - 100px);
-        }
-        to {
-            top: 0;
-        }
-    }
-
-    @keyframes up-move {
-        from {
-            top: 0;;
-        }
-        to {
-            top: calc(-100% - 100px);
         }
     }
 </style>

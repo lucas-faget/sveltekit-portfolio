@@ -10,11 +10,13 @@
 <style scoped>
     .mobile-nav-toggle
     {
+        position: relative;
         display: none;
         width: 30px;
         aspect-ratio: 1/1;
         z-index: 1000;
         cursor: pointer;
+        z-index: 1000;
     }
 
     .mobile-nav-toggle.color-dark:before, .mobile-nav-toggle.color-dark:after, .mobile-nav-toggle.color-dark > div
