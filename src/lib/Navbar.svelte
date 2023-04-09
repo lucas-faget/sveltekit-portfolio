@@ -1,57 +1,66 @@
 <script lang="ts">
     import { Router, Link, Route } from "svelte-routing";
     import Home from "../views/Home.svelte";
-    import MobileNavToogle from "./MobileNavToogle.svelte";
+    import MobileNavToggle from "./MobileNavToggle.svelte";
   
-    let isColoredDark: boolean = true;
-    let navClass: string = 'nav-dark';
+    const maxMobileNavViewportWidth: number = 600;
+    let viewportHeight: number = window.innerHeight || document.documentElement.clientHeight;
+    let viewportWidth: number = window.innerWidth || document.documentElement.clientWidth;
+    let scrollTop: number = window.pageYOffset || document.documentElement.scrollTop;
     let isMobileNavOpen: boolean = false;
 
-    function toogleMobileNav() {
-        isMobileNavOpen = !isMobileNavOpen;
-    }
-
-    function handleKeyDown(event: KeyboardEvent) {
-        if (event.key === 'Enter' || event.key === ' ') {
-            toogleMobileNav();
-        }
-    };
+    window.addEventListener('resize', () => {
+        viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+        viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    });
 
     window.addEventListener('scroll', () => {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-
-        if (scrollTop < (50 * viewportHeight) / 100) {
-            isColoredDark = true;
-            navClass = "nav-dark";
-        } else {
-            isColoredDark = false;
-            navClass = "nav-light";
-        }
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     });
+
+    $: hasScrolled = scrollTop < (50 * viewportHeight) / 100;
+
+    $: isWideNav = hasScrolled && !isMobileNavVisible;
+
+    $: isDarkNav = isWideNav;
+
+    $: isMobileNavVisible = isMobileNavOpen && viewportWidth <= maxMobileNavViewportWidth;
+  
+    function toggleMobileNav() {
+        isMobileNavOpen = !isMobileNavOpen;
+    }
+  
+    function handleKeyDown(event: KeyboardEvent) {
+        if (event.key === "Enter" || event.key === " ") {
+            toggleMobileNav();
+        }
+    }
 </script>
 
 <Router>
-    <nav class={navClass}>
+    <nav class={isDarkNav ? 'nav-dark ' : 'nav-light '}{isWideNav ? 'nav-wide' : 'nav-thin'}>
         <Link to="/" style="text-decoration: none;">
-            <div class="logo">Lucas Faget</div>  
+            <div class="logo">Lucas Faget</div>
         </Link>
 
-        <div on:click={toogleMobileNav} on:keydown={handleKeyDown}>
-            <MobileNavToogle isColoredDark={!isColoredDark} isMobileNavOpen={isMobileNavOpen} />
+        <div on:click={toggleMobileNav} on:keydown={handleKeyDown}>
+            <MobileNavToggle isColoredDark={!isDarkNav} isMobileNavOpen={isMobileNavOpen} />
         </div>
         
         <ul aria-expanded={isMobileNavOpen}>
-            <Link to="/" style="height: 100%; text-decoration: none"><li>Home</li></Link>
-            <Link to="/" style="height: 100%; text-decoration: none"><li>Home</li></Link>
-            <Link to="/" style="height: 100%; text-decoration: none"><li>Home</li></Link>
+            <Link to="/" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+                <li>Home</li>
+            </Link>
+            <Link to="/" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+                <li>Home</li>
+            </Link>
+            <Link to="/" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+                <li>Home</li>
+            </Link>
         </ul>
     </nav>
     <div>
-        <Route path="/"><Home /></Route>
-        <Route path="/"><Home /></Route>
-        <Route path="/"><Home /></Route>
-        <!-- <Route path="/" component="{Home}" /> -->
+        <Route path="/" component="{Home}" />
     </div>
 </Router>
   
@@ -69,17 +78,22 @@
     }
 
     .nav-dark {
-        background-color: #000;
+        background-color: var(--color-dark);
+    }
+
+    .nav-light {
+        background-color: var(--color-light);
+    }
+
+    .nav-wide {
         position: absolute;
         height: 100px;
     }
 
-    .nav-light {
-        background-color: #fff;
+    .nav-thin {
         position: fixed;
         height: 60px;
         padding-inline: 30px;
-        animation: slideDown 0.5s forwards;
     }
 
     nav ul {
@@ -90,20 +104,12 @@
         list-style: none;
     }
 
-    .nav-dark ul {
-        background-color: #000;
-    }
-
-    .nav-light ul {
-        background-color: #fff;
-    }
-
     nav ul li {
         display: flex;
         align-items: center;
-        height: 100%;
         border-radius: 20px 0 20px 0;
         font-size: 20px;
+        font-family: 'Anton', sans-serif;
         cursor: pointer;
     }
 
@@ -117,20 +123,21 @@
 
     .nav-dark ul li:hover {
         color: #000;
-        background-color: #fff;
     }
 
     .nav-light ul li:hover {
         color: #fff;
-        background-color: #000;
     }
     
     .logo {
-        color: #fff;
         position: relative;
         font-size: 25px;
         font-family: 'Anton', sans-serif;
         z-index: 1000;
+    }
+
+    .nav-dark .logo {
+        color: #fff;
     }
 
     .nav-light .logo {
@@ -154,7 +161,20 @@
         }
 
         nav ul li {
+            height: 100%;
             padding-inline: 20px;
+        }
+
+        .nav-dark ul li:hover {
+            background-color: #fff;
+        }
+
+        .nav-light ul li:hover {
+            background-color: var(--color-dark);
+        }
+
+        .nav-thin {
+            animation: slideDown 0.5s forwards;
         }
     }
 
@@ -169,27 +189,25 @@
         }
 
         nav ul {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             flex-direction: column;
-            align-items: flex-start;
+            justify-content: center;
+            height: 100%;
             width: 100%;
-            transition: top 0.5s ease-in-out;
             z-index: 10;
         }
 
-        .nav-dark ul {
-            margin-top: 100px;
-        }
-
-        .nav-light ul {
-            margin-top: 60px;
+        .nav-dark ul, .nav-light ul {
+            background-color: var(--color-pink);
         }
 
         nav ul li {
             padding-inline: 50px;
             padding-block: 20px;
+            font-size: 50px;
+            font-family: 'Anton', sans-serif;
         }
     }
 </style>
