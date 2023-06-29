@@ -16,9 +16,13 @@
     <div class="articles">
         <section class="article">
             <div class="aside">
-                <Aside index="01." title="title1" />
+                <Aside index="01." title="Sokoban" />
             </div>
             <div class="section">
+                <FromDownAnimation>
+                    <Paragraph fontSize={20} text="The game is played on a board of squares, where each square is a floor or a wall. Some floor squares contain boxes, and some floor squares are marked as storage locations. The player is confined to the board and may move horizontally or vertically onto empty squares (never through walls or boxes). The player can move a box by walking up to it and push it to the square beyond. Boxes cannot be pulled, and they cannot be pushed to squares with walls or other boxes. The number of boxes equals the number of storage locations. The puzzle is solved when all boxes are placed at storage locations." />
+                </FromDownAnimation>
+
                 <FromDownAnimation>
                     <Image src={ASSETS + "technology-earth1.jpg"} description="Technology Earth" />
                 </FromDownAnimation>
@@ -26,7 +30,6 @@
                 <FromDownAnimation>
                     <ListWithImage items={[
                         { src: ASSETS_LOGOS + "typescript.png", text: "TypeScript" },
-                        { src: ASSETS_LOGOS + "vuejs.svg", text: "Vue.js" },
                         { src: ASSETS_LOGOS + "svelte.svg", text: "Svelte.js" }
                     ]} />
                 </FromDownAnimation>
@@ -59,23 +62,32 @@
 
 <style>
     main {
-        background-color: var(--color-dark);
+        /* background-color: var(--color-dark); */
+        background-image: url("assets/background1.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position-y: top;
+        background-repeat: no-repeat;
         border-radius: 0 0 0 80px;
     }
 
     .articles {
+        position: relative;
         display: flex;
         flex-direction: column;
         padding-inline: var(--horizontal-padding);
         padding-bottom: 80px;
+        z-index: 1;
     }
 
     .article {
+        position: relative;
         display: flex;
         justify-content: space-between;
         padding-block: var(--vertical-gap);
         box-sizing: border-box;
         border-bottom: 2px dotted var(--color-light);
+        z-index: 1;
     }
 
     .aside {

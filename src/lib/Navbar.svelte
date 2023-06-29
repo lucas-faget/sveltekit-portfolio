@@ -15,7 +15,7 @@
     });
 
     window.addEventListener('scroll', () => {
-        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollTop = document.documentElement.scrollTop;
     });
 
     $: hasScrolled = scrollTop < (50 * viewportHeight) / 100;
@@ -78,7 +78,7 @@
     }
 
     .nav-dark {
-        background-color: var(--color-dark);
+        background-color: var(--color-dark) transparent;
     }
 
     .nav-light {
