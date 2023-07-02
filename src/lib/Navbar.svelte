@@ -51,12 +51,6 @@
             <Link to="/" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 <li>Home</li>
             </Link>
-            <Link to="/" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
-                <li>Home</li>
-            </Link>
-            <Link to="/" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
-                <li>Home</li>
-            </Link>
         </ul>
     </nav>
     <div>

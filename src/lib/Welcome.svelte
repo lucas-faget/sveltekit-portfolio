@@ -2,7 +2,7 @@
     import { onMount, onDestroy } from 'svelte';
     import Paragraph from "./Paragraph.svelte";
 
-    const maxFontSize = 150;
+    const maxFontSize = 145;
 
     let text: string[];
     let fontSize = maxFontSize;
@@ -46,10 +46,14 @@
 </script>
 
 <section class="welcome" on:resize={updateFontSize}>
-    <div class="title" bind:this={element}>
+    <div class="welcome-title" style:font-size="{fontSize}px" bind:this={element}>
         {#each text as line, index}
             <div class={isVisible ? getLateralMoveClass(index) : ''}>
-                <Paragraph text={line} fontSize={fontSize} />
+                {#if index !== 0}
+                    <p class="outlined-text">{line}</p>
+                {:else}
+                    <p>{line}</p>
+                {/if}
             </div>
         {/each}
     </div>
@@ -68,8 +72,14 @@
         font-family: 'Anton', sans-serif;
     }
 
-    .title {
+    .welcome-title {
+        color: #fff;
         padding-inline: var(--horizontal-padding);
+    }
+
+    .outlined-text {
+        color: transparent;
+        -webkit-text-stroke: 3px #fff;
     }
 
     @media (min-width: 800px) {

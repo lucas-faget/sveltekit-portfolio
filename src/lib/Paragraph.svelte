@@ -1,12 +1,18 @@
 <script lang="ts">
+  import CustomLink from "./CustomLink.svelte";
+
     export let text: string;
     export let fontSize: number; // in pixels
 </script>
 
-<p class="paragraph" style:font-size="{fontSize}px">
+<p style:font-size="{fontSize}px">
     {#each text.split(' ') as word}
         {#if word.charAt(0) === '#'}
-            <span class="color-red">{word.substring(1, word.length) + ' '}</span>
+            <span><CustomLink 
+                href={word.substring(1, word.length)} 
+                text={word.substring(1, word.length) + ' '} 
+                fontSize={fontSize}>
+            </CustomLink></span>
         {:else}
             <span>{word + ' '}</span>
         {/if}
@@ -14,13 +20,7 @@
 </p>
 
 <style>
-    .paragraph {
+    p {
         color: var(--color-light);
-        padding: 0;
-        margin: 0;
-    }
-
-    .color-red {
-        color: var(--color-pink);
     }
 </style>
