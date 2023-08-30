@@ -84,7 +84,7 @@
 <style>
     main {
         /* background-color: var(--color-dark); */
-        background-image: url("assets/background1.jpg");
+        background-image: url("/assets/background1.jpg");
         background-attachment: fixed;
         background-size: cover;
         background-position-y: top;
