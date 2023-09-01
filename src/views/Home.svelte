@@ -122,7 +122,11 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREENSHOTS + "movue.png"} description="Movue screenshot" />
+                    <Image src={ASSETS_SCREENSHOTS + "movue1.png"} description="Movue screenshot" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Image src={ASSETS_SCREENSHOTS + "movue2.png"} description="Movue screenshot" />
                 </FromDownAnimation>
             </div>
         </section>
@@ -130,7 +134,7 @@
         <!-- Healthy -->
         <section class="article">
             <div class="aside">
-                <Aside index="04." title="Healthy" />
+                <Aside index="04." title="Site under construction. Laravel API using PostgreSQL and OpenFoodFacts API, a food products database made by everyone. The front in Svelte will allow to read the nutritional information of food products, and list your personal intake, which will allow you to count calories. The database is dockerized." />
             </div>
             <div class="section">
                 <FromDownAnimation>
