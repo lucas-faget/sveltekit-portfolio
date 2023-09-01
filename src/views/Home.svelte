@@ -22,7 +22,7 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="Chess game playable locally with 4 variants, Strandard, Fischer Random, Fog Of War, Four Player Four. The site has a learning section to understand the movement of the pieces." />
+                    <Paragraph fontSize={20} text="Chess game playable locally with 4 variants, Standard Chess, Fischer Random Chess, Fog of War, Four Player Chess. The site has a learning section to understand the movement of the pieces. Online games will soon be available thanks to Socket.io" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -134,11 +134,11 @@
         <!-- Healthy -->
         <section class="article">
             <div class="aside">
-                <Aside index="04." title="Site under construction. Laravel API using PostgreSQL and OpenFoodFacts API, a food products database made by everyone. The front in Svelte will allow to read the nutritional information of food products, and list your personal intake, which will allow you to count calories. The database is dockerized." />
+                <Aside index="04." title="Healthy" />
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="Healthy" />
+                    <Paragraph fontSize={20} text="Site under construction. Laravel API using PostgreSQL and OpenFoodFacts API, a food products database made by everyone. The front in Svelte will allow to read the nutritional information of food products, and list your personal intake, which will allow you to count calories. The database is dockerized." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
