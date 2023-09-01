@@ -22,7 +22,7 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="Chess." />
+                    <Paragraph fontSize={20} text="Chess game playable locally with 4 variants, Strandard, Fischer Random, Fog Of War, Four Player Four. The site has a learning section to understand the movement of the pieces." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -35,6 +35,10 @@
 
                 <FromDownAnimation>
                     <Paragraph fontSize={20} text="To visit the website : #https://chess-lucas-faget.netlify.app" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Paragraph fontSize={20} text="To see the GitHub repository : #https://github.com/lucas-faget/vue-chess" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -58,7 +62,7 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="Sokoban game encoded with Svelte and Typescript. The player can move the character using the directional arrows on the keyboard. The player can go back to the last move played and restart the level again. He can also customize his assets." />
+                    <Paragraph fontSize={20} text="Sokoban game encoded with Svelte and Typescript. The player can move the character using the directional arrows on the keyboard. The player can go back to the last move played and restart the level again. He can also customize his assets. The online playable game is coming soon using Socket.io." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -71,6 +75,10 @@
 
                 <FromDownAnimation>
                     <Paragraph fontSize={20} text="To visit the website : #https://sokoban-lucas-faget.netlify.app" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Paragraph fontSize={20} text="To see the GitHub repository : #https://github.com/lucas-faget/svelte-sokoban" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -110,10 +118,53 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
+                    <Paragraph fontSize={20} text="To see the GitHub repository : #https://github.com/lucas-faget/vue-movies" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
                     <Image src={ASSETS_SCREENSHOTS + "movue.png"} description="Movue screenshot" />
                 </FromDownAnimation>
             </div>
         </section>
+
+        <!-- Healthy -->
+        <section class="article">
+            <div class="aside">
+                <Aside index="04." title="Healthy" />
+            </div>
+            <div class="section">
+                <FromDownAnimation>
+                    <Paragraph fontSize={20} text="Healthy" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: ASSETS_LOGOS + "laravel.svg", text: "Laravel" },
+                        { src: ASSETS_LOGOS + "svelte.svg", text: "Svelte.js" },
+                        { src: ASSETS_LOGOS + "postgresql.svg", text: "PostgreSQL" },
+                        { src: ASSETS_LOGOS + "docker.svg", text: "Docker" },
+                        { src: ASSETS_FLAGS + "united-kingdom.svg", text: "English" }
+                    ]} />
+                </FromDownAnimation>
+
+                <!-- <FromDownAnimation>
+                    <Paragraph fontSize={20} text="To visit the website : #https://healthy-lucas-faget.netlify.app" />
+                </FromDownAnimation> -->
+
+                <FromDownAnimation>
+                    <Paragraph fontSize={20} text="To see the GitHub repository : #https://github.com/lucas-faget/laravel-healthy" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Image src={ASSETS_SCREENSHOTS + "healthy1.png"} description="Healthy screenshot" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Image src={ASSETS_SCREENSHOTS + "healthy2.png"} description="Healthy screenshot" />
+                </FromDownAnimation>
+            </div>
+        </section>
+
     </div>
 </main>
 
