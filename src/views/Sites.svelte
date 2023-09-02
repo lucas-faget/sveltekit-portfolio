@@ -6,9 +6,9 @@
     import FromDownAnimation from "../lib/FromDownAnimation.svelte";
     import Welcome from "../lib/Welcome.svelte";
 
-    const ASSETS_LOGOS = "/assets/logos/";
-    const ASSETS_FLAGS = "/assets/flags/";
-    const ASSETS_SCREENSHOTS = "/assets/screenshots/";
+    const ASSETS_LOGO = "/logo/";
+    const ASSETS_FLAG = "/flag/";
+    const ASSETS_SCREEN = "/screen/";
 </script>
 
 <main>
@@ -27,9 +27,9 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGOS + "typescript.svg", text: "TypeScript" },
-                        { src: ASSETS_LOGOS + "vue.svg", text: "Vue.js" },
-                        { src: ASSETS_FLAGS + "united-kingdom.svg", text: "English" }
+                        { src: ASSETS_LOGO + "typescript.svg", text: "TypeScript" },
+                        { src: ASSETS_LOGO + "vue.svg", text: "Vue.js" },
+                        { src: ASSETS_FLAG + "united-kingdom.svg", text: "English" }
                     ]} />
                 </FromDownAnimation>
 
@@ -42,11 +42,11 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREENSHOTS + "chess1.png"} description="Chess screenshot" />
+                    <Image src={ASSETS_SCREEN + "chess1.png"} description="Chess screenshot" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREENSHOTS + "chess2.png"} description="Chess screenshot" />
+                    <Image src={ASSETS_SCREEN + "chess2.png"} description="Chess screenshot" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -67,9 +67,9 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGOS + "typescript.svg", text: "TypeScript" },
-                        { src: ASSETS_LOGOS + "svelte.svg", text: "Svelte.js" },
-                        { src: ASSETS_FLAGS + "united-kingdom.svg", text: "English" }
+                        { src: ASSETS_LOGO + "typescript.svg", text: "TypeScript" },
+                        { src: ASSETS_LOGO + "svelte.svg", text: "Svelte.js" },
+                        { src: ASSETS_FLAG + "united-kingdom.svg", text: "English" }
                     ]} />
                 </FromDownAnimation>
 
@@ -82,11 +82,11 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREENSHOTS + "sokoban1.png"} description="Sokoban screenshot" />
+                    <Image src={ASSETS_SCREEN + "sokoban1.png"} description="Sokoban screenshot" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREENSHOTS + "sokoban2.png"} description="Sokoban screenshot" />
+                    <Image src={ASSETS_SCREEN + "sokoban2.png"} description="Sokoban screenshot" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -107,9 +107,9 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGOS + "javascript.svg", text: "JavaScript" },
-                        { src: ASSETS_LOGOS + "vue.svg", text: "Vue.js" },
-                        { src: ASSETS_FLAGS + "france.svg", text: "French" }
+                        { src: ASSETS_LOGO + "javascript.svg", text: "JavaScript" },
+                        { src: ASSETS_LOGO + "vue.svg", text: "Vue.js" },
+                        { src: ASSETS_FLAG + "france.svg", text: "French" }
                     ]} />
                 </FromDownAnimation>
 
@@ -122,11 +122,11 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREENSHOTS + "movue1.png"} description="Movue screenshot" />
+                    <Image src={ASSETS_SCREEN + "movue1.png"} description="Movue screenshot" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREENSHOTS + "movue2.png"} description="Movue screenshot" />
+                    <Image src={ASSETS_SCREEN + "movue2.png"} description="Movue screenshot" />
                 </FromDownAnimation>
             </div>
         </section>
@@ -143,28 +143,24 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGOS + "laravel.svg", text: "Laravel" },
-                        { src: ASSETS_LOGOS + "svelte.svg", text: "Svelte.js" },
-                        { src: ASSETS_LOGOS + "postgresql.svg", text: "PostgreSQL" },
-                        { src: ASSETS_LOGOS + "docker.svg", text: "Docker" },
-                        { src: ASSETS_FLAGS + "united-kingdom.svg", text: "English" }
+                        { src: ASSETS_LOGO + "laravel.svg", text: "Laravel" },
+                        { src: ASSETS_LOGO + "svelte.svg", text: "Svelte.js" },
+                        { src: ASSETS_LOGO + "postgresql.svg", text: "PostgreSQL" },
+                        { src: ASSETS_LOGO + "docker.svg", text: "Docker" },
+                        { src: ASSETS_FLAG + "united-kingdom.svg", text: "English" }
                     ]} />
                 </FromDownAnimation>
-
-                <!-- <FromDownAnimation>
-                    <Paragraph fontSize={20} text="To visit the website : #https://healthy-lucas-faget.netlify.app" />
-                </FromDownAnimation> -->
 
                 <FromDownAnimation>
                     <Paragraph fontSize={20} text="To see the GitHub repository : #https://github.com/lucas-faget/laravel-healthy" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREENSHOTS + "healthy1.png"} description="Healthy screenshot" />
+                    <Image src={ASSETS_SCREEN + "healthy1.png"} description="Healthy screenshot" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREENSHOTS + "healthy2.png"} description="Healthy screenshot" />
+                    <Image src={ASSETS_SCREEN + "healthy2.png"} description="Healthy screenshot" />
                 </FromDownAnimation>
             </div>
         </section>
@@ -175,7 +171,7 @@
 <style>
     main {
         /* background-color: var(--color-dark); */
-        background-image: url("/assets/background1.jpg");
+        background-image: url("/background/background1.jpg");
         background-attachment: fixed;
         background-size: cover;
         background-position-y: top;

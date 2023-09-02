@@ -1,7 +1,8 @@
 <script lang="ts">
     import { Router, Link, Route } from "svelte-routing";
-    import Home from "../views/Home.svelte";
     import MobileNavToggle from "./MobileNavToggle.svelte";
+    import Sites from "../views/Sites.svelte";
+    import CV from "../views/CV.svelte";
   
     const maxMobileNavViewportWidth: number = 600;
     let viewportHeight: number = window.innerHeight || document.documentElement.clientHeight;
@@ -49,12 +50,16 @@
         
         <ul aria-expanded={isMobileNavOpen}>
             <Link to="/" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
-                <li>Home</li>
+                <li>Sites</li>
+            </Link>
+            <Link to="/cv" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+                <li>CV</li>
             </Link>
         </ul>
     </nav>
     <div>
-        <Route path="/" component="{Home}" />
+        <Route path="/" component="{Sites}" />
+        <Route path="/cv" component="{CV}" />
     </div>
 </Router>
   

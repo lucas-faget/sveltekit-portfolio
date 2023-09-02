@@ -21,6 +21,10 @@ p {
     margin: 0;
 }
 
+iframe {
+    border: none;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     border-radius: 10px;
