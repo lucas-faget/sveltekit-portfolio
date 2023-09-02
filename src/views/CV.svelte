@@ -1,5 +1,5 @@
 <main>
-    <iframe src="/src/cv/index.html" title="CV" width="100%" height="1300"></iframe>
+    <iframe src="/cv.html" title="CV" width="100%" height="1300"></iframe>
 </main>
 
 <style>

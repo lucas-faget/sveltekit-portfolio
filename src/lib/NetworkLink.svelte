@@ -4,7 +4,7 @@
     export let networkUrl: string;
 </script>
 
-<a href={networkUrl} target="_blank">
+<a href={networkUrl} target="_blank" rel="noreferrer">
     <div class="network" style="width: {size}px; height: {size}px;">
         <img class="icon" src={imageUrl} alt="network" />
     </div>
