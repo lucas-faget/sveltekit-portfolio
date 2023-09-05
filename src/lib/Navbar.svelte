@@ -3,11 +3,12 @@
     import MobileNavToggle from "./MobileNavToggle.svelte";
     import Sites from "../views/Sites.svelte";
     import CV from "../views/CV.svelte";
+    import Contact from "../views/Contact.svelte";
   
     const maxMobileNavViewportWidth: number = 600;
     let viewportHeight: number = window.innerHeight || document.documentElement.clientHeight;
     let viewportWidth: number = window.innerWidth || document.documentElement.clientWidth;
-    let scrollTop: number = window.pageYOffset || document.documentElement.scrollTop;
+    let scrollTop: number = document.documentElement.scrollTop;
     let isMobileNavOpen: boolean = false;
 
     window.addEventListener('resize', () => {
@@ -55,11 +56,15 @@
             <Link to="/cv" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 <li>CV</li>
             </Link>
+            <Link to="/contact" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+                <li>Contact</li>
+            </Link>
         </ul>
     </nav>
     <div>
         <Route path="/" component="{Sites}" />
         <Route path="/cv" component="{CV}" />
+        <Route path="/contact" component="{Contact}" />
     </div>
 </Router>
   
@@ -120,11 +125,11 @@
         color: #000;
     }
 
-    .nav-dark ul li:hover {
+    .nav-thin.nav-dark ul li:hover {
         color: #000;
     }
 
-    .nav-light ul li:hover {
+    .nav-thin.nav-light ul li:hover {
         color: #fff;
     }
     
@@ -164,11 +169,11 @@
             padding-inline: 20px;
         }
 
-        .nav-dark ul li:hover {
+        .nav-thin.nav-dark ul li:hover {
             background-color: #fff;
         }
 
-        .nav-light ul li:hover {
+        .nav-thin.nav-light ul li:hover {
             background-color: var(--color-dark);
         }
 
@@ -210,4 +215,3 @@
         }
     }
 </style>
-  
