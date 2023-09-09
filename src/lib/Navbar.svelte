@@ -209,7 +209,7 @@
 
         nav ul li {
             padding-inline: 50px;
-            padding-block: 20px;
+            padding-block: 5px;
             font-size: 50px;
             font-family: 'Anton', sans-serif;
         }

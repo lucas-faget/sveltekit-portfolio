@@ -3,6 +3,11 @@
     --color-dark: #000;
     --color-pink: hsl(0, 100%, 75%);
 
+    --welcome-font-size: clamp(3rem, 9vw, 9rem);
+    --paragraph-font-size: clamp(0.9rem, 1.2vw ,1.3rem);
+    --aside-font-size: clamp(1.8rem, 3vw, 3rem);
+    --footer-font-size: clamp(1.2rem, 2vw, 2rem);
+
     --vertical-gap: 50px;
     --horizontal-padding: 3vw;
 }

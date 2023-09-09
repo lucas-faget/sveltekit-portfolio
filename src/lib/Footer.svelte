@@ -62,7 +62,7 @@
         display: flex;
         justify-content: space-between;
         border-bottom: 2px dotted var(--color-dark);
-        font-size: 25px;
+        font-size: var(--footer-font-size);
         font-family: 'Anton', sans-serif;
     }
 

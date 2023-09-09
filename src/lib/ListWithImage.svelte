@@ -13,7 +13,7 @@
     {#each items as item}
         <li class="item">
             <img class="logo" src={item.src} alt="logo"/>
-            <Paragraph text={item.text} fontSize={20} />
+            <Paragraph text={item.text} />
         </li>
     {/each}
 </ul>

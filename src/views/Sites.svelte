@@ -22,7 +22,7 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="Chess game playable locally with 4 variants, Standard Chess, Fischer Random Chess, Fog of War, Four Player Chess. The site has a learning section to understand the movement of the pieces. Online games will soon be available thanks to Socket.io" />
+                    <Paragraph text="Chess game playable locally with 4 variants, Standard Chess, Fischer Random Chess, Fog of War, Four Player Chess. The site has a learning section to understand the movement of the pieces. Online games will soon be available thanks to Socket.io" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -34,11 +34,11 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="To visit the website : #https://chess-lucas-faget.netlify.app" />
+                    <Paragraph text="To visit the website : #https://chess-lucas-faget.netlify.app" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="To see the GitHub repository : #https://github.com/lucas-faget/vue-chess" />
+                    <Paragraph text="To see the GitHub repository : #https://github.com/lucas-faget/vue-chess" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -50,7 +50,7 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="To learn more about Chess : #https://en.wikipedia.org/wiki/Chess" />
+                    <Paragraph text="To learn more about Chess : #https://en.wikipedia.org/wiki/Chess" />
                 </FromDownAnimation>
             </div>
         </section>
@@ -62,7 +62,7 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="Sokoban game encoded with Svelte and Typescript. The player can move the character using the directional arrows on the keyboard. The player can go back to the last move played and restart the level again. He can also customize his assets. The online playable game is coming soon using Socket.io." />
+                    <Paragraph text="Sokoban game encoded with Svelte and Typescript. The player can move the character using the directional arrows on the keyboard. The player can go back to the last move played and restart the level again. He can also customize his assets. The online playable game is coming soon using Socket.io." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -74,11 +74,11 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="To visit the website : #https://sokoban-lucas-faget.netlify.app" />
+                    <Paragraph text="To visit the website : #https://sokoban-lucas-faget.netlify.app" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="To see the GitHub repository : #https://github.com/lucas-faget/svelte-sokoban" />
+                    <Paragraph text="To see the GitHub repository : #https://github.com/lucas-faget/svelte-sokoban" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -90,7 +90,7 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="To learn more about Sokoban : #https://en.wikipedia.org/wiki/Sokoban" />
+                    <Paragraph text="To learn more about Sokoban : #https://en.wikipedia.org/wiki/Sokoban" />
                 </FromDownAnimation>
             </div>
         </section>
@@ -102,7 +102,7 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="A minimalist movie database using Vue.js. The user can visit the list of available films, see the details of a movie and add a movie to the database." />
+                    <Paragraph text="A minimalist movie database using Vue.js. The user can visit the list of available films, see the details of a movie and add a movie to the database." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -114,11 +114,11 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="To visit the website : #https://movue-lucas-faget.netlify.app" />
+                    <Paragraph text="To visit the website : #https://movue-lucas-faget.netlify.app" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="To see the GitHub repository : #https://github.com/lucas-faget/vue-movies" />
+                    <Paragraph text="To see the GitHub repository : #https://github.com/lucas-faget/vue-movies" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -138,7 +138,7 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="Site under construction. Laravel API using PostgreSQL and OpenFoodFacts API, a food products database made by everyone. The front in Svelte will allow to read the nutritional information of food products, and list your personal intake, which will allow you to count calories. The database is dockerized." />
+                    <Paragraph text="Site under construction. Laravel API using PostgreSQL and OpenFoodFacts API, a food products database made by everyone. The front in Svelte will allow to read the nutritional information of food products, and list your personal intake, which will allow you to count calories. The database is dockerized." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -152,7 +152,7 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph fontSize={20} text="To see the GitHub repository : #https://github.com/lucas-faget/laravel-healthy" />
+                    <Paragraph text="To see the GitHub repository : #https://github.com/lucas-faget/laravel-healthy" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>

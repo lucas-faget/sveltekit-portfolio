@@ -7,8 +7,8 @@
 
 <aside class="aside">
     <div>
-        <Paragraph text={index} fontSize={30} />
-        <Paragraph text={title} fontSize={50} />
+        <p>{index}</p>
+        <p>{title}</p>
     </div>
 </aside>
 
@@ -24,5 +24,10 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .aside > div > p {
+        color: var(--color-light);
+        font-size: var(--aside-font-size);
     }
 </style>

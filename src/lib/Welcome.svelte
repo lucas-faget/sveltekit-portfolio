@@ -22,7 +22,7 @@
         return lineIndex % 2 === 0 ? 'from-right-lateral-move' : 'from-left-lateral-move'
     }
 
-    export { text, fontSize, isVisible };
+    export { text, isVisible };
 </script>
 
 <section class="welcome">
@@ -55,7 +55,7 @@
     .welcome-title {
         color: #fff;
         padding-inline: var(--horizontal-padding);
-        font-size: clamp(3rem, 9vw, 9rem);
+        font-size: var(--welcome-font-size);
     }
 
     .outlined-text {
