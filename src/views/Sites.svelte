@@ -170,7 +170,6 @@
 
 <style>
     main {
-        /* background-color: var(--color-dark); */
         background-image: url("/background/background1.jpg");
         background-attachment: fixed;
         background-size: cover;
