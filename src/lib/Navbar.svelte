@@ -75,7 +75,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100vw;
+        width: max(500px, 100%);
         padding-inline: 30px;
         box-sizing: border-box;
         z-index: 100;
@@ -189,7 +189,7 @@
         }
 
         nav ul[aria-expanded="false"] {
-            top: -100vh;
+            top: -100%;
         }
 
         nav ul {

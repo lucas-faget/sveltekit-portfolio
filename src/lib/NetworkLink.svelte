@@ -9,7 +9,7 @@
         <div class="network">
             <img class="icon" src={imageUrl} alt="network" />
         </div>
-        <div>
+        <div class="text">
             {networkText}
         </div>
     </div>
@@ -20,12 +20,12 @@
         color: var(--color-dark);
         background-color: var(--color-light);
         height: 100px;
-        width: 80vw;
         padding-inline: 20px;
         display: flex;
         align-items: center;
         gap: 30px;
         border-radius: 100px;
+        font-size: var(--paragraph-font-size);
     }
 
     .contact:hover {
@@ -45,5 +45,11 @@
     .icon {
         width: 100%;
         height: 100%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .text {
+            display: none;
+        }
     }
 </style>
