@@ -37,6 +37,10 @@
             toggleMobileNav();
         }
     }
+
+    function changePage() {
+        isMobileNavOpen = false;
+    }
 </script>
 
 <Router>
@@ -50,13 +54,13 @@
         </div>
         
         <ul aria-expanded={isMobileNavOpen}>
-            <Link to="/" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+            <Link to="/" on:click={changePage} style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 <li>Sites</li>
             </Link>
-            <Link to="/cv" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+            <Link to="/cv" on:click={changePage} style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 <li>CV</li>
             </Link>
-            <Link to="/contact" style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+            <Link to="/contact" on:click={changePage} style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 <li>Contact</li>
             </Link>
         </ul>
