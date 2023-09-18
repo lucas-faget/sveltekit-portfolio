@@ -1,7 +1,11 @@
+<script>
+    import CustomButton from "../lib/CustomButton.svelte";
+</script>
+
 <main>
     <div class="cv">
         <a href="/CV_FAGET_Lucas.pdf" target="_blank" download="CV_FAGET_Lucas.pdf">
-            Download
+            <CustomButton />
         </a> 
         <iframe title="CV" src="/CV_FAGET_Lucas.pdf"></iframe>    
     </div>
