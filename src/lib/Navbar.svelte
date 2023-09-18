@@ -27,6 +27,8 @@
     $: isDarkNav = isWideNav;
 
     $: isMobileNavVisible = isMobileNavOpen && viewportWidth <= maxMobileNavViewportWidth;
+
+    $: logoSrc = isDarkNav ? "/logo/logo-light-removebg.png" : "/logo/logo-dark-removebg.png";
   
     function toggleMobileNav() {
         isMobileNavOpen = !isMobileNavOpen;
@@ -45,8 +47,8 @@
 
 <Router>
     <nav class={isDarkNav ? 'nav-dark ' : 'nav-light '}{isWideNav ? 'nav-wide' : 'nav-thin'}>
-        <Link to="/" style="text-decoration: none;">
-            <div class="logo">Lucas Faget</div>
+        <Link to="/" style="text-decoration: none; height: 100%; display: flex; align-items: center;">
+            <img src={logoSrc} class="logo" alt="logo" />
         </Link>
 
         <div on:click={toggleMobileNav} on:keydown={handleKeyDown}>
@@ -139,8 +141,7 @@
     
     .logo {
         position: relative;
-        font-size: 25px;
-        font-family: 'Anton', sans-serif;
+        height: 50%;
         z-index: 1000;
     }
 
