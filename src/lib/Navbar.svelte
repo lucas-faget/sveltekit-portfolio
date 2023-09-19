@@ -1,7 +1,8 @@
 <script lang="ts">
     import { Router, Link, Route } from "svelte-routing";
     import MobileNavToggle from "./MobileNavToggle.svelte";
-    import Sites from "../views/Sites.svelte";
+    import Home from "../views/Home.svelte";
+    import Projects from "../views/Projects.svelte";
     import CV from "../views/CV.svelte";
     import Contact from "../views/Contact.svelte";
   
@@ -56,8 +57,8 @@
         </div>
         
         <ul aria-expanded={isMobileNavOpen}>
-            <Link to="/" on:click={changePage} style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
-                <li>Sites</li>
+            <Link to="/projects" on:click={changePage} style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+                <li>Projects</li>
             </Link>
             <Link to="/cv" on:click={changePage} style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 <li>CV</li>
@@ -68,7 +69,8 @@
         </ul>
     </nav>
     <div>
-        <Route path="/" component="{Sites}" />
+        <Route path="/" component="{Home}" />
+        <Route path="/projects" component="{Projects}" />
         <Route path="/cv" component="{CV}" />
         <Route path="/contact" component="{Contact}" />
     </div>

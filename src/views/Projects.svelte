@@ -12,7 +12,7 @@
 </script>
 
 <main>
-    <Welcome text={["Lucas Faget", "Web developer", "Welcome to my portfolio"]}/>
+    <Welcome text={["Lucas Faget", "My personal projects"]}/>
 
     <div class="articles">
         <!-- Sokoban -->

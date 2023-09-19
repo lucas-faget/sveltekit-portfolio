@@ -1,0 +1,212 @@
+<script lang="ts">
+    import Aside from "../lib/Aside.svelte";
+    import ListWithImage from "../lib/ListWithImage.svelte";
+    import Paragraph from "../lib/Paragraph.svelte";
+    import FromDownAnimation from "../lib/FromDownAnimation.svelte";
+    import Welcome from "../lib/Welcome.svelte";
+    import List from "../lib/List.svelte";
+
+    const ASSETS_ICON = "/icon/";
+    const ASSETS_LOGO = "/logo/";
+    const ASSETS_FLAG = "/flag/";
+</script>
+
+<main>
+    <Welcome text={["Lucas Faget", "Web developer", "Welcome to my portfolio"]}/>
+
+    <div class="articles">
+        <!-- Sokoban -->
+        <section class="article">
+            <div class="aside">
+                <Aside index="01." title="Who Am I." />
+            </div>
+            <div class="section">
+                <FromDownAnimation>
+                    <Paragraph text="Bienvenue sur mon site web 🙌" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Paragraph text="Je suis Lucas Faget, 💻 développeur web issu d'un DUT Informatique et d'un Licence Pro en développement web où j'ai pu en l'espace d'un an m'intégrer au monde professionnel en rejoignant l'entreprise Simpliciti. Aujourd'hui, je recherche un nouveau challenge dans une entreprise où je pourrai poursuivre mon apprentissage et surtout mettre à profit mon savoir-faire." />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: ASSETS_ICON + "linkedin.svg", text: "LinkedIn: #https://fr.linkedin.com/in/lucas-faget" },
+                        { src: ASSETS_ICON + "github.svg", text: "GitHub: #https://github.com/lucas-faget" }
+                    ]} />
+                </FromDownAnimation>
+            </div>
+        </section>
+
+        <!-- Sokoban -->
+        <section class="article">
+            <div class="aside">
+                <Aside index="02." title="My technology stack" />
+            </div>
+            <div class="section">
+                <FromDownAnimation>
+                    <Paragraph text="FRONT-END" />
+                </FromDownAnimation>
+                
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: ASSETS_LOGO + "javascript.svg", text: "JavaScript" },
+                        { src: ASSETS_LOGO + "typescript.svg", text: "TypeScript" },
+                        { src: ASSETS_LOGO + "vue.svg", text: "Vue.js" },
+                        { src: ASSETS_LOGO + "svelte.svg", text: "Svelte" },
+                        { src: ASSETS_LOGO + "react.svg", text: "React" }
+                    ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Paragraph text="BACK-END" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: ASSETS_LOGO + "php.svg", text: "PHP" },
+                        { src: ASSETS_LOGO + "laravel.svg", text: "Laravel" },
+                        { src: ASSETS_LOGO + "symfony.svg", text: "Symfony" },
+                        { src: ASSETS_LOGO + "nodejs.svg", text: "Node.js" }
+                    ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Paragraph text="I also have the basics of Java, C# and Python." />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Paragraph text="DATABASE" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: ASSETS_LOGO + "mysql.png", text: "MySQL" },
+                        { src: ASSETS_LOGO + "postgresql.svg", text: "PostgreSQL" },
+                        { src: ASSETS_LOGO + "mongodb.svg", text: "MongoDB" }
+                    ]} />
+                </FromDownAnimation>
+            </div>
+        </section>
+
+        <!-- Movue -->
+        <section class="article">
+            <div class="aside">
+                <Aside index="03." title="Work experience" />
+            </div>
+            <div class="section">
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: ASSETS_LOGO + "simpliciti.svg", text: "Simpliciti" }
+                    ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <List items={[
+                        { text: "July 2022 - Sept. 2023 (13 months)" },
+                        { text: "Web Developer Intern" },
+                        { text: "Maintenance and development of an application to optimize waste collection circuits" },
+                        { text: "PHP / MySQL / PostgreSQL / JavaScript (+ Svelte / TypeScript / Docker)" },
+                        { text: "Project management (SCRUM, Git, EasyRedmine, ...)" }
+                    ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: ASSETS_LOGO + "audit-action-plus.jpg", text: "Audit Action +" }
+                    ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <List items={[
+                        { text: "June 2021 - Aug. 2021 (3 months)" },
+                        { text: "Web Developer Intern" },
+                        { text: "Development of an ERP" },
+                        { text: "PHP / JavaScript / MySQL" }
+                    ]} />
+                </FromDownAnimation>
+            </div>
+        </section>
+
+        <!-- Healthy -->
+        <section class="article">
+            <div class="aside">
+                <Aside index="04." title="Education" />
+            </div>
+            <div class="section">
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: ASSETS_LOGO + "iut-bordeaux.jpg", text: "University of Bordeaux" }
+                    ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Paragraph text="Professional Bachelor Degree in computer sciences (2023)" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: ASSETS_LOGO + "iut-toulouse.png", text: "University of Toulouse" }
+                    ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Paragraph text="DUT in computing (2021)" />
+                </FromDownAnimation>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<style>
+    main {
+        background-image: url("/background/background1.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position-y: top;
+        background-repeat: no-repeat;
+        border-radius: 0 0 0 80px;
+    }
+
+    .articles {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-inline: var(--horizontal-padding);
+        padding-bottom: 80px;
+        z-index: 1;
+    }
+
+    .article {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-block: var(--vertical-gap);
+        box-sizing: border-box;
+        border-bottom: 2px dotted var(--color-light);
+        z-index: 1;
+    }
+
+    .aside {
+        width: 30%;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        gap: var(--vertical-gap);
+        width: 60%;
+    }
+
+    @media (max-width: 800px) {
+        .article {
+            flex-direction: column;
+            gap: var(--vertical-gap);
+        }
+
+        .aside, .section {
+            width: 100%;
+        }
+    }
+</style>

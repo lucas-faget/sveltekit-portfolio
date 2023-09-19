@@ -2,7 +2,6 @@
     import Paragraph from "./Paragraph.svelte";
 
     type Item = {
-        src: string
         text: string
     }
 
@@ -12,7 +11,6 @@
 <ul class="list">
     {#each items as item}
         <li class="item">
-            <img class="logo" src={item.src} alt="logo" />
             <Paragraph text={item.text} />
         </li>
     {/each}
@@ -20,21 +18,11 @@
 
 <style>
     .list {
+        color: var(--color-light);
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 15px;
         padding: 0;
         margin: 0;
-        list-style: none;
-    }
-
-    .list > .item {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .list > .item > .logo {
-        height: 60px;
     }
 </style>
