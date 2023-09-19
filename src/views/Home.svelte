@@ -6,17 +6,16 @@
     import Welcome from "../lib/Welcome.svelte";
     import List from "../lib/List.svelte";
     import CustomButton from "../lib/CustomButton.svelte";
+    import { Link } from "svelte-routing";
 
-    const ASSETS_ICON = "/icon/";
     const ASSETS_LOGO = "/logo/";
-    const ASSETS_FLAG = "/flag/";
 </script>
 
 <main class="background-landscape1">
     <Welcome text={["Lucas Faget", "Web developer", "Welcome to my portfolio"]}/>
 
     <div class="articles">
-        <!-- Sokoban -->
+        <!-- Who Am I -->
         <section class="article">
             <div class="aside">
                 <Aside index="01." title="Who Am I." />
@@ -31,19 +30,14 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <CustomButton text="Curriculum Vitae" />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: ASSETS_LOGO + "linkedin.jpg", text: "LinkedIn: #https://fr.linkedin.com/in/lucas-faget" },
-                        { src: ASSETS_LOGO + "github.jpg", text: "GitHub: #https://github.com/lucas-faget" }
-                    ]} />
+                    <Link to="/cv" style="text-decoration: none">
+                        <CustomButton text="Curriculum Vitae" isContrasting={true} />
+                    </Link>
                 </FromDownAnimation>
             </div>
         </section>
 
-        <!-- Sokoban -->
+        <!-- My technology stack -->
         <section class="article">
             <div class="aside">
                 <Aside index="02." title="My technology stack" />
@@ -94,7 +88,7 @@
             </div>
         </section>
 
-        <!-- Movue -->
+        <!-- Work experience -->
         <section class="article">
             <div class="aside">
                 <Aside index="03." title="Work experience" />
@@ -133,7 +127,7 @@
             </div>
         </section>
 
-        <!-- Healthy -->
+        <!-- Education -->
         <section class="article">
             <div class="aside">
                 <Aside index="04." title="Education" />
@@ -161,6 +155,26 @@
             </div>
         </section>
 
+        <!-- Learn more -->
+        <section class="article">
+            <div class="aside">
+                <Aside index="03." title="To learn more" />
+            </div>
+            <div class="section">
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: ASSETS_LOGO + "linkedin.jpg", text: "LinkedIn: #https://fr.linkedin.com/in/lucas-faget" },
+                        { src: ASSETS_LOGO + "github.jpg", text: "GitHub profile: #https://github.com/lucas-faget" }
+                    ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Link to="/projects" style="text-decoration: none">
+                        <CustomButton text="My Projects" isContrasting={true} />
+                    </Link>
+                </FromDownAnimation>
+            </div>
+        </section>
     </div>
 </main>
 

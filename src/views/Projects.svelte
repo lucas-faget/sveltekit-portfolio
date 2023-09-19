@@ -36,13 +36,13 @@
 
                 <FromDownAnimation>
                     <a href="https://chess-lucas-faget.netlify.app">
-                        <CustomButton text="Visit the website" />
+                        <CustomButton text="Visit the website" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
 
                 <FromDownAnimation>
                     <a href="https://github.com/lucas-faget/vue-chess">
-                        <CustomButton text="GitHub repository" />
+                        <CustomButton text="GitHub repository" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
 
@@ -80,13 +80,13 @@
 
                 <FromDownAnimation>
                     <a href="https://sokoban-lucas-faget.netlify.app">
-                        <CustomButton text="Visit the website" />
+                        <CustomButton text="Visit the website" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
 
                 <FromDownAnimation>
                     <a href="https://github.com/lucas-faget/svelte-sokoban">
-                        <CustomButton text="GitHub repository" />
+                        <CustomButton text="GitHub repository" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
 
@@ -124,13 +124,13 @@
 
                 <FromDownAnimation>
                     <a href="https://movue-lucas-faget.netlify.app">
-                        <CustomButton text="Visit the website" />
+                        <CustomButton text="Visit the website" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
 
                 <FromDownAnimation>
                     <a href="https://github.com/lucas-faget/vue-movies">
-                        <CustomButton text="GitHub repository" />
+                        <CustomButton text="GitHub repository" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
 
@@ -166,7 +166,7 @@
 
                 <FromDownAnimation>
                     <a href="https://github.com/lucas-faget/laravel-healthy">
-                        <CustomButton text="GitHub repository" />
+                        <CustomButton text="GitHub repository" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
 

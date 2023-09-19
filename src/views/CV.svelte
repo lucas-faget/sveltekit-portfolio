@@ -8,7 +8,7 @@
 
     <div class="cv">
         <a href="/CV_FAGET_Lucas.pdf" target="_blank" download="CV_FAGET_Lucas.pdf">
-            <CustomButton text="Download"/>
+            <CustomButton text="Download" isRounded={true} />
         </a>
         <iframe title="CV" src="/CV_FAGET_Lucas.pdf"></iframe>
     </div>

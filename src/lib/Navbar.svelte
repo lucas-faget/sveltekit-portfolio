@@ -60,21 +60,21 @@
         <ul aria-expanded={isMobileNavOpen}>
             <Link to="/projects" on:click={changePage} style={isWideNav ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 {#if isDarkNav}
-                    <CustomButton text="Projects" />
+                    <CustomButton text="Projects" isRounded={true} />
                 {:else}
                     <li>Projects</li>
                 {/if}
             </Link>
             <Link to="/cv" on:click={changePage} style={isWideNav ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 {#if isDarkNav}
-                    <CustomButton text="CV" />
+                    <CustomButton text="CV" isRounded={true} />
                 {:else}
                     <li>CV</li>
                 {/if}
             </Link>
             <Link to="/contact" on:click={changePage} style={isWideNav ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 {#if isDarkNav}
-                    <CustomButton text="Contact" />
+                    <CustomButton text="Contact" isRounded={true} />
                 {:else}
                     <li>Contact</li>
                 {/if}

@@ -3,6 +3,14 @@
     export let text: string;
 </script>
 
+<div class="button">
+    <div class="fill"></div>
+    <div class="content">
+        <img class="icon" src={iconSrc} alt="icon" />
+        <span class="text">{text}</span>
+    </div>
+</div>
+
 <style>
     .button {
         background-color: hsl(0, 0%, 20%);
@@ -54,12 +62,10 @@
     .button:hover .text {
         color: #000;
     }
-</style>
 
-<div class="button">
-    <div class="fill"></div>
-    <div class="content">
-        <img class="icon" src={iconSrc} alt="icon" />
-        <span class="text">{text}</span>
-    </div>
-</div>
+    @media screen and (max-width: 600px) {
+        .text {
+            display: none;
+        }
+    }
+</style>
