@@ -48,5 +48,25 @@ iframe {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-pink);
+    background: hsl(0, 0%, 20%);
+}
+
+.background-dark {
+    background-color: var(--color-dark);
+}
+
+.background-landscape1 {
+    background-image: url("/landscape/landscape1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+.background-landscape2 {
+    background-image: url("/landscape/landscape2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: top;
+    background-repeat: no-repeat;
 }

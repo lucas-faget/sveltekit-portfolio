@@ -5,13 +5,14 @@
     import FromDownAnimation from "../lib/FromDownAnimation.svelte";
     import Welcome from "../lib/Welcome.svelte";
     import List from "../lib/List.svelte";
+    import CustomButton from "../lib/CustomButton.svelte";
 
     const ASSETS_ICON = "/icon/";
     const ASSETS_LOGO = "/logo/";
     const ASSETS_FLAG = "/flag/";
 </script>
 
-<main>
+<main class="background-landscape1">
     <Welcome text={["Lucas Faget", "Web developer", "Welcome to my portfolio"]}/>
 
     <div class="articles">
@@ -22,17 +23,21 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="Bienvenue sur mon site web 🙌" />
+                    <Paragraph text="Welcome to my website !" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="Je suis Lucas Faget, 💻 développeur web issu d'un DUT Informatique et d'un Licence Pro en développement web où j'ai pu en l'espace d'un an m'intégrer au monde professionnel en rejoignant l'entreprise Simpliciti. Aujourd'hui, je recherche un nouveau challenge dans une entreprise où je pourrai poursuivre mon apprentissage et surtout mettre à profit mon savoir-faire." />
+                    <Paragraph text="I am Lucas Faget, a 💻 web developer with a background in Computer Science from a two-year technical degree and a Professional Bachelor's degree in web development. Within the span of a year, I was able to integrate into the professional world by joining Simpliciti company. Today, I am seeking a new challenge in a company where I can leverage my expertise." />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <CustomButton text="Curriculum Vitae" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_ICON + "linkedin.svg", text: "LinkedIn: #https://fr.linkedin.com/in/lucas-faget" },
-                        { src: ASSETS_ICON + "github.svg", text: "GitHub: #https://github.com/lucas-faget" }
+                        { src: ASSETS_LOGO + "linkedin.jpg", text: "LinkedIn: #https://fr.linkedin.com/in/lucas-faget" },
+                        { src: ASSETS_LOGO + "github.jpg", text: "GitHub: #https://github.com/lucas-faget" }
                     ]} />
                 </FromDownAnimation>
             </div>
@@ -160,15 +165,6 @@
 </main>
 
 <style>
-    main {
-        background-image: url("/background/background1.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position-y: top;
-        background-repeat: no-repeat;
-        border-radius: 0 0 0 80px;
-    }
-
     .articles {
         position: relative;
         display: flex;

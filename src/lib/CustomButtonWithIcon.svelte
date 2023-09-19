@@ -1,4 +1,5 @@
 <script lang="ts">
+    export let iconSrc: string;
     export let text: string;
 </script>
 
@@ -9,12 +10,24 @@
         position: relative;
         overflow: hidden;
         border: none;
-        border-radius: 25px;
-        padding: 12px 25px;
-        text-transform: uppercase;
+        border-radius: 130px;
+        padding: 25px;
         letter-spacing: 0.15rem;
         cursor: pointer;
         z-index: 1;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .icon {
+        position: relative;
+        z-index: 2;
+        width: 80px;
+        height: 80px;
     }
 
     .text {
@@ -45,5 +58,8 @@
 
 <div class="button">
     <div class="fill"></div>
-    <span class="text">{text}</span>
+    <div class="content">
+        <img class="icon" src={iconSrc} alt="icon" />
+        <span class="text">{text}</span>
+    </div>
 </div>

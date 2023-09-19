@@ -1,5 +1,5 @@
 <script lang="ts">
-    import SmallNetworkLink from "./SmallNetworkLink.svelte";
+    import NetworkLink from "./NetworkLink.svelte";
 
     const ASSETS_ICON = "/icon/";
 </script>
@@ -12,9 +12,9 @@
         </div>
         <div class="bottom">
             <div class="networks">
-                <SmallNetworkLink size={50} imageUrl={ASSETS_ICON + "linkedin.svg"} networkUrl="https://fr.linkedin.com/in/lucas-faget" />
-                <SmallNetworkLink size={50} imageUrl={ASSETS_ICON + "github.svg"} networkUrl="https://github.com/lucas-faget" />
-                <SmallNetworkLink size={50} imageUrl={ASSETS_ICON + "email.svg"} networkUrl="mailto:lucas.faget@laposte.net" />
+                <NetworkLink size={50} imageUrl={ASSETS_ICON + "linkedin.svg"} networkUrl="https://fr.linkedin.com/in/lucas-faget" />
+                <NetworkLink size={50} imageUrl={ASSETS_ICON + "github.svg"} networkUrl="https://github.com/lucas-faget" />
+                <NetworkLink size={50} imageUrl={ASSETS_ICON + "email.svg"} networkUrl="mailto:lucas.faget@laposte.net" />
             </div>
         </div>
     </div>
@@ -26,7 +26,6 @@
         background-color: var(--color-light);
         width: 100%;
         min-height: 80px;
-        border-radius: 0 80px 0 0;
         display: flex;
         justify-content: center;
         align-items: center;

@@ -36,5 +36,6 @@
 
     .list > .item > .logo {
         height: 60px;
+        min-width: 60px;
     }
 </style>

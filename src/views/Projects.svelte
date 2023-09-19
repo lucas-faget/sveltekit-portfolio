@@ -5,13 +5,14 @@
     import Paragraph from "../lib/Paragraph.svelte";
     import FromDownAnimation from "../lib/FromDownAnimation.svelte";
     import Welcome from "../lib/Welcome.svelte";
+    import CustomButton from "../lib/CustomButton.svelte";
 
     const ASSETS_LOGO = "/logo/";
     const ASSETS_FLAG = "/flag/";
     const ASSETS_SCREEN = "/screen/";
 </script>
 
-<main>
+<main class="background-landscape2">
     <Welcome text={["Lucas Faget", "My personal projects"]}/>
 
     <div class="articles">
@@ -34,11 +35,15 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="To visit the website : #https://chess-lucas-faget.netlify.app" />
+                    <a href="https://chess-lucas-faget.netlify.app">
+                        <CustomButton text="Visit the website" />
+                    </a>
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="To see the GitHub repository : #https://github.com/lucas-faget/vue-chess" />
+                    <a href="https://github.com/lucas-faget/vue-chess">
+                        <CustomButton text="GitHub repository" />
+                    </a>
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -74,11 +79,15 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="To visit the website : #https://sokoban-lucas-faget.netlify.app" />
+                    <a href="https://sokoban-lucas-faget.netlify.app">
+                        <CustomButton text="Visit the website" />
+                    </a>
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="To see the GitHub repository : #https://github.com/lucas-faget/svelte-sokoban" />
+                    <a href="https://github.com/lucas-faget/svelte-sokoban">
+                        <CustomButton text="GitHub repository" />
+                    </a>
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -114,11 +123,15 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="To visit the website : #https://movue-lucas-faget.netlify.app" />
+                    <a href="https://movue-lucas-faget.netlify.app">
+                        <CustomButton text="Visit the website" />
+                    </a>
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="To see the GitHub repository : #https://github.com/lucas-faget/vue-movies" />
+                    <a href="https://github.com/lucas-faget/vue-movies">
+                        <CustomButton text="GitHub repository" />
+                    </a>
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -152,7 +165,9 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="To see the GitHub repository : #https://github.com/lucas-faget/laravel-healthy" />
+                    <a href="https://github.com/lucas-faget/laravel-healthy">
+                        <CustomButton text="GitHub repository" />
+                    </a>
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -169,15 +184,6 @@
 </main>
 
 <style>
-    main {
-        background-image: url("/background/background1.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position-y: top;
-        background-repeat: no-repeat;
-        border-radius: 0 0 0 80px;
-    }
-
     .articles {
         position: relative;
         display: flex;

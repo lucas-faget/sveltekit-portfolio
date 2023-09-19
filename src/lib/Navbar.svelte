@@ -5,6 +5,7 @@
     import Projects from "../views/Projects.svelte";
     import CV from "../views/CV.svelte";
     import Contact from "../views/Contact.svelte";
+    import CustomButton from "./CustomButton.svelte";
   
     const maxMobileNavViewportWidth: number = 600;
     let viewportHeight: number = window.innerHeight || document.documentElement.clientHeight;
@@ -57,14 +58,26 @@
         </div>
         
         <ul aria-expanded={isMobileNavOpen}>
-            <Link to="/projects" on:click={changePage} style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
-                <li>Projects</li>
+            <Link to="/projects" on:click={changePage} style={isWideNav ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+                {#if isDarkNav}
+                    <CustomButton text="Projects" />
+                {:else}
+                    <li>Projects</li>
+                {/if}
             </Link>
-            <Link to="/cv" on:click={changePage} style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
-                <li>CV</li>
+            <Link to="/cv" on:click={changePage} style={isWideNav ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+                {#if isDarkNav}
+                    <CustomButton text="CV" />
+                {:else}
+                    <li>CV</li>
+                {/if}
             </Link>
-            <Link to="/contact" on:click={changePage} style={isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
-                <li>Contact</li>
+            <Link to="/contact" on:click={changePage} style={isWideNav ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+                {#if isDarkNav}
+                    <CustomButton text="Contact" />
+                {:else}
+                    <li>Contact</li>
+                {/if}
             </Link>
         </ul>
     </nav>

@@ -3,23 +3,18 @@
     import CustomButton from "../lib/CustomButton.svelte";
 </script>
 
-<main>
+<main class="background-dark">
     <Welcome text={["Lucas Faget", "Download my CV"]}/>
 
     <div class="cv">
         <a href="/CV_FAGET_Lucas.pdf" target="_blank" download="CV_FAGET_Lucas.pdf">
-            <CustomButton />
+            <CustomButton text="Download"/>
         </a>
         <iframe title="CV" src="/CV_FAGET_Lucas.pdf"></iframe>
     </div>
 </main>
 
 <style>
-    main {
-        background-color: var(--color-dark);
-        border-radius: 0 0 0 80px;
-    }
-
     .cv {
         display: flex;
         flex-direction: column;
