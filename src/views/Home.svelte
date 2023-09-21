@@ -7,6 +7,11 @@
     import List from "../lib/List.svelte";
     import CustomButton from "../lib/CustomButton.svelte";
     import { Link } from "svelte-routing";
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+        window.scrollTo(0, 0);
+    });
 
     const ASSETS_LOGO = "/logo/";
 </script>
@@ -15,10 +20,10 @@
     <Welcome text={["Lucas Faget", "Web developer", "Welcome to my portfolio"]}/>
 
     <div class="articles">
-        <!-- Who Am I -->
+        <!-- Introduction -->
         <section class="article">
             <div class="aside">
-                <Aside index="01." title="Who Am I." />
+                <Aside index="01." title="Introduction" />
             </div>
             <div class="section">
                 <FromDownAnimation>
@@ -84,6 +89,12 @@
                         { src: ASSETS_LOGO + "postgresql.svg", text: "PostgreSQL" },
                         { src: ASSETS_LOGO + "mongodb.svg", text: "MongoDB" }
                     ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Link to="/projects" style="text-decoration: none">
+                        <CustomButton text="Go to my projects" isContrasting={true} />
+                    </Link>
                 </FromDownAnimation>
             </div>
         </section>
@@ -158,7 +169,7 @@
         <!-- Learn more -->
         <section class="article">
             <div class="aside">
-                <Aside index="03." title="To learn more" />
+                <Aside index="03." title="My networks" />
             </div>
             <div class="section">
                 <FromDownAnimation>
@@ -166,12 +177,6 @@
                         { src: ASSETS_LOGO + "linkedin.jpg", text: "LinkedIn: #https://fr.linkedin.com/in/lucas-faget" },
                         { src: ASSETS_LOGO + "github.jpg", text: "GitHub profile: #https://github.com/lucas-faget" }
                     ]} />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <Link to="/projects" style="text-decoration: none">
-                        <CustomButton text="My Projects" isContrasting={true} />
-                    </Link>
                 </FromDownAnimation>
             </div>
         </section>

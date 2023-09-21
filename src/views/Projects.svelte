@@ -6,6 +6,11 @@
     import FromDownAnimation from "../lib/FromDownAnimation.svelte";
     import Welcome from "../lib/Welcome.svelte";
     import CustomButton from "../lib/CustomButton.svelte";
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+        window.scrollTo(0, 0);
+    });
 
     const ASSETS_LOGO = "/logo/";
     const ASSETS_FLAG = "/flag/";

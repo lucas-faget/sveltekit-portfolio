@@ -7,7 +7,7 @@
     import Contact from "../views/Contact.svelte";
     import CustomButton from "./CustomButton.svelte";
   
-    const maxMobileNavViewportWidth: number = 800;
+    const maxMobileNavViewportWidth: number = 900;
     let viewportHeight: number = window.innerHeight || document.documentElement.clientHeight;
     let viewportWidth: number = window.innerWidth || document.documentElement.clientWidth;
     let scrollTop: number = document.documentElement.scrollTop;
@@ -58,6 +58,13 @@
         </div>
         
         <ul aria-expanded={isMobileNavOpen}>
+            <Link to="/" on:click={changePage} style={hasScrolled || isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+                {#if isDarkNav}
+                    <CustomButton text="About me" isRounded={true} />
+                {:else}
+                    <li>About me</li>
+                {/if}
+            </Link>
             <Link to="/projects" on:click={changePage} style={hasScrolled || isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 {#if isDarkNav}
                     <CustomButton text="Projects" isRounded={true} />
@@ -165,7 +172,7 @@
         }
     }
 
-    @media only screen and (min-width: 801px)
+    @media only screen and (min-width: 901px)
     {
         nav ul {
             gap: 15px;
@@ -194,7 +201,7 @@
         }
     }
 
-    @media only screen and (max-width: 800px)
+    @media only screen and (max-width: 900px)
     {
         nav ul[aria-expanded="true"] {
             top: 0;

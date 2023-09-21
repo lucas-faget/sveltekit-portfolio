@@ -1,6 +1,11 @@
 <script>
     import Welcome from "../lib/Welcome.svelte";
     import CustomButton from "../lib/CustomButton.svelte";
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+        window.scrollTo(0, 0);
+    });
 </script>
 
 <main class="background-dark">

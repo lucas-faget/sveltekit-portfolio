@@ -1,6 +1,11 @@
 <script lang="ts">
     import CustomButtonWithIcon from "../lib/CustomButtonWithIcon.svelte";
     import Welcome from "../lib/Welcome.svelte";
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+        window.scrollTo(0, 0);
+    });
 
     const ASSETS_ICON = "/icon/";
 </script>

@@ -54,7 +54,7 @@
         transform: scale(0);
     }
 
-    @media (max-width: 800px)
+    @media (max-width: 900px)
     {
         .mobile-nav-toggle
         {
