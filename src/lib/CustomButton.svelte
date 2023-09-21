@@ -25,13 +25,13 @@
     }
 
     .button-dark {
-        background-color: hsl(0, 0%, 20%);
-        color: #fff;
+        background-color: var(--color-dark);
+        color: var(--color-light);
     }
 
     .button-light {
-        background-color: #fff;
-        color: hsl(0, 0%, 20%);
+        background-color: var(--color-light);
+        color: var(--color-dark);
     }
 
     .text {
@@ -50,11 +50,11 @@
     }
 
     .button-dark .fill {
-        background-color: #fff;
+        background-color: var(--color-light);
     }
 
     .button-light .fill {
-        background-color: hsl(0, 0%, 20%);
+        background-color: var(--color-dark);
     }
 
     .button:hover .fill {
@@ -62,11 +62,11 @@
     }
 
     .button-dark:hover .text {
-        color: hsl(0, 0%, 20%);
+        color: var(--color-dark);
     }
 
     .button-light:hover .text {
-        color: #fff;
+        color: var(--color-light);
     }
 </style>
 

@@ -47,20 +47,20 @@
         padding-top: calc(100px + var(--vertical-gap));
         padding-bottom: var(--vertical-gap);
         box-sizing: border-box;
-        border-bottom: 2px dotted #fff;
+        border-bottom: 2px dotted var(--color-light);
         line-height: 1.1;
         font-family: 'Anton', sans-serif;
     }
 
     .welcome-title {
-        color: #fff;
+        color: var(--color-light);
         padding-inline: var(--horizontal-padding);
         font-size: var(--welcome-font-size);
     }
 
     .outlined-text {
         color: transparent;
-        -webkit-text-stroke: min(0.2vw, 0.1rem) #fff;
+        -webkit-text-stroke: min(0.2vw, 0.1rem) var(--color-light);
     }
 
     @media (min-width: 800px) {

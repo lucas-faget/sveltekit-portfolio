@@ -23,6 +23,7 @@
         flex-direction: column;
         gap: 15px;
         padding: 0;
+        padding-left: 18px;
         margin: 0;
     }
 </style>

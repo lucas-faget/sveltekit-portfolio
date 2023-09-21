@@ -1,7 +1,11 @@
 :root {
-    --color-light: #fff;
-    --color-dark: #000;
-    --color-pink: hsl(0, 100%, 75%);
+    --color-white: #fff;
+    --color-light: hsl(0,0%,90%);
+    --color-light-gray: hsl(0,0%,65%);
+    --color-gray: hsl(0,0%,50%);
+    --color-dark-gray: hsl(0,0%,35%);
+    --color-dark: hsl(0,0%,20%);
+    --color-black: #000;
 
     --welcome-font-size: clamp(3rem, 9vw, 9rem);
     --paragraph-font-size: clamp(0.9rem, 1.2vw ,1.3rem);
@@ -40,19 +44,19 @@ iframe {
 }
   
 ::-webkit-scrollbar-track {
-    background: hsl(0, 0%, 90%);
+    background: var(--color-light-gray);
 }
   
 ::-webkit-scrollbar-thumb {
-    background: hsl(0, 0%, 50%);
+    background: var(--color-gray);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: hsl(0, 0%, 20%);
+    background: var(--color-dark-gray);
 }
 
 .background-dark {
-    background-color: var(--color-dark);
+    background-color: var(--color-black);
 }
 
 .background-landscape1 {

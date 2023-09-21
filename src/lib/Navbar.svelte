@@ -7,7 +7,7 @@
     import Contact from "../views/Contact.svelte";
     import CustomButton from "./CustomButton.svelte";
   
-    const maxMobileNavViewportWidth: number = 600;
+    const maxMobileNavViewportWidth: number = 800;
     let viewportHeight: number = window.innerHeight || document.documentElement.clientHeight;
     let viewportWidth: number = window.innerWidth || document.documentElement.clientWidth;
     let scrollTop: number = document.documentElement.scrollTop;
@@ -58,21 +58,21 @@
         </div>
         
         <ul aria-expanded={isMobileNavOpen}>
-            <Link to="/projects" on:click={changePage} style={isWideNav ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+            <Link to="/projects" on:click={changePage} style={hasScrolled || isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 {#if isDarkNav}
                     <CustomButton text="Projects" isRounded={true} />
                 {:else}
                     <li>Projects</li>
                 {/if}
             </Link>
-            <Link to="/cv" on:click={changePage} style={isWideNav ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+            <Link to="/cv" on:click={changePage} style={hasScrolled || isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 {#if isDarkNav}
                     <CustomButton text="CV" isRounded={true} />
                 {:else}
                     <li>CV</li>
                 {/if}
             </Link>
-            <Link to="/contact" on:click={changePage} style={isWideNav ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+            <Link to="/contact" on:click={changePage} style={hasScrolled || isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
                 {#if isDarkNav}
                     <CustomButton text="Contact" isRounded={true} />
                 {:else}
@@ -133,39 +133,27 @@
         display: flex;
         align-items: center;
         border-radius: 20px 0 20px 0;
-        font-size: 20px;
-        font-family: 'Anton', sans-serif;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
         cursor: pointer;
     }
 
     .nav-dark ul li {
-        color: #fff;
+        color: var(--color-light);
     }
 
     .nav-light ul li {
-        color: #000;
+        color: var(--color-dark);
     }
 
     .nav-thin.nav-dark ul li:hover {
-        color: #000;
-    }
-
-    .nav-thin.nav-light ul li:hover {
-        color: #fff;
+        color: var(--color-dark);
     }
     
     .logo {
         position: relative;
         height: 50%;
         z-index: 1000;
-    }
-
-    .nav-dark .logo {
-        color: #fff;
-    }
-
-    .nav-light .logo {
-        color: #000;
     }
 
     @keyframes slideDown {
@@ -177,7 +165,7 @@
         }
     }
 
-    @media only screen and (min-width: 601px)
+    @media only screen and (min-width: 801px)
     {
         nav ul {
             gap: 15px;
@@ -190,11 +178,15 @@
         }
 
         .nav-thin.nav-dark ul li:hover {
-            background-color: #fff;
+            background-color: var(--color-light);
         }
 
         .nav-thin.nav-light ul li:hover {
             background-color: var(--color-dark);
+        }
+
+        .nav-thin.nav-light ul li:hover {
+            color: var(--color-light);
         }
 
         .nav-thin {
@@ -202,7 +194,7 @@
         }
     }
 
-    @media only screen and (max-width: 600px)
+    @media only screen and (max-width: 800px)
     {
         nav ul[aria-expanded="true"] {
             top: 0;
@@ -214,24 +206,29 @@
 
         nav ul {
             position: fixed;
-            top: 0;
             left: 0;
             flex-direction: column;
             justify-content: center;
+            align-items: flex-start;
             height: 100%;
             width: 100%;
             z-index: 10;
         }
 
         .nav-dark ul, .nav-light ul {
-            background-color: var(--color-pink);
+            background-color: var(--color-light);
         }
 
         nav ul li {
             padding-inline: 50px;
             padding-block: 5px;
-            font-size: 50px;
+            font-size: 40px;
+            text-transform: uppercase;
             font-family: 'Anton', sans-serif;
+        }
+
+        .nav-thin.nav-light ul li:hover {
+            color: var(--color-gray);
         }
     }
 </style>

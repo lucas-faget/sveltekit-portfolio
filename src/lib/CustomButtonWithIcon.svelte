@@ -13,8 +13,8 @@
 
 <style>
     .button {
-        background-color: hsl(0, 0%, 20%);
-        color: #fff;
+        background-color: var(--color-dark);
+        color: var(--color-light);
         position: relative;
         overflow: hidden;
         border: none;
@@ -45,7 +45,7 @@
     }
 
     .fill {
-        background-color: #fff;
+        background-color: var(--color-light);
         position: absolute;
         top: 0;
         left: -100%;
@@ -60,7 +60,7 @@
     }
 
     .button:hover .text {
-        color: #000;
+        color: var(--color-dark);
     }
 
     @media screen and (max-width: 600px) {

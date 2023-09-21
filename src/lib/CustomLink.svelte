@@ -7,13 +7,13 @@
 
 <style>
     a {
-       color: red;
+       color: silver;
        text-decoration: none;
-       border-bottom: 1px solid red;
+       border-bottom: 1px solid silver;
     }
 
     a:hover {
-        color: var(--color-pink);
-        border-bottom: 1px solid var(--color-pink);
+        color: gold;
+        border-bottom: 1px solid gold;
     }
 </style>

@@ -21,12 +21,12 @@
 
     .mobile-nav-toggle.color-dark:before, .mobile-nav-toggle.color-dark:after, .mobile-nav-toggle.color-dark > div
     {
-        background-color: #000;
+        background-color: var(--color-dark);
     }
 
     .mobile-nav-toggle.color-light:before, .mobile-nav-toggle.color-light:after, .mobile-nav-toggle.color-light > div
     {
-        background-color: #fff;
+        background-color: var(--color-light);
     }
 
     .mobile-nav-toggle:before, .mobile-nav-toggle:after, .mobile-nav-toggle > div
@@ -54,7 +54,7 @@
         transform: scale(0);
     }
 
-    @media (max-width: 600px)
+    @media (max-width: 800px)
     {
         .mobile-nav-toggle
         {
