@@ -8,7 +8,7 @@
     });
 </script>
 
-<main class="background-dark">
+<main class="background-world-map">
     <Welcome text={["Lucas Faget", "Download my CV"]}/>
 
     <div class="cv">

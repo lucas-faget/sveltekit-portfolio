@@ -10,7 +10,7 @@
     const ASSETS_ICON = "/icon/";
 </script>
 
-<main class="background-dark">
+<main class="background-world-map">
     <Welcome text={["Lucas Faget", "My networks"]}/>
 
     <div class="contact">

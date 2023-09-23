@@ -56,7 +56,7 @@ iframe {
 }
 
 .background-dark {
-    background-color: var(--color-black);
+    background-color: hsl(0,0%,10%);
 }
 
 .background-landscape1 {
@@ -71,6 +71,15 @@ iframe {
     background-image: url("/landscape/landscape2.jpg");
     background-attachment: fixed;
     background-size: cover;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+.background-world-map {
+    background-image: url("/landscape/world-map.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
 }

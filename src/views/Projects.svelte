@@ -17,7 +17,7 @@
     const ASSETS_SCREEN = "/screen/";
 </script>
 
-<main class="background-landscape2">
+<main class="background-world-map">
     <Welcome text={["Lucas Faget", "My personal projects"]}/>
 
     <div class="articles">

@@ -16,7 +16,7 @@
     const ASSETS_LOGO = "/logo/";
 </script>
 
-<main class="background-landscape1">
+<main class="background-world-map">
     <Welcome text={["Lucas Faget", "Web developer", "Welcome to my portfolio"]}/>
 
     <div class="articles">
