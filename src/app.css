@@ -22,7 +22,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: Roboto Mono, monospace;
+    font-family: Inter, sans-serif;
 }
 
 p {
@@ -60,7 +60,7 @@ iframe {
 }
 
 .background-landscape1 {
-    background-image: url("/landscape/landscape1.jpg");
+    background-image: url("/background/landscape1.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position-y: top;
@@ -68,7 +68,7 @@ iframe {
 }
 
 .background-landscape2 {
-    background-image: url("/landscape/landscape2.jpg");
+    background-image: url("/background/landscape2.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position-y: top;
@@ -76,7 +76,7 @@ iframe {
 }
 
 .background-world-map {
-    background-image: url("/landscape/world-map.svg");
+    background-image: url("/background/world-map.svg");
     background-attachment: fixed;
     background-size: cover;
     background-position-x: center;

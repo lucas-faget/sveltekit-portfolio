@@ -49,7 +49,7 @@
         box-sizing: border-box;
         border-bottom: 2px dotted var(--color-light);
         line-height: 1.1;
-        font-family: 'Anton', sans-serif;
+        font-family: Anton, sans-serif;
     }
 
     .welcome-title {

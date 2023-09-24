@@ -1,7 +1,6 @@
 <script lang="ts">
+    import { Assets } from "./Assets";
     import NetworkLink from "./NetworkLink.svelte";
-
-    const ASSETS_ICON = "/icon/";
 </script>
 
 <footer class="footer">
@@ -12,9 +11,9 @@
         </div>
         <div class="bottom">
             <div class="networks">
-                <NetworkLink size={50} imageUrl={ASSETS_ICON + "linkedin.svg"} networkUrl="https://fr.linkedin.com/in/lucas-faget" />
-                <NetworkLink size={50} imageUrl={ASSETS_ICON + "github.svg"} networkUrl="https://github.com/lucas-faget" />
-                <NetworkLink size={50} imageUrl={ASSETS_ICON + "email.svg"} networkUrl="mailto:lucas.faget@laposte.net" />
+                <NetworkLink size={50} imageUrl={Assets.Icon + "linkedin.svg"} networkUrl="https://fr.linkedin.com/in/lucas-faget" />
+                <NetworkLink size={50} imageUrl={Assets.Icon + "github.svg"} networkUrl="https://github.com/lucas-faget" />
+                <NetworkLink size={50} imageUrl={Assets.Icon + "email.svg"} networkUrl="mailto:lucas.faget@laposte.net" />
             </div>
         </div>
     </div>
@@ -62,7 +61,7 @@
         justify-content: space-between;
         border-bottom: 2px dotted var(--color-dark);
         font-size: var(--footer-font-size);
-        font-family: 'Anton', sans-serif;
+        font-family: Anton, sans-serif;
     }
 
     .bottom {

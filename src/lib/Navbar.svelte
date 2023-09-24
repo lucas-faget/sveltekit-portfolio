@@ -182,6 +182,7 @@
         nav ul li {
             height: 100%;
             padding-inline: 20px;
+            font-family: Abel, sans-serif;
         }
 
         .nav-thin.nav-dark ul li:hover {
@@ -231,7 +232,7 @@
             padding-block: 5px;
             font-size: 40px;
             text-transform: uppercase;
-            font-family: 'Anton', sans-serif;
+            font-family: Anton, sans-serif;
         }
 
         .nav-thin.nav-light ul li:hover {

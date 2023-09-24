@@ -29,5 +29,6 @@
     .aside > div > p {
         color: var(--color-light);
         font-size: var(--aside-font-size);
+        font-family: Abel, sans-serif;
     }
 </style>

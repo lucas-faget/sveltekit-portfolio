@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { Assets } from "../lib/Assets";
     import Aside from "../lib/Aside.svelte";
     import Image from "../lib/Image.svelte";
     import ListWithImage from "../lib/ListWithImage.svelte";
@@ -11,10 +12,6 @@
     onMount(() => {
         window.scrollTo(0, 0);
     });
-
-    const ASSETS_LOGO = "/logo/";
-    const ASSETS_FLAG = "/flag/";
-    const ASSETS_SCREEN = "/screen/";
 </script>
 
 <main class="background-world-map">
@@ -33,9 +30,9 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGO + "typescript.svg", text: "TypeScript" },
-                        { src: ASSETS_LOGO + "vue.svg", text: "Vue.js" },
-                        { src: ASSETS_FLAG + "united-kingdom.svg", text: "English" }
+                        { src: Assets.Logo + "typescript.svg", text: "TypeScript" },
+                        { src: Assets.Logo + "vue.svg", text: "Vue.js" },
+                        { src: Assets.Flag + "united-kingdom.svg", text: "English" }
                     ]} />
                 </FromDownAnimation>
 
@@ -52,11 +49,11 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREEN + "chess1.png"} description="Chess screenshot" />
+                    <Image src={Assets.Screen + "chess1.png"} description="Chess screenshot" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREEN + "chess2.png"} description="Chess screenshot" />
+                    <Image src={Assets.Screen + "chess2.png"} description="Chess screenshot" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -77,9 +74,9 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGO + "typescript.svg", text: "TypeScript" },
-                        { src: ASSETS_LOGO + "svelte.svg", text: "Svelte.js" },
-                        { src: ASSETS_FLAG + "united-kingdom.svg", text: "English" }
+                        { src: Assets.Logo + "typescript.svg", text: "TypeScript" },
+                        { src: Assets.Logo + "svelte.svg", text: "Svelte.js" },
+                        { src: Assets.Flag + "united-kingdom.svg", text: "English" }
                     ]} />
                 </FromDownAnimation>
 
@@ -96,11 +93,11 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREEN + "sokoban1.png"} description="Sokoban screenshot" />
+                    <Image src={Assets.Screen + "sokoban1.png"} description="Sokoban screenshot" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREEN + "sokoban2.png"} description="Sokoban screenshot" />
+                    <Image src={Assets.Screen + "sokoban2.png"} description="Sokoban screenshot" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -121,9 +118,9 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGO + "javascript.svg", text: "JavaScript" },
-                        { src: ASSETS_LOGO + "vue.svg", text: "Vue.js" },
-                        { src: ASSETS_FLAG + "france.svg", text: "French" }
+                        { src: Assets.Logo + "javascript.svg", text: "JavaScript" },
+                        { src: Assets.Logo + "vue.svg", text: "Vue.js" },
+                        { src: Assets.Flag + "france.svg", text: "French" }
                     ]} />
                 </FromDownAnimation>
 
@@ -140,11 +137,11 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREEN + "movue1.png"} description="Movue screenshot" />
+                    <Image src={Assets.Screen + "movue1.png"} description="Movue screenshot" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREEN + "movue2.png"} description="Movue screenshot" />
+                    <Image src={Assets.Screen + "movue2.png"} description="Movue screenshot" />
                 </FromDownAnimation>
             </div>
         </section>
@@ -161,11 +158,11 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGO + "laravel.svg", text: "Laravel" },
-                        { src: ASSETS_LOGO + "svelte.svg", text: "Svelte.js" },
-                        { src: ASSETS_LOGO + "postgresql.svg", text: "PostgreSQL" },
-                        { src: ASSETS_LOGO + "docker.svg", text: "Docker" },
-                        { src: ASSETS_FLAG + "united-kingdom.svg", text: "English" }
+                        { src: Assets.Logo + "laravel.svg", text: "Laravel" },
+                        { src: Assets.Logo + "svelte.svg", text: "Svelte.js" },
+                        { src: Assets.Logo + "postgresql.svg", text: "PostgreSQL" },
+                        { src: Assets.Logo + "docker.svg", text: "Docker" },
+                        { src: Assets.Flag + "united-kingdom.svg", text: "English" }
                     ]} />
                 </FromDownAnimation>
 
@@ -176,11 +173,11 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREEN + "healthy1.png"} description="Healthy screenshot" />
+                    <Image src={Assets.Screen + "healthy1.png"} description="Healthy screenshot" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={ASSETS_SCREEN + "healthy2.png"} description="Healthy screenshot" />
+                    <Image src={Assets.Screen + "healthy2.png"} description="Healthy screenshot" />
                 </FromDownAnimation>
             </div>
         </section>

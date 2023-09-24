@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { Assets } from "../lib/Assets";
     import CustomButtonWithIcon from "../lib/CustomButtonWithIcon.svelte";
     import Welcome from "../lib/Welcome.svelte";
     import { onMount } from 'svelte';
@@ -6,8 +7,6 @@
     onMount(() => {
         window.scrollTo(0, 0);
     });
-
-    const ASSETS_ICON = "/icon/";
 </script>
 
 <main class="background-world-map">
@@ -16,13 +15,13 @@
     <div class="contact">
         <div class="links">
             <a href="https://fr.linkedin.com/in/lucas-faget">
-                <CustomButtonWithIcon iconSrc={ASSETS_ICON + "linkedin.svg"} text="LinkedIn @lucas-faget" />
+                <CustomButtonWithIcon iconSrc={Assets.Icon + "linkedin.svg"} text="LinkedIn @lucas-faget" />
             </a>
             <a href="https://github.com/lucas-faget">
-                <CustomButtonWithIcon iconSrc={ASSETS_ICON + "github.svg"} text="GitHub @lucas-faget" />
+                <CustomButtonWithIcon iconSrc={Assets.Icon + "github.svg"} text="GitHub @lucas-faget" />
             </a>
             <a href="mailto:lucas.faget@laposte.net">
-                <CustomButtonWithIcon iconSrc={ASSETS_ICON + "email.svg"} text="E-Mail lucas-faget@laposte.net" />
+                <CustomButtonWithIcon iconSrc={Assets.Icon + "email.svg"} text="E-Mail lucas-faget@laposte.net" />
             </a>
         </div>
     </div>

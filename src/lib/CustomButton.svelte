@@ -16,6 +16,7 @@
         padding: 12px 25px;
         text-transform: uppercase;
         letter-spacing: 0.15rem;
+        font-family: Abel, sans-serif;
         cursor: pointer;
         z-index: 1;
     }

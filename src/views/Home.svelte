@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { Assets } from "../lib/Assets";
     import Aside from "../lib/Aside.svelte";
     import ListWithImage from "../lib/ListWithImage.svelte";
     import Paragraph from "../lib/Paragraph.svelte";
@@ -12,8 +13,6 @@
     onMount(() => {
         window.scrollTo(0, 0);
     });
-
-    const ASSETS_LOGO = "/logo/";
 </script>
 
 <main class="background-world-map">
@@ -54,11 +53,11 @@
                 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGO + "javascript.svg", text: "JavaScript" },
-                        { src: ASSETS_LOGO + "typescript.svg", text: "TypeScript" },
-                        { src: ASSETS_LOGO + "vue.svg", text: "Vue.js" },
-                        { src: ASSETS_LOGO + "svelte.svg", text: "Svelte" },
-                        { src: ASSETS_LOGO + "react.svg", text: "React" }
+                        { src: Assets.Logo + "javascript.svg", text: "JavaScript" },
+                        { src: Assets.Logo + "typescript.svg", text: "TypeScript" },
+                        { src: Assets.Logo + "vue.svg", text: "Vue.js" },
+                        { src: Assets.Logo + "svelte.svg", text: "Svelte" },
+                        { src: Assets.Logo + "react.svg", text: "React" }
                     ]} />
                 </FromDownAnimation>
 
@@ -68,10 +67,10 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGO + "php.svg", text: "PHP" },
-                        { src: ASSETS_LOGO + "laravel.svg", text: "Laravel" },
-                        { src: ASSETS_LOGO + "symfony.svg", text: "Symfony" },
-                        { src: ASSETS_LOGO + "nodejs.svg", text: "Node.js" }
+                        { src: Assets.Logo + "php.svg", text: "PHP" },
+                        { src: Assets.Logo + "laravel.svg", text: "Laravel" },
+                        { src: Assets.Logo + "symfony-white.svg", text: "Symfony" },
+                        { src: Assets.Logo + "nodejs.svg", text: "Node.js" }
                     ]} />
                 </FromDownAnimation>
 
@@ -85,9 +84,9 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGO + "mysql.png", text: "MySQL" },
-                        { src: ASSETS_LOGO + "postgresql.svg", text: "PostgreSQL" },
-                        { src: ASSETS_LOGO + "mongodb.svg", text: "MongoDB" }
+                        { src: Assets.Logo + "mysql.png", text: "MySQL" },
+                        { src: Assets.Logo + "postgresql.svg", text: "PostgreSQL" },
+                        { src: Assets.Logo + "mongodb.svg", text: "MongoDB" }
                     ]} />
                 </FromDownAnimation>
 
@@ -107,7 +106,7 @@
             <div class="section">
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGO + "simpliciti.svg", text: "Simpliciti" }
+                        { src: Assets.Logo + "simpliciti.svg", text: "Simpliciti" }
                     ]} />
                 </FromDownAnimation>
 
@@ -123,7 +122,7 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGO + "audit-action-plus.jpg", text: "Audit Action +" }
+                        { src: Assets.Logo + "audit-action-plus.jpg", text: "Audit Action +" }
                     ]} />
                 </FromDownAnimation>
 
@@ -146,7 +145,7 @@
             <div class="section">
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGO + "iut-bordeaux.jpg", text: "University of Bordeaux" }
+                        { src: Assets.Logo + "iut-bordeaux.jpg", text: "University of Bordeaux" }
                     ]} />
                 </FromDownAnimation>
 
@@ -156,7 +155,7 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGO + "iut-toulouse.png", text: "University of Toulouse" }
+                        { src: Assets.Logo + "iut-toulouse.png", text: "University of Toulouse" }
                     ]} />
                 </FromDownAnimation>
 
@@ -174,8 +173,8 @@
             <div class="section">
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: ASSETS_LOGO + "linkedin.jpg", text: "LinkedIn: #https://fr.linkedin.com/in/lucas-faget" },
-                        { src: ASSETS_LOGO + "github.jpg", text: "GitHub profile: #https://github.com/lucas-faget" }
+                        { src: Assets.Logo + "linkedin.jpg", text: "LinkedIn: #https://fr.linkedin.com/in/lucas-faget" },
+                        { src: Assets.Logo + "github.jpg", text: "GitHub profile: #https://github.com/lucas-faget" }
                     ]} />
                 </FromDownAnimation>
             </div>
