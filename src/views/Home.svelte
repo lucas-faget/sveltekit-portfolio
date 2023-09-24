@@ -11,6 +11,7 @@
     import { Link } from "svelte-routing";
     import { onMount } from 'svelte';
     import { Rating } from "../enum/Rating";
+    import TitleBar from "../lib/TitleBar.svelte";
 
     onMount(() => {
         window.scrollTo(0, 0);
@@ -50,7 +51,7 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="FRONT-END" />
+                    <TitleBar text="Front-end" />
                 </FromDownAnimation>
                 
                 <FromDownAnimation>
@@ -64,7 +65,7 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="BACK-END" />
+                    <TitleBar text="Back-end" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -81,7 +82,7 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="DATABASE" />
+                    <TitleBar text="Database" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -90,6 +91,21 @@
                         { rating: Rating.ThreeStars, src: Assets.Logo + "postgresql.svg", text: "PostgreSQL" },
                         { rating: Rating.TwoStars, src: Assets.Logo + "mongodb.svg", text: "MongoDB" }
                     ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <TitleBar text="Other tools" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <ListWithImageAndRating items={[
+                        { rating: Rating.TwoStars, src: Assets.Logo + "linux.svg", text: "Linux" },
+                        { rating: Rating.OneStar, src: Assets.Logo + "docker.svg", text: "Docker" }
+                    ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <TitleBar text="My projects" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -107,6 +123,10 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
+                    <TitleBar text="July 2022 - Sept. 2023" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
                     <ListWithImage items={[
                         { src: Assets.Logo + "simpliciti.svg", text: "Simpliciti" }
                     ]} />
@@ -114,12 +134,15 @@
 
                 <FromDownAnimation>
                     <List items={[
-                        { text: "July 2022 - Sept. 2023 (13 months)" },
-                        { text: "Web Developer Intern" },
+                        { text: "Web Developer Intern (13 months)" },
                         { text: "Maintenance and development of an application to optimize waste collection circuits" },
                         { text: "PHP / MySQL / PostgreSQL / JavaScript (+ Svelte / TypeScript / Docker)" },
                         { text: "Project management (SCRUM, Git, EasyRedmine, ...)" }
                     ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <TitleBar text="June 2021 - Aug. 2021" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -130,8 +153,7 @@
 
                 <FromDownAnimation>
                     <List items={[
-                        { text: "June 2021 - Aug. 2021 (3 months)" },
-                        { text: "Web Developer Intern" },
+                        { text: "Web Developer Intern (3 months)" },
                         { text: "Development of an ERP" },
                         { text: "PHP / JavaScript / MySQL" }
                     ]} />
@@ -146,37 +168,32 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
+                    <TitleBar text="2023" />
+                </FromDownAnimation>
+                
+                <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Logo + "iut-bordeaux.jpg", text: "University of Bordeaux" }
+                        { src: Assets.Icon + "graduate-student.svg", text: "Professional Bachelor Degree in Computer Sciences (University of Bordeaux)" }
                     ]} />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="Professional Bachelor Degree in computer sciences (2023)" />
+                    <TitleBar text="2021" />
                 </FromDownAnimation>
-
+                
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Logo + "iut-toulouse.png", text: "University of Toulouse" }
+                        { src: Assets.Icon + "laptop.svg", text: "DUT in Computing (University of Toulouse)" }
                     ]} />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="DUT in computing (2021)" />
+                    <TitleBar text="2019" />
                 </FromDownAnimation>
-            </div>
-        </section>
-
-        <!-- Learn more -->
-        <section class="article">
-            <div class="aside">
-                <Aside index="03." title="My networks" />
-            </div>
-            <div class="section">
+                
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Logo + "linkedin.jpg", text: "LinkedIn: #https://fr.linkedin.com/in/lucas-faget" },
-                        { src: Assets.Logo + "github.jpg", text: "GitHub profile: #https://github.com/lucas-faget" }
+                        { src: Assets.Icon + "atom.svg", text: "Bachelor Degree in Physics (University of Pau)" }
                     ]} />
                 </FromDownAnimation>
             </div>
