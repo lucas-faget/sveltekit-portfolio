@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Assets } from "../lib/Assets";
+    import { Assets } from "../enum/Assets";
     import Aside from "../lib/Aside.svelte";
     import Image from "../lib/Image.svelte";
     import ListWithImage from "../lib/ListWithImage.svelte";

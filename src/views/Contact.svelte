@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Assets } from "../lib/Assets";
+    import { Assets } from "../enum/Assets";
     import CustomButtonWithIcon from "../lib/CustomButtonWithIcon.svelte";
     import Welcome from "../lib/Welcome.svelte";
     import { onMount } from 'svelte';

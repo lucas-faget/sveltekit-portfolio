@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Assets } from "./Assets";
+    import { Assets } from "../enum/Assets";
     import NetworkLink from "./NetworkLink.svelte";
 </script>
 

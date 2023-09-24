@@ -1,7 +1,8 @@
 <script lang="ts">
-    import { Assets } from "../lib/Assets";
+    import { Assets } from "../enum/Assets";
     import Aside from "../lib/Aside.svelte";
     import ListWithImage from "../lib/ListWithImage.svelte";
+    import ListWithImageAndRating from "../lib/ListWithImageAndRating.svelte";
     import Paragraph from "../lib/Paragraph.svelte";
     import FromDownAnimation from "../lib/FromDownAnimation.svelte";
     import Welcome from "../lib/Welcome.svelte";
@@ -9,6 +10,7 @@
     import CustomButton from "../lib/CustomButton.svelte";
     import { Link } from "svelte-routing";
     import { onMount } from 'svelte';
+    import { Rating } from "../enum/Rating";
 
     onMount(() => {
         window.scrollTo(0, 0);
@@ -52,12 +54,12 @@
                 </FromDownAnimation>
                 
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Logo + "javascript.svg", text: "JavaScript" },
-                        { src: Assets.Logo + "typescript.svg", text: "TypeScript" },
-                        { src: Assets.Logo + "vue.svg", text: "Vue.js" },
-                        { src: Assets.Logo + "svelte.svg", text: "Svelte" },
-                        { src: Assets.Logo + "react.svg", text: "React" }
+                    <ListWithImageAndRating items={[
+                        { rating: Rating.ThreeStars, src: Assets.Logo + "javascript.svg", text: "JavaScript" },
+                        { rating: Rating.ThreeStars, src: Assets.Logo + "typescript.svg", text: "TypeScript" },
+                        { rating: Rating.TwoStars, src: Assets.Logo + "vue.svg", text: "Vue.js" },
+                        { rating: Rating.TwoStars, src: Assets.Logo + "svelte.svg", text: "Svelte" },
+                        { rating: Rating.OneStar, src: Assets.Logo + "react.svg", text: "React" }
                     ]} />
                 </FromDownAnimation>
 
@@ -66,11 +68,11 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Logo + "php.svg", text: "PHP" },
-                        { src: Assets.Logo + "laravel.svg", text: "Laravel" },
-                        { src: Assets.Logo + "symfony-white.svg", text: "Symfony" },
-                        { src: Assets.Logo + "nodejs.svg", text: "Node.js" }
+                    <ListWithImageAndRating items={[
+                        { rating: Rating.ThreeStars, src: Assets.Logo + "php.svg", text: "PHP" },
+                        { rating: Rating.TwoStars, src: Assets.Logo + "laravel.svg", text: "Laravel" },
+                        { rating: Rating.OneStar, src: Assets.Logo + "symfony-white.svg", text: "Symfony" },
+                        { rating: Rating.OneStar, src: Assets.Logo + "nodejs.svg", text: "Node.js" }
                     ]} />
                 </FromDownAnimation>
 
@@ -83,16 +85,16 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Logo + "mysql.png", text: "MySQL" },
-                        { src: Assets.Logo + "postgresql.svg", text: "PostgreSQL" },
-                        { src: Assets.Logo + "mongodb.svg", text: "MongoDB" }
+                    <ListWithImageAndRating items={[
+                        { rating: Rating.ThreeStars, src: Assets.Logo + "mysql.png", text: "MySQL" },
+                        { rating: Rating.ThreeStars, src: Assets.Logo + "postgresql.svg", text: "PostgreSQL" },
+                        { rating: Rating.TwoStars, src: Assets.Logo + "mongodb.svg", text: "MongoDB" }
                     ]} />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
                     <Link to="/projects" style="text-decoration: none">
-                        <CustomButton text="Go to my projects" isContrasting={true} />
+                        <CustomButton text="My projects" isContrasting={true} />
                     </Link>
                 </FromDownAnimation>
             </div>
