@@ -60,7 +60,7 @@
                         { rating: Rating.ThreeStars, src: Assets.Logo + "typescript.svg", text: "TypeScript" },
                         { rating: Rating.TwoStars, src: Assets.Logo + "vue.svg", text: "Vue.js" },
                         { rating: Rating.TwoStars, src: Assets.Logo + "svelte.svg", text: "Svelte" },
-                        { rating: Rating.OneStar, src: Assets.Logo + "react.svg", text: "React" }
+                        { rating: Rating.TwoStars, src: Assets.Logo + "react.svg", text: "React" }
                     ]} />
                 </FromDownAnimation>
 
