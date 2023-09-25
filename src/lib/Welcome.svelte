@@ -19,7 +19,8 @@
 
     function getLateralMoveClass(lineIndex: number): string 
     {
-        return lineIndex % 2 === 0 ? 'from-right-lateral-move' : 'from-left-lateral-move'
+        return '';
+        // return lineIndex % 2 === 0 ? 'from-right-lateral-move' : 'from-left-lateral-move'
     }
 
     export { text, isVisible };
