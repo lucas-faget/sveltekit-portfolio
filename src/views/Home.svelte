@@ -173,7 +173,7 @@
                 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Icon + "graduate-student.svg", text: "Professional Bachelor Degree in Computer Sciences (University of Bordeaux)" }
+                        { src: Assets.Icon + "graduate-student.svg", text: "Professional Bachelor Degree in Web Development (University of Bordeaux)" }
                     ]} />
                 </FromDownAnimation>
 
@@ -183,7 +183,7 @@
                 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Icon + "laptop.svg", text: "DUT in Computing (University of Toulouse)" }
+                        { src: Assets.Icon + "laptop.svg", text: "DUT in Computer Sciences (University of Toulouse)" }
                     ]} />
                 </FromDownAnimation>
 
