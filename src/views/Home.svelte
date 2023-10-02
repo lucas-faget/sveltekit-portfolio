@@ -87,7 +87,7 @@
 
                 <FromDownAnimation>
                     <ListWithImageAndRating items={[
-                        { rating: Rating.ThreeStars, src: Assets.Logo + "mysql.png", text: "MySQL" },
+                        { rating: Rating.ThreeStars, src: Assets.Logo + "mysql.svg", text: "MySQL" },
                         { rating: Rating.ThreeStars, src: Assets.Logo + "postgresql.svg", text: "PostgreSQL" },
                         { rating: Rating.TwoStars, src: Assets.Logo + "mongodb.svg", text: "MongoDB" }
                     ]} />
