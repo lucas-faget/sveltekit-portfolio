@@ -25,13 +25,19 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="Chess game playable locally with 4 variants, Standard Chess, Fischer Random Chess, Fog of War, Four Player Chess. The site has a learning section to understand the movement of the pieces. Online games will soon be available thanks to Socket.io" />
+                    <Paragraph text="A chess website featuring a Vue.js front-end with TypeScript, and a back-end API developed in NestJS, along with a WebSocket server powered by Socket.io, to enable online multiplayer chess matches." />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Paragraph text="The back-end is currently under development and will be available soon !" />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
                     <ListWithImage items={[
                         { src: Assets.Logo + "typescript.svg", text: "TypeScript" },
                         { src: Assets.Logo + "vue.svg", text: "Vue.js" },
+                        { src: Assets.Logo + "nest.svg", text: "NestJS" },
+                        { src: Assets.Logo + "socket.io.svg", text: "Socket.io" },
                         { src: Assets.Flag + "united-kingdom.svg", text: "English" }
                     ]} />
                 </FromDownAnimation>
@@ -43,7 +49,7 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <a href="https://github.com/lucas-faget/vue-chess">
+                    <a href="https://github.com/lucas-faget/nest-vue-chess">
                         <CustomButton text="GitHub repository" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
@@ -69,7 +75,7 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="Sokoban game encoded with Svelte and Typescript. The player can move the character using the directional arrows on the keyboard. The player can go back to the last move played and restart the level again. He can also customize his assets. The online playable game is coming soon using Socket.io." />
+                    <Paragraph text="A single-level Sokoban game coded with Svelte and TypeScript." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -113,7 +119,7 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="A minimalist movie database using Vue.js. The user can visit the list of available films, see the details of a movie and add a movie to the database." />
+                    <Paragraph text="A CRUD-based movie database developed with Vue.js, containing a few locally stored movies about space." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -153,7 +159,7 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="Site under construction. Laravel API using PostgreSQL and OpenFoodFacts API, a food products database made by everyone. The front in Svelte will allow to read the nutritional information of food products, and list your personal intake, which will allow you to count calories. The database is dockerized." />
+                    <Paragraph text="Site under construction. Laravel API using PostgreSQL and OpenFoodFacts API, a food products database made by everyone. The front in Svelte enables to read the nutritional information of food products, and list your personal intake, which will allow you to count calories. The database is dockerized." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
