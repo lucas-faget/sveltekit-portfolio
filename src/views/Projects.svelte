@@ -43,7 +43,7 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <a href="https://chess-lucas-faget.netlify.app">
+                    <a href="https://chess.lucas-faget.com">
                         <CustomButton text="Visit the website" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
@@ -87,7 +87,7 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <a href="https://sokoban-lucas-faget.netlify.app">
+                    <a href="https://sokoban.lucas-faget.com">
                         <CustomButton text="Visit the website" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
@@ -131,7 +131,7 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <a href="https://movue-lucas-faget.netlify.app">
+                    <a href="https://movue.lucas-faget.com">
                         <CustomButton text="Visit the website" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
