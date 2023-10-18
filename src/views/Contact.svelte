@@ -20,8 +20,8 @@
             <a href="https://github.com/lucas-faget">
                 <CustomButtonWithIcon iconSrc={Assets.Icon + "github.svg"} text="GitHub @lucas-faget" />
             </a>
-            <a href="mailto:lucas.faget@laposte.net">
-                <CustomButtonWithIcon iconSrc={Assets.Icon + "email.svg"} text="E-Mail lucas-faget@laposte.net" />
+            <a href="mailto:contact@lucas-faget.com">
+                <CustomButtonWithIcon iconSrc={Assets.Icon + "email.svg"} text="E-Mail contact@lucas-faget.com" />
             </a>
         </div>
     </div>
