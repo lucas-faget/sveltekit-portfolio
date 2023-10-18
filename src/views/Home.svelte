@@ -56,11 +56,11 @@
                 
                 <FromDownAnimation>
                     <ListWithImageAndRating items={[
-                        { rating: Rating.ThreeStars, src: Assets.Logo + "javascript.svg", text: "JavaScript" },
-                        { rating: Rating.ThreeStars, src: Assets.Logo + "typescript.svg", text: "TypeScript" },
-                        { rating: Rating.TwoStars, src: Assets.Logo + "vue.svg", text: "Vue.js" },
-                        { rating: Rating.TwoStars, src: Assets.Logo + "svelte.svg", text: "Svelte" },
-                        { rating: Rating.OneStar, src: Assets.Logo + "react.svg", text: "React" }
+                        { rating: Rating.ThreeStars, src: Assets.Technology + "javascript.svg", text: "JavaScript" },
+                        { rating: Rating.ThreeStars, src: Assets.Technology + "typescript.svg", text: "TypeScript" },
+                        { rating: Rating.TwoStars, src: Assets.Technology + "vue.svg", text: "Vue.js" },
+                        { rating: Rating.TwoStars, src: Assets.Technology + "svelte.svg", text: "Svelte" },
+                        { rating: Rating.OneStar, src: Assets.Technology + "react.svg", text: "React" }
                     ]} />
                 </FromDownAnimation>
 
@@ -70,10 +70,10 @@
 
                 <FromDownAnimation>
                     <ListWithImageAndRating items={[
-                        { rating: Rating.ThreeStars, src: Assets.Logo + "php.svg", text: "PHP" },
-                        { rating: Rating.TwoStars, src: Assets.Logo + "laravel.svg", text: "Laravel" },
-                        { rating: Rating.OneStar, src: Assets.Logo + "symfony-white.svg", text: "Symfony" },
-                        { rating: Rating.OneStar, src: Assets.Logo + "nodejs.svg", text: "Node.js" }
+                        { rating: Rating.ThreeStars, src: Assets.Technology + "php.svg", text: "PHP" },
+                        { rating: Rating.TwoStars, src: Assets.Technology + "laravel.svg", text: "Laravel" },
+                        { rating: Rating.OneStar, src: Assets.Technology + "symfony-white.svg", text: "Symfony" },
+                        { rating: Rating.OneStar, src: Assets.Technology + "nodejs.svg", text: "Node.js" }
                     ]} />
                 </FromDownAnimation>
 
@@ -87,9 +87,9 @@
 
                 <FromDownAnimation>
                     <ListWithImageAndRating items={[
-                        { rating: Rating.ThreeStars, src: Assets.Logo + "mysql.svg", text: "MySQL" },
-                        { rating: Rating.ThreeStars, src: Assets.Logo + "postgresql.svg", text: "PostgreSQL" },
-                        { rating: Rating.TwoStars, src: Assets.Logo + "mongodb.svg", text: "MongoDB" }
+                        { rating: Rating.ThreeStars, src: Assets.Technology + "mysql.svg", text: "MySQL" },
+                        { rating: Rating.ThreeStars, src: Assets.Technology + "postgresql.svg", text: "PostgreSQL" },
+                        { rating: Rating.TwoStars, src: Assets.Technology + "mongodb.svg", text: "MongoDB" }
                     ]} />
                 </FromDownAnimation>
 
@@ -99,9 +99,9 @@
 
                 <FromDownAnimation>
                     <ListWithImageAndRating items={[
-                        { rating: Rating.ThreeStars, src: Assets.Logo + "git.svg", text: "Git" },
-                        { rating: Rating.TwoStars, src: Assets.Logo + "linux.svg", text: "Linux" },
-                        { rating: Rating.OneStar, src: Assets.Logo + "docker.svg", text: "Docker" }
+                        { rating: Rating.ThreeStars, src: Assets.Technology + "git.svg", text: "Git" },
+                        { rating: Rating.TwoStars, src: Assets.Technology + "linux.svg", text: "Linux" },
+                        { rating: Rating.OneStar, src: Assets.Technology + "docker.svg", text: "Docker" }
                     ]} />
                 </FromDownAnimation>
 
@@ -129,7 +129,7 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Logo + "simpliciti.svg", text: "Simpliciti" }
+                        { src: Assets.Logo + "company/simpliciti.svg", text: "Simpliciti" }
                     ]} />
                 </FromDownAnimation>
 
@@ -148,7 +148,7 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Logo + "audit-action-plus.jpg", text: "Audit Action +" }
+                        { src: Assets.Logo + "company/audit-action-plus.jpg", text: "Audit Action +" }
                     ]} />
                 </FromDownAnimation>
 
@@ -174,7 +174,7 @@
                 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Icon + "graduate-student.svg", text: "Professional Bachelor Degree in Web Development (University of Bordeaux)" }
+                        { src: Assets.Collection + "education/graduation.svg", text: "Professional Bachelor Degree in Web Development (University of Bordeaux)" }
                     ]} />
                 </FromDownAnimation>
 
@@ -184,7 +184,7 @@
                 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Icon + "laptop.svg", text: "DUT in Computer Sciences (University of Toulouse)" }
+                        { src: Assets.Collection + "elegant-circle/computer.svg", text: "DUT in Computer Sciences (University of Toulouse)" }
                     ]} />
                 </FromDownAnimation>
 
@@ -194,7 +194,7 @@
                 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Icon + "atom.svg", text: "Bachelor Degree in Physics (University of Pau)" }
+                        { src: Assets.Collection + "elegant-circle/atom.svg", text: "Bachelor Degree in Physics (University of Pau)" }
                     ]} />
                 </FromDownAnimation>
             </div>

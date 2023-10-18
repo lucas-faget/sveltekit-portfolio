@@ -6,9 +6,9 @@
 </script>
 
 <div class="stars">
-    <img class="star" src={Assets.Icon + (rating !== Rating.ZeroStar ? "gold-star.svg" : "black-star.svg")} alt="logo" />
-    <img class="star" src={Assets.Icon + (rating === Rating.TwoStars || rating === Rating.ThreeStars ? "gold-star.svg" : "black-star.svg")} alt="logo" />
-    <img class="star" src={Assets.Icon + (rating === Rating.ThreeStars ? "gold-star.svg" : "black-star.svg")} alt="logo" />
+    <img class="star" src={Assets.Icon + "star/" + (rating !== Rating.ZeroStar ? "gold-star.svg" : "black-star.svg")} alt="logo" />
+    <img class="star" src={Assets.Icon + "star/" + (rating === Rating.TwoStars || rating === Rating.ThreeStars ? "gold-star.svg" : "black-star.svg")} alt="logo" />
+    <img class="star" src={Assets.Icon + "star/" + (rating === Rating.ThreeStars ? "gold-star.svg" : "black-star.svg")} alt="logo" />
 </div>
 
 <style>

@@ -34,11 +34,11 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Logo + "typescript.svg", text: "TypeScript" },
-                        { src: Assets.Logo + "vue.svg", text: "Vue.js" },
-                        { src: Assets.Logo + "nest.svg", text: "NestJS" },
-                        { src: Assets.Logo + "socket.io.svg", text: "Socket.io" },
-                        { src: Assets.Flag + "united-kingdom.svg", text: "English" }
+                        { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
+                        { src: Assets.Technology + "vue.svg", text: "Vue.js" },
+                        { src: Assets.Technology + "nest.svg", text: "NestJS" },
+                        { src: Assets.Technology + "socket.io.svg", text: "Socket.io" },
+                        { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
                     ]} />
                 </FromDownAnimation>
 
@@ -80,9 +80,9 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Logo + "typescript.svg", text: "TypeScript" },
-                        { src: Assets.Logo + "svelte.svg", text: "Svelte.js" },
-                        { src: Assets.Flag + "united-kingdom.svg", text: "English" }
+                        { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
+                        { src: Assets.Technology + "svelte.svg", text: "Svelte.js" },
+                        { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
                     ]} />
                 </FromDownAnimation>
 
@@ -124,9 +124,9 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Logo + "javascript.svg", text: "JavaScript" },
-                        { src: Assets.Logo + "vue.svg", text: "Vue.js" },
-                        { src: Assets.Flag + "france.svg", text: "French" }
+                        { src: Assets.Technology + "javascript.svg", text: "JavaScript" },
+                        { src: Assets.Technology + "vue.svg", text: "Vue.js" },
+                        { src: Assets.Icon + "flag/france.svg", text: "French" }
                     ]} />
                 </FromDownAnimation>
 
@@ -164,11 +164,11 @@
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Logo + "laravel.svg", text: "Laravel" },
-                        { src: Assets.Logo + "svelte.svg", text: "Svelte.js" },
-                        { src: Assets.Logo + "postgresql.svg", text: "PostgreSQL" },
-                        { src: Assets.Logo + "docker.svg", text: "Docker" },
-                        { src: Assets.Flag + "united-kingdom.svg", text: "English" }
+                        { src: Assets.Technology + "laravel.svg", text: "Laravel" },
+                        { src: Assets.Technology + "svelte.svg", text: "Svelte.js" },
+                        { src: Assets.Technology + "postgresql.svg", text: "PostgreSQL" },
+                        { src: Assets.Technology + "docker.svg", text: "Docker" },
+                        { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
                     ]} />
                 </FromDownAnimation>
 

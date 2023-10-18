@@ -30,7 +30,7 @@
 
     $: isMobileNavVisible = isMobileNavOpen && viewportWidth <= maxMobileNavViewportWidth;
 
-    $: logoSrc = isDarkNav ? "/logo/logo-light-removebg.png" : "/logo/logo-dark-removebg.png";
+    $: logoSrc = isDarkNav ? "/lucas-faget.com/logo-light-removebg.png" : "/lucas-faget.com/logo-dark-removebg.png";
   
     function toggleMobileNav() {
         isMobileNavOpen = !isMobileNavOpen;

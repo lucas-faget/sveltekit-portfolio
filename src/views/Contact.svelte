@@ -15,13 +15,13 @@
     <div class="contact">
         <div class="links">
             <a href="https://fr.linkedin.com/in/lucas-faget">
-                <CustomButtonWithIcon iconSrc={Assets.Icon + "linkedin.svg"} text="LinkedIn @lucas-faget" />
+                <CustomButtonWithIcon iconSrc={Assets.Logo + "linkedin-black.svg"} text="LinkedIn @lucas-faget" />
             </a>
             <a href="https://github.com/lucas-faget">
-                <CustomButtonWithIcon iconSrc={Assets.Icon + "github.svg"} text="GitHub @lucas-faget" />
+                <CustomButtonWithIcon iconSrc={Assets.Logo + "github.svg"} text="GitHub @lucas-faget" />
             </a>
             <a href="mailto:contact@lucas-faget.com">
-                <CustomButtonWithIcon iconSrc={Assets.Icon + "email.svg"} text="E-Mail contact@lucas-faget.com" />
+                <CustomButtonWithIcon iconSrc={Assets.Icon + "mail-black.svg"} text="E-Mail contact@lucas-faget.com" />
             </a>
         </div>
     </div>

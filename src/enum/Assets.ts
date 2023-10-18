@@ -1,9 +1,11 @@
-const ASSETS_DIR = "/";
+const ROOT = "/";
+const ASSETS = ROOT + "assets/";
 
 export enum Assets {
-    Background = ASSETS_DIR + "background/",
-    Icon = ASSETS_DIR + "icon/",
-    Logo = ASSETS_DIR + "logo/",
-    Flag = ASSETS_DIR + "flag/",
-    Screen = ASSETS_DIR + "screen/"
+    Background = ROOT + "background/",
+    Collection = ASSETS + "collection/",
+    Icon = ASSETS + "icon/",
+    Logo = ASSETS + "logo/",
+    Screen = ROOT + "screen/",
+    Technology = ASSETS + "technology/"
 }
