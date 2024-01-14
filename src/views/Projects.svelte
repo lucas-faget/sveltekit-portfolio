@@ -25,17 +25,17 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="A chess website featuring a Vue.js front-end with TypeScript, and a back-end API developed in NestJS, along with a WebSocket server powered by Socket.io, to enable online multiplayer chess matches." />
+                    <Paragraph text="A chess website featuring a Vue.js frontend with TypeScript." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="The back-end is currently under development and will be available soon !" />
+                    <Paragraph text="The backend in NestJS, along with a WebSocket server powered by Socket.io, is currently under development to enable online multiplayer chess matches." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
                         { src: Assets.Technology + "vue.svg", text: "Vue.js" },
+                        { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
                         { src: Assets.Technology + "nest.svg", text: "NestJS" },
                         { src: Assets.Technology + "socket.io.svg", text: "Socket.io" },
                         { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
@@ -68,20 +68,150 @@
             </div>
         </section>
 
-        <!-- Sokoban -->
+        <!-- Healthy -->
         <section class="article">
             <div class="aside">
-                <Aside index="02." title="Sokoban" />
+                <Aside index="02." title="Healthy" />
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="A single-level Sokoban game coded with Svelte and TypeScript." />
+                    <Paragraph text="A food application which allows you to read the nutritional information, list your daily food intake, and count calories." />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Paragraph text="The backend is a Laravel and PostgreSQL API. The food product data are based on FoodData Central : #https://fdc.nal.usda.gov. The frontend is powered by Svelte. The database is dockerized." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
                     <ListWithImage items={[
-                        { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
+                        { src: Assets.Technology + "laravel.svg", text: "Laravel" },
                         { src: Assets.Technology + "svelte.svg", text: "Svelte.js" },
+                        { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
+                        { src: Assets.Technology + "postgresql.svg", text: "PostgreSQL" },
+                        { src: Assets.Technology + "docker.svg", text: "Docker" },
+                        { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
+                    ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <a href="https://github.com/lucas-faget/laravel-healthy">
+                        <CustomButton text="GitHub repository" isContrasting={true} />
+                    </a>
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Image src={Assets.Screen + "healthy1.png"} description="Healthy screenshot" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Image src={Assets.Screen + "healthy2.png"} description="Healthy screenshot" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Image src={Assets.Screen + "healthy3.png"} description="Healthy screenshot" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Image src={Assets.Screen + "healthy4.png"} description="Healthy screenshot" />
+                </FromDownAnimation>
+            </div>
+        </section>
+
+        <!-- Networth -->
+        <section class="article">
+            <div class="aside">
+                <Aside index="02." title="Networth" />
+            </div>
+            <div class="section">
+                <FromDownAnimation>
+                    <Paragraph text="A professional social network inspired by LinkedIn. The aim of the application is to find professionals who can help you with your projects." />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Paragraph text="The backend is an API using Symfony and PostgreSQL. The frontend is powered by Vue.js. The database is dockerized." />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: Assets.Technology + "symfony.svg", text: "Symfony" },
+                        { src: Assets.Technology + "vue.svg", text: "Vue.js" },
+                        { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
+                        { src: Assets.Technology + "mysql.svg", text: "MySQL" },
+                        { src: Assets.Technology + "docker.svg", text: "Docker" },
+                        { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
+                    ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <a href="https://github.com/lucas-faget/symfony-vue-networth">
+                        <CustomButton text="GitHub repository" isContrasting={true} />
+                    </a>
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Image src={Assets.Screen + "networth1.png"} description="Networth screenshot" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Image src={Assets.Screen + "networth2.png"} description="Networth screenshot" />
+                </FromDownAnimation>
+            </div>
+        </section>
+
+        <!-- Movue -->
+        <section class="article">
+            <div class="aside">
+                <Aside index="04." title="Movue" />
+            </div>
+            <div class="section">
+                <FromDownAnimation>
+                    <Paragraph text="A CRUD-based movie database written in Vue.js, containing a few locally stored movies about space." />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: Assets.Technology + "vue.svg", text: "Vue.js" },
+                        { src: Assets.Technology + "javascript.svg", text: "JavaScript" },
+                        { src: Assets.Icon + "flag/france.svg", text: "French" }
+                    ]} />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <a href="https://movue.lucas-faget.com">
+                        <CustomButton text="Visit the website" isContrasting={true} />
+                    </a>
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <a href="https://github.com/lucas-faget/vue-movies">
+                        <CustomButton text="GitHub repository" isContrasting={true} />
+                    </a>
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Image src={Assets.Screen + "movue1.png"} description="Movue screenshot" />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <Image src={Assets.Screen + "movue2.png"} description="Movue screenshot" />
+                </FromDownAnimation>
+            </div>
+        </section>
+
+        <!-- Sokoban -->
+        <section class="article">
+            <div class="aside">
+                <Aside index="05." title="Sokoban" />
+            </div>
+            <div class="section">
+                <FromDownAnimation>
+                    <Paragraph text="A single-level Sokoban game developed with Svelte and TypeScript." />
+                </FromDownAnimation>
+
+                <FromDownAnimation>
+                    <ListWithImage items={[
+                        { src: Assets.Technology + "svelte.svg", text: "Svelte.js" },
+                        { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
                         { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
                     ]} />
                 </FromDownAnimation>
@@ -111,83 +241,6 @@
                 </FromDownAnimation>
             </div>
         </section>
-
-        <!-- Movue -->
-        <section class="article">
-            <div class="aside">
-                <Aside index="03." title="Movue" />
-            </div>
-            <div class="section">
-                <FromDownAnimation>
-                    <Paragraph text="A CRUD-based movie database developed with Vue.js, containing a few locally stored movies about space." />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Technology + "javascript.svg", text: "JavaScript" },
-                        { src: Assets.Technology + "vue.svg", text: "Vue.js" },
-                        { src: Assets.Icon + "flag/france.svg", text: "French" }
-                    ]} />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <a href="https://movue.lucas-faget.com">
-                        <CustomButton text="Visit the website" isContrasting={true} />
-                    </a>
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <a href="https://github.com/lucas-faget/vue-movies">
-                        <CustomButton text="GitHub repository" isContrasting={true} />
-                    </a>
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <Image src={Assets.Screen + "movue1.png"} description="Movue screenshot" />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <Image src={Assets.Screen + "movue2.png"} description="Movue screenshot" />
-                </FromDownAnimation>
-            </div>
-        </section>
-
-        <!-- Healthy -->
-        <section class="article">
-            <div class="aside">
-                <Aside index="04." title="Healthy" />
-            </div>
-            <div class="section">
-                <FromDownAnimation>
-                    <Paragraph text="Site under construction. Laravel API using PostgreSQL and OpenFoodFacts API, a food products database made by everyone. The front in Svelte enables to read the nutritional information of food products, and list your personal intake, which will allow you to count calories. The database is dockerized." />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Technology + "laravel.svg", text: "Laravel" },
-                        { src: Assets.Technology + "svelte.svg", text: "Svelte.js" },
-                        { src: Assets.Technology + "postgresql.svg", text: "PostgreSQL" },
-                        { src: Assets.Technology + "docker.svg", text: "Docker" },
-                        { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
-                    ]} />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <a href="https://github.com/lucas-faget/laravel-healthy">
-                        <CustomButton text="GitHub repository" isContrasting={true} />
-                    </a>
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <Image src={Assets.Screen + "healthy1.png"} description="Healthy screenshot" />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <Image src={Assets.Screen + "healthy2.png"} description="Healthy screenshot" />
-                </FromDownAnimation>
-            </div>
-        </section>
-
     </div>
 </main>
 

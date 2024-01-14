@@ -7,13 +7,11 @@
 
 <style>
     a {
-       color: silver;
+       color: hsl(240,100%,80%);
        text-decoration: none;
-       border-bottom: 1px solid silver;
     }
 
     a:hover {
-        color: gold;
-        border-bottom: 1px solid gold;
+        border-bottom: 1px solid hsl(240,100%,80%);
     }
 </style>
