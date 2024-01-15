@@ -120,7 +120,7 @@
         <!-- Networth -->
         <section class="article">
             <div class="aside">
-                <Aside index="02." title="Networth" />
+                <Aside index="03." title="Networth" />
             </div>
             <div class="section">
                 <FromDownAnimation>
