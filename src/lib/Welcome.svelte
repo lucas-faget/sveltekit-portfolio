@@ -29,7 +29,7 @@
     <div class="welcome-title" bind:this={element}>
         {#each text as line, index}
             <div class={isVisible ? getLateralMoveClass(index) : ''}>
-                {#if index !== 0}
+                {#if index > 1}
                     <p class="outlined-text">{line}</p>
                 {:else}
                     <p>{line}</p>
