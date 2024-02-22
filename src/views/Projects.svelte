@@ -29,15 +29,9 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="The backend in NestJS, along with a WebSocket server powered by Socket.io, is currently under development to enable online multiplayer chess matches." />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
                     <ListWithImage items={[
                         { src: Assets.Technology + "vue.svg", text: "Vue.js" },
                         { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
-                        { src: Assets.Technology + "nest.svg", text: "NestJS" },
-                        { src: Assets.Technology + "socket.io.svg", text: "Socket.io" },
                         { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
                     ]} />
                 </FromDownAnimation>
@@ -49,7 +43,7 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <a href="https://github.com/lucas-faget/nest-vue-chess">
+                    <a href="https://github.com/lucas-faget/vue-chess">
                         <CustomButton text="GitHub repository" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
@@ -94,7 +88,7 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <a href="https://github.com/lucas-faget/laravel-healthy">
+                    <a href="https://github.com/lucas-faget/laravel-svelte-healthy">
                         <CustomButton text="GitHub repository" isContrasting={true} />
                     </a>
                 </FromDownAnimation>
