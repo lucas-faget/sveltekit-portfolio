@@ -58,7 +58,7 @@
                     <ListWithImageAndRating items={[
                         { rating: Rating.ThreeStars, src: Assets.Technology + "typescript.svg", text: "TypeScript" },
                         { rating: Rating.ThreeStars, src: Assets.Technology + "javascript.svg", text: "JavaScript" },
-                        { rating: Rating.TwoStars, src: Assets.Technology + "vue.svg", text: "Vue.js" },
+                        { rating: Rating.TwoStars, src: Assets.Technology + "vuejs.svg", text: "Vue.js" },
                         { rating: Rating.TwoStars, src: Assets.Technology + "svelte.svg", text: "Svelte" },
                         { rating: Rating.OneStar, src: Assets.Technology + "react.svg", text: "React" }
                     ]} />
@@ -73,12 +73,9 @@
                         { rating: Rating.ThreeStars, src: Assets.Technology + "php.svg", text: "PHP" },
                         { rating: Rating.TwoStars, src: Assets.Technology + "symfony-white.svg", text: "Symfony" },
                         { rating: Rating.OneStar, src: Assets.Technology + "laravel.svg", text: "Laravel" },
+                        { rating: Rating.OneStar, src: Assets.Technology + "c_sharp.svg", text: "ASP.NET Core" },
                         { rating: Rating.OneStar, src: Assets.Technology + "nodejs.svg", text: "Node.js" }
                     ]} />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <Paragraph text="I also have the basics of Java, C# and Python." />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
