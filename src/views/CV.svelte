@@ -1,7 +1,7 @@
 <script>
     import Welcome from "../lib/Welcome.svelte";
     import CustomButton from "../lib/CustomButton.svelte";
-    import { onMount } from 'svelte';
+    import { onMount } from "svelte";
 
     onMount(() => {
         window.scrollTo(0, 0);
@@ -9,8 +9,7 @@
 </script>
 
 <main class="background-world-map">
-    <Welcome text={["Lucas Faget", "Download my CV"]}/>
-
+    <Welcome text={["Lucas Faget", "Download my CV"]} />
     <div class="cv">
         <a href="/CV_FAGET_Lucas.pdf" target="_blank" download="CV_FAGET_Lucas.pdf">
             <CustomButton text="Download" isRounded={true} />

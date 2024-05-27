@@ -7,7 +7,7 @@
     import FromDownAnimation from "../lib/FromDownAnimation.svelte";
     import Welcome from "../lib/Welcome.svelte";
     import CustomButton from "../lib/CustomButton.svelte";
-    import { onMount } from 'svelte';
+    import { onMount } from "svelte";
 
     onMount(() => {
         window.scrollTo(0, 0);
@@ -15,7 +15,7 @@
 </script>
 
 <main class="background-world-map">
-    <Welcome text={["Lucas Faget", "My personal projects"]}/>
+    <Welcome text={["Lucas Faget", "My personal projects"]} />
 
     <div class="articles">
         <!-- Sokoban -->
@@ -25,15 +25,19 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="A chess website featuring a Vue.js frontend with TypeScript." />
+                    <Paragraph
+                        text="A chess website featuring a Vue.js frontend with TypeScript."
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Technology + "vuejs.svg", text: "Vue.js" },
-                        { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
-                        { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
-                    ]} />
+                    <ListWithImage
+                        items={[
+                            { src: Assets.Technology + "vuejs.svg", text: "Vue.js" },
+                            { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
+                            { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -57,7 +61,9 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="To learn more about Chess : #https://en.wikipedia.org/wiki/Chess" />
+                    <Paragraph
+                        text="To learn more about Chess : #https://en.wikipedia.org/wiki/Chess"
+                    />
                 </FromDownAnimation>
             </div>
         </section>
@@ -69,22 +75,28 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="A food application which allows you to read the nutritional information, list your daily food intake, and count calories." />
+                    <Paragraph
+                        text="A food application which allows you to read the nutritional information, list your daily food intake, and count calories."
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="The backend is a Laravel and PostgreSQL API. The food product data are based on FoodData Central : #https://fdc.nal.usda.gov. The frontend is powered by Svelte. The database is dockerized." />
+                    <Paragraph
+                        text="The backend is a Laravel and PostgreSQL API. The food product data are based on FoodData Central : #https://fdc.nal.usda.gov. The frontend is powered by Svelte. The database is dockerized."
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Technology + "laravel.svg", text: "Laravel" },
-                        { src: Assets.Technology + "svelte.svg", text: "Svelte.js" },
-                        { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
-                        { src: Assets.Technology + "postgresql.svg", text: "PostgreSQL" },
-                        { src: Assets.Technology + "docker.svg", text: "Docker" },
-                        { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
-                    ]} />
+                    <ListWithImage
+                        items={[
+                            { src: Assets.Technology + "laravel.svg", text: "Laravel" },
+                            { src: Assets.Technology + "svelte.svg", text: "Svelte.js" },
+                            { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
+                            { src: Assets.Technology + "postgresql.svg", text: "PostgreSQL" },
+                            { src: Assets.Technology + "docker.svg", text: "Docker" },
+                            { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -118,22 +130,28 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="A professional social network inspired by LinkedIn. The aim of the application is to find professionals who can help you with your projects." />
+                    <Paragraph
+                        text="A professional social network inspired by LinkedIn. The aim of the application is to find professionals who can help you with your projects."
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="The backend is an API using Symfony and PostgreSQL. The frontend is powered by Vue.js. The database is dockerized." />
+                    <Paragraph
+                        text="The backend is an API using Symfony and PostgreSQL. The frontend is powered by Vue.js. The database is dockerized."
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Technology + "symfony.svg", text: "Symfony" },
-                        { src: Assets.Technology + "vuejs.svg", text: "Vue.js" },
-                        { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
-                        { src: Assets.Technology + "mysql.svg", text: "MySQL" },
-                        { src: Assets.Technology + "docker.svg", text: "Docker" },
-                        { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
-                    ]} />
+                    <ListWithImage
+                        items={[
+                            { src: Assets.Technology + "symfony.svg", text: "Symfony" },
+                            { src: Assets.Technology + "vuejs.svg", text: "Vue.js" },
+                            { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
+                            { src: Assets.Technology + "mysql.svg", text: "MySQL" },
+                            { src: Assets.Technology + "docker.svg", text: "Docker" },
+                            { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -143,11 +161,17 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={Assets.Screen + "networth1.png"} description="Networth screenshot" />
+                    <Image
+                        src={Assets.Screen + "networth1.png"}
+                        description="Networth screenshot"
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Image src={Assets.Screen + "networth2.png"} description="Networth screenshot" />
+                    <Image
+                        src={Assets.Screen + "networth2.png"}
+                        description="Networth screenshot"
+                    />
                 </FromDownAnimation>
             </div>
         </section>
@@ -159,15 +183,19 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="A CRUD-based movie database written in Vue.js, containing a few locally stored movies about space." />
+                    <Paragraph
+                        text="A CRUD-based movie database written in Vue.js, containing a few locally stored movies about space."
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Technology + "vuejs.svg", text: "Vue.js" },
-                        { src: Assets.Technology + "javascript.svg", text: "JavaScript" },
-                        { src: Assets.Icon + "flag/france.svg", text: "French" }
-                    ]} />
+                    <ListWithImage
+                        items={[
+                            { src: Assets.Technology + "vuejs.svg", text: "Vue.js" },
+                            { src: Assets.Technology + "javascript.svg", text: "JavaScript" },
+                            { src: Assets.Icon + "flag/france.svg", text: "French" },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -199,15 +227,19 @@
             </div>
             <div class="section">
                 <FromDownAnimation>
-                    <Paragraph text="A single-level Sokoban game developed with Svelte and TypeScript." />
+                    <Paragraph
+                        text="A single-level Sokoban game developed with Svelte and TypeScript."
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Technology + "svelte.svg", text: "Svelte.js" },
-                        { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
-                        { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" }
-                    ]} />
+                    <ListWithImage
+                        items={[
+                            { src: Assets.Technology + "svelte.svg", text: "Svelte.js" },
+                            { src: Assets.Technology + "typescript.svg", text: "TypeScript" },
+                            { src: Assets.Icon + "flag/united-kingdom.svg", text: "English" },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -231,7 +263,9 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="To learn more about Sokoban : #https://en.wikipedia.org/wiki/Sokoban" />
+                    <Paragraph
+                        text="To learn more about Sokoban : #https://en.wikipedia.org/wiki/Sokoban"
+                    />
                 </FromDownAnimation>
             </div>
         </section>
@@ -275,7 +309,8 @@
             gap: var(--vertical-gap);
         }
 
-        .aside, .section {
+        .aside,
+        .section {
             width: 100%;
         }
     }

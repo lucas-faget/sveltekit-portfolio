@@ -2,8 +2,8 @@
     import Paragraph from "./Paragraph.svelte";
 
     type Item = {
-        text: string
-    }
+        text: string;
+    };
 
     export let items: Item[];
 </script>

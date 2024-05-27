@@ -1,14 +1,14 @@
 :root {
     --color-white: #fff;
-    --color-light: hsl(0,0%,90%);
-    --color-light-gray: hsl(0,0%,65%);
-    --color-gray: hsl(0,0%,50%);
-    --color-dark-gray: hsl(0,0%,35%);
-    --color-dark: hsl(0,0%,20%);
+    --color-light: hsl(0, 0%, 90%);
+    --color-light-gray: hsl(0, 0%, 65%);
+    --color-gray: hsl(0, 0%, 50%);
+    --color-dark-gray: hsl(0, 0%, 35%);
+    --color-dark: hsl(0, 0%, 20%);
     --color-black: #000;
 
     --welcome-font-size: clamp(3rem, 9vw, 9rem);
-    --paragraph-font-size: clamp(0.9rem, 1.2vw ,1.3rem);
+    --paragraph-font-size: clamp(0.9rem, 1.2vw, 1.3rem);
     --aside-font-size: clamp(1.8rem, 3vw, 3rem);
     --footer-font-size: clamp(1.2rem, 2vw, 2rem);
 
@@ -43,11 +43,11 @@ iframe {
     width: 10px;
     border-radius: 10px;
 }
-  
+
 ::-webkit-scrollbar-track {
     background: var(--color-light-gray);
 }
-  
+
 ::-webkit-scrollbar-thumb {
     background: var(--color-gray);
 }
@@ -57,7 +57,7 @@ iframe {
 }
 
 .background-dark {
-    background-color: hsl(0,0%,10%);
+    background-color: hsl(0, 0%, 10%);
 }
 
 .background-landscape1 {

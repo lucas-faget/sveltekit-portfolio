@@ -5,14 +5,16 @@
 </script>
 
 <p>
-    {#each text.split(' ') as word}
-        {#if word.charAt(0) === '#'}
-            <span><CustomLink
-                href={word.substring(1, word.length)}
-                text={word.substring(1, word.length) + ' '}>
-            </CustomLink></span>
+    {#each text.split(" ") as word}
+        {#if word.charAt(0) === "#"}
+            <span
+                ><CustomLink
+                    href={word.substring(1, word.length)}
+                    text={word.substring(1, word.length) + " "}
+                ></CustomLink></span
+            >
         {:else}
-            <span>{word + ' '}</span>
+            <span>{word + " "}</span>
         {/if}
     {/each}
 </p>

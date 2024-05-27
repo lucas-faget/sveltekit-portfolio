@@ -1,6 +1,4 @@
 <script lang="ts">
-    import Paragraph from "./Paragraph.svelte";
-
     export let index: string;
     export let title: string;
 </script>

@@ -9,7 +9,7 @@
     import List from "../lib/List.svelte";
     import CustomButton from "../lib/CustomButton.svelte";
     import { Link } from "svelte-routing";
-    import { onMount } from 'svelte';
+    import { onMount } from "svelte";
     import { Rating } from "../enum/Rating";
     import TitleBar from "../lib/TitleBar.svelte";
 
@@ -19,7 +19,7 @@
 </script>
 
 <main class="background-world-map">
-    <Welcome text={["Lucas Faget", "Web developer", "Welcome to my portfolio"]}/>
+    <Welcome text={["Lucas Faget", "Web developer", "Welcome to my portfolio"]} />
 
     <div class="articles">
         <!-- Introduction -->
@@ -33,7 +33,9 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <Paragraph text="I am Lucas Faget, a 💻 web developer with a background in Computer Science from a two-year technical degree and a Professional Bachelor's degree in web development. Within the span of a year, I was able to integrate into the professional world by joining Simpliciti company. Today, I am seeking a new challenge in a company where I can leverage my expertise." />
+                    <Paragraph
+                        text="I am Lucas Faget, a 💻 web developer with a background in Computer Science from a two-year technical degree and a Professional Bachelor's degree in web development. Within the span of a year, I was able to integrate into the professional world by joining Simpliciti company. Today, I am seeking a new challenge in a company where I can leverage my expertise."
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -53,15 +55,37 @@
                 <FromDownAnimation>
                     <TitleBar text="Front-end" />
                 </FromDownAnimation>
-                
+
                 <FromDownAnimation>
-                    <ListWithImageAndRating items={[
-                        { rating: Rating.ThreeStars, src: Assets.Technology + "typescript.svg", text: "TypeScript" },
-                        { rating: Rating.ThreeStars, src: Assets.Technology + "javascript.svg", text: "JavaScript" },
-                        { rating: Rating.TwoStars, src: Assets.Technology + "vuejs.svg", text: "Vue.js" },
-                        { rating: Rating.TwoStars, src: Assets.Technology + "svelte.svg", text: "Svelte" },
-                        { rating: Rating.OneStar, src: Assets.Technology + "react.svg", text: "React" }
-                    ]} />
+                    <ListWithImageAndRating
+                        items={[
+                            {
+                                rating: Rating.ThreeStars,
+                                src: Assets.Technology + "typescript.svg",
+                                text: "TypeScript",
+                            },
+                            {
+                                rating: Rating.ThreeStars,
+                                src: Assets.Technology + "javascript.svg",
+                                text: "JavaScript",
+                            },
+                            {
+                                rating: Rating.TwoStars,
+                                src: Assets.Technology + "vuejs.svg",
+                                text: "Vue.js",
+                            },
+                            {
+                                rating: Rating.TwoStars,
+                                src: Assets.Technology + "svelte.svg",
+                                text: "Svelte",
+                            },
+                            {
+                                rating: Rating.OneStar,
+                                src: Assets.Technology + "react.svg",
+                                text: "React",
+                            },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -69,13 +93,35 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <ListWithImageAndRating items={[
-                        { rating: Rating.ThreeStars, src: Assets.Technology + "php.svg", text: "PHP" },
-                        { rating: Rating.TwoStars, src: Assets.Technology + "symfony-white.svg", text: "Symfony" },
-                        { rating: Rating.OneStar, src: Assets.Technology + "laravel.svg", text: "Laravel" },
-                        { rating: Rating.OneStar, src: Assets.Technology + "c_sharp.svg", text: "ASP.NET Core" },
-                        { rating: Rating.OneStar, src: Assets.Technology + "nodejs.svg", text: "Node.js" }
-                    ]} />
+                    <ListWithImageAndRating
+                        items={[
+                            {
+                                rating: Rating.ThreeStars,
+                                src: Assets.Technology + "php.svg",
+                                text: "PHP",
+                            },
+                            {
+                                rating: Rating.TwoStars,
+                                src: Assets.Technology + "symfony-white.svg",
+                                text: "Symfony",
+                            },
+                            {
+                                rating: Rating.OneStar,
+                                src: Assets.Technology + "laravel.svg",
+                                text: "Laravel",
+                            },
+                            {
+                                rating: Rating.OneStar,
+                                src: Assets.Technology + "c_sharp.svg",
+                                text: "ASP.NET Core",
+                            },
+                            {
+                                rating: Rating.OneStar,
+                                src: Assets.Technology + "nodejs.svg",
+                                text: "Node.js",
+                            },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -83,11 +129,25 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <ListWithImageAndRating items={[
-                        { rating: Rating.ThreeStars, src: Assets.Technology + "mysql.svg", text: "MySQL" },
-                        { rating: Rating.ThreeStars, src: Assets.Technology + "postgresql.svg", text: "PostgreSQL" },
-                        { rating: Rating.TwoStars, src: Assets.Technology + "mongodb.svg", text: "MongoDB" }
-                    ]} />
+                    <ListWithImageAndRating
+                        items={[
+                            {
+                                rating: Rating.ThreeStars,
+                                src: Assets.Technology + "mysql.svg",
+                                text: "MySQL",
+                            },
+                            {
+                                rating: Rating.ThreeStars,
+                                src: Assets.Technology + "postgresql.svg",
+                                text: "PostgreSQL",
+                            },
+                            {
+                                rating: Rating.TwoStars,
+                                src: Assets.Technology + "mongodb.svg",
+                                text: "MongoDB",
+                            },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -95,11 +155,25 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <ListWithImageAndRating items={[
-                        { rating: Rating.ThreeStars, src: Assets.Technology + "git.svg", text: "Git" },
-                        { rating: Rating.TwoStars, src: Assets.Technology + "linux.svg", text: "Linux" },
-                        { rating: Rating.OneStar, src: Assets.Technology + "docker.svg", text: "Docker" }
-                    ]} />
+                    <ListWithImageAndRating
+                        items={[
+                            {
+                                rating: Rating.ThreeStars,
+                                src: Assets.Technology + "git.svg",
+                                text: "Git",
+                            },
+                            {
+                                rating: Rating.TwoStars,
+                                src: Assets.Technology + "linux.svg",
+                                text: "Linux",
+                            },
+                            {
+                                rating: Rating.OneStar,
+                                src: Assets.Technology + "docker.svg",
+                                text: "Docker",
+                            },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -125,18 +199,26 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Logo + "company/simpliciti.svg", text: "Simpliciti" }
-                    ]} />
+                    <ListWithImage
+                        items={[
+                            { src: Assets.Logo + "company/simpliciti.svg", text: "Simpliciti" },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <List items={[
-                        { text: "Web Developer Intern (13 months)" },
-                        { text: "Maintenance and development of an application to optimize waste collection circuits" },
-                        { text: "PHP / MySQL / PostgreSQL / JavaScript (+ Svelte / TypeScript / Docker)" },
-                        { text: "Project management (SCRUM, Git, EasyRedmine, ...)" }
-                    ]} />
+                    <List
+                        items={[
+                            { text: "Web Developer Intern (13 months)" },
+                            {
+                                text: "Maintenance and development of an application to optimize waste collection circuits",
+                            },
+                            {
+                                text: "PHP / MySQL / PostgreSQL / JavaScript (+ Svelte / TypeScript / Docker)",
+                            },
+                            { text: "Project management (SCRUM, Git, EasyRedmine, ...)" },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
@@ -144,17 +226,24 @@
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Logo + "company/audit-action-plus.jpg", text: "Audit Action +" }
-                    ]} />
+                    <ListWithImage
+                        items={[
+                            {
+                                src: Assets.Logo + "company/audit-action-plus.jpg",
+                                text: "Audit Action +",
+                            },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
-                    <List items={[
-                        { text: "Web Developer Intern (3 months)" },
-                        { text: "Development of an ERP" },
-                        { text: "PHP / JavaScript / MySQL" }
-                    ]} />
+                    <List
+                        items={[
+                            { text: "Web Developer Intern (3 months)" },
+                            { text: "Development of an ERP" },
+                            { text: "PHP / JavaScript / MySQL" },
+                        ]}
+                    />
                 </FromDownAnimation>
             </div>
         </section>
@@ -168,31 +257,46 @@
                 <FromDownAnimation>
                     <TitleBar text="2023" />
                 </FromDownAnimation>
-                
+
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Collection + "education/graduation.svg", text: "Professional Bachelor Degree in Web Development (University of Bordeaux)" }
-                    ]} />
+                    <ListWithImage
+                        items={[
+                            {
+                                src: Assets.Collection + "education/graduation.svg",
+                                text: "Professional Bachelor Degree in Web Development (University of Bordeaux)",
+                            },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
                     <TitleBar text="2021" />
                 </FromDownAnimation>
-                
+
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Collection + "elegant-circle/computer.svg", text: "DUT in Computer Sciences (University of Toulouse)" }
-                    ]} />
+                    <ListWithImage
+                        items={[
+                            {
+                                src: Assets.Collection + "elegant-circle/computer.svg",
+                                text: "DUT in Computer Sciences (University of Toulouse)",
+                            },
+                        ]}
+                    />
                 </FromDownAnimation>
 
                 <FromDownAnimation>
                     <TitleBar text="2019" />
                 </FromDownAnimation>
-                
+
                 <FromDownAnimation>
-                    <ListWithImage items={[
-                        { src: Assets.Collection + "elegant-circle/atom.svg", text: "Bachelor Degree in Physics (University of Pau)" }
-                    ]} />
+                    <ListWithImage
+                        items={[
+                            {
+                                src: Assets.Collection + "elegant-circle/atom.svg",
+                                text: "Bachelor Degree in Physics (University of Pau)",
+                            },
+                        ]}
+                    />
                 </FromDownAnimation>
             </div>
         </section>
@@ -236,7 +340,8 @@
             gap: var(--vertical-gap);
         }
 
-        .aside, .section {
+        .aside,
+        .section {
             width: 100%;
         }
     }

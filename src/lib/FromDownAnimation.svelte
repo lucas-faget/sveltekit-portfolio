@@ -1,11 +1,11 @@
 <script lang="ts">
-    import { onMount, onDestroy } from 'svelte';
+    import { onMount, onDestroy } from "svelte";
 
     let isVisible = false;
     let element: HTMLElement;
 
     const observer = new IntersectionObserver((entries) => {
-        isVisible = entries.some(entry => entry.isIntersecting);
+        isVisible = entries.some((entry) => entry.isIntersecting);
     });
 
     onMount(() => {
@@ -17,7 +17,7 @@
     });
 </script>
 
-<div bind:this={element} class={isVisible ? 'from-down-move' : 'hidden'}>
+<div bind:this={element} class={isVisible ? "from-down-move" : "hidden"}>
     <slot></slot>
 </div>
 
@@ -34,7 +34,6 @@
         from {
             transform: translateY(100px);
             opacity: 0;
-
         }
         to {
             transform: translateY(0px);

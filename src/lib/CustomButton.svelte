@@ -4,9 +4,18 @@
     export let isContrasting: boolean = false;
 
     function buttonClass(): string {
-        return 'button ' + (isRounded ? 'button-rounded ' : ' ') + (isContrasting ? 'button-light' : 'button-dark');
+        return (
+            "button " +
+            (isRounded ? "button-rounded " : " ") +
+            (isContrasting ? "button-light" : "button-dark")
+        );
     }
 </script>
+
+<div class={buttonClass()}>
+    <div class="fill"></div>
+    <span class="text">{text}</span>
+</div>
 
 <style>
     .button {
@@ -70,8 +79,3 @@
         color: var(--color-light);
     }
 </style>
-
-<div class={buttonClass()}>
-    <div class="fill"></div>
-    <span class="text">{text}</span>
-</div>

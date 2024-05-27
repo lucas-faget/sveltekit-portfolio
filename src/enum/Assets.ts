@@ -7,5 +7,5 @@ export enum Assets {
     Icon = ASSETS + "icon/",
     Logo = ASSETS + "logo/",
     Screen = ROOT + "screen/",
-    Technology = ASSETS + "technology/"
+    Technology = ASSETS + "technology/",
 }

@@ -6,19 +6,19 @@
     import CV from "../views/CV.svelte";
     import Contact from "../views/Contact.svelte";
     import CustomButton from "./CustomButton.svelte";
-  
+
     const maxMobileNavViewportWidth: number = 900;
     let viewportHeight: number = window.innerHeight || document.documentElement.clientHeight;
     let viewportWidth: number = window.innerWidth || document.documentElement.clientWidth;
     let scrollTop: number = document.documentElement.scrollTop;
     let isMobileNavOpen: boolean = false;
 
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
         viewportWidth = window.innerWidth || document.documentElement.clientWidth;
         viewportHeight = window.innerHeight || document.documentElement.clientHeight;
     });
 
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
         scrollTop = document.documentElement.scrollTop;
     });
 
@@ -30,12 +30,14 @@
 
     $: isMobileNavVisible = isMobileNavOpen && viewportWidth <= maxMobileNavViewportWidth;
 
-    $: logoSrc = isDarkNav ? "/lucas-faget.com/logo-light-removebg.png" : "/lucas-faget.com/logo-dark-removebg.png";
-  
+    $: logoSrc = isDarkNav
+        ? "/lucas-faget.com/logo-light-removebg.png"
+        : "/lucas-faget.com/logo-dark-removebg.png";
+
     function toggleMobileNav() {
         isMobileNavOpen = !isMobileNavOpen;
     }
-  
+
     function handleKeyDown(event: KeyboardEvent) {
         if (event.key === "Enter" || event.key === " ") {
             toggleMobileNav();
@@ -48,38 +50,65 @@
 </script>
 
 <Router>
-    <nav class={isDarkNav ? 'nav-dark ' : 'nav-light '}{isWideNav ? 'nav-wide' : 'nav-thin'}>
-        <Link to="/" style="text-decoration: none; height: 100%; display: flex; align-items: center;">
+    <nav class="{isDarkNav ? 'nav-dark ' : 'nav-light '}{isWideNav ? 'nav-wide' : 'nav-thin'}">
+        <Link
+            to="/"
+            style="text-decoration: none; height: 100%; display: flex; align-items: center;"
+        >
             <img src={logoSrc} class="logo" alt="logo" />
         </Link>
 
         <div on:click={toggleMobileNav} on:keydown={handleKeyDown}>
-            <MobileNavToggle isColoredDark={!isDarkNav} isMobileNavOpen={isMobileNavOpen} />
+            <MobileNavToggle isColoredDark={!isDarkNav} {isMobileNavOpen} />
         </div>
-        
+
         <ul aria-expanded={isMobileNavOpen}>
-            <Link to="/" on:click={changePage} style={hasScrolled || isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+            <Link
+                to="/"
+                on:click={changePage}
+                style={hasScrolled || isMobileNavVisible
+                    ? "text-decoration: none;"
+                    : "text-decoration: none; height: 100%;"}
+            >
                 {#if isDarkNav}
                     <CustomButton text="About me" isRounded={true} />
                 {:else}
                     <li>About me</li>
                 {/if}
             </Link>
-            <Link to="/projects" on:click={changePage} style={hasScrolled || isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+            <Link
+                to="/projects"
+                on:click={changePage}
+                style={hasScrolled || isMobileNavVisible
+                    ? "text-decoration: none;"
+                    : "text-decoration: none; height: 100%;"}
+            >
                 {#if isDarkNav}
                     <CustomButton text="Projects" isRounded={true} />
                 {:else}
                     <li>Projects</li>
                 {/if}
             </Link>
-            <Link to="/cv" on:click={changePage} style={hasScrolled || isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+            <Link
+                to="/cv"
+                on:click={changePage}
+                style={hasScrolled || isMobileNavVisible
+                    ? "text-decoration: none;"
+                    : "text-decoration: none; height: 100%;"}
+            >
                 {#if isDarkNav}
                     <CustomButton text="CV" isRounded={true} />
                 {:else}
                     <li>CV</li>
                 {/if}
             </Link>
-            <Link to="/contact" on:click={changePage} style={hasScrolled || isMobileNavVisible ? "text-decoration: none;" : "text-decoration: none; height: 100%;"}>
+            <Link
+                to="/contact"
+                on:click={changePage}
+                style={hasScrolled || isMobileNavVisible
+                    ? "text-decoration: none;"
+                    : "text-decoration: none; height: 100%;"}
+            >
                 {#if isDarkNav}
                     <CustomButton text="Contact" isRounded={true} />
                 {:else}
@@ -89,13 +118,13 @@
         </ul>
     </nav>
     <div>
-        <Route path="/" component="{Home}" />
-        <Route path="/projects" component="{Projects}" />
-        <Route path="/cv" component="{CV}" />
-        <Route path="/contact" component="{Contact}" />
+        <Route path="/" component={Home} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/cv" component={CV} />
+        <Route path="/contact" component={Contact} />
     </div>
 </Router>
-  
+
 <style>
     nav {
         top: 0;
@@ -156,7 +185,7 @@
     .nav-thin.nav-dark ul li:hover {
         color: var(--color-dark);
     }
-    
+
     .logo {
         position: relative;
         height: 50%;
@@ -172,8 +201,7 @@
         }
     }
 
-    @media only screen and (min-width: 901px)
-    {
+    @media only screen and (min-width: 901px) {
         nav ul {
             gap: 15px;
             height: 100%;
@@ -202,8 +230,7 @@
         }
     }
 
-    @media only screen and (max-width: 900px)
-    {
+    @media only screen and (max-width: 900px) {
         nav ul[aria-expanded="true"] {
             top: 0;
         }
@@ -223,7 +250,8 @@
             z-index: 10;
         }
 
-        .nav-dark ul, .nav-light ul {
+        .nav-dark ul,
+        .nav-light ul {
             background-color: var(--color-light);
         }
 

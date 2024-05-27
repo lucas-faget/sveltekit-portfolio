@@ -11,9 +11,21 @@
         </div>
         <div class="bottom">
             <div class="networks">
-                <NetworkLink size={50} imageUrl={Assets.Logo + "linkedin-black.svg"} networkUrl="https://linkedin.com/in/lucas-faget" />
-                <NetworkLink size={50} imageUrl={Assets.Logo + "github.svg"} networkUrl="https://github.com/lucas-faget" />
-                <NetworkLink size={50} imageUrl={Assets.Icon + "mail-black.svg"} networkUrl="mailto:contact@lucas-faget.com" />
+                <NetworkLink
+                    size={50}
+                    imageUrl={Assets.Logo + "linkedin-black.svg"}
+                    networkUrl="https://linkedin.com/in/lucas-faget"
+                />
+                <NetworkLink
+                    size={50}
+                    imageUrl={Assets.Logo + "github.svg"}
+                    networkUrl="https://github.com/lucas-faget"
+                />
+                <NetworkLink
+                    size={50}
+                    imageUrl={Assets.Icon + "mail-black.svg"}
+                    networkUrl="mailto:contact@lucas-faget.com"
+                />
             </div>
         </div>
     </div>

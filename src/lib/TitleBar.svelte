@@ -35,7 +35,8 @@
         display: flex;
     }
 
-    .border-left, .border-right {
+    .border-left,
+    .border-right {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -43,18 +44,21 @@
         width: 25px;
     }
 
-    .border-top, .border-bottom {
+    .border-top,
+    .border-bottom {
         background-color: var(--color-light);
         flex: 1;
         width: 1.2px;
     }
 
-    .border-left .border-top, .border-right .border-bottom {
-        transform: skew(-45deg)
+    .border-left .border-top,
+    .border-right .border-bottom {
+        transform: skew(-45deg);
     }
 
-    .border-left .border-bottom, .border-right .border-top {
-        transform: skew(45deg)
+    .border-left .border-bottom,
+    .border-right .border-top {
+        transform: skew(45deg);
     }
 
     .middle {

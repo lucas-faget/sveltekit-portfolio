@@ -1,12 +1,12 @@
 <script lang="ts">
-    import { onMount, onDestroy } from 'svelte';
+    import { onMount, onDestroy } from "svelte";
 
     let text: string[];
     let isVisible: boolean = false;
     let element: HTMLElement;
 
     const observer = new IntersectionObserver((entries) => {
-        isVisible = entries.some(entry => entry.isIntersecting);
+        isVisible = entries.some((entry) => entry.isIntersecting);
     });
 
     onMount(() => {
@@ -17,9 +17,8 @@
         observer.unobserve(element);
     });
 
-    function getLateralMoveClass(lineIndex: number): string 
-    {
-        return lineIndex % 2 === 0 ? 'from-right-lateral-move' : 'from-left-lateral-move'
+    function getLateralMoveClass(lineIndex: number): string {
+        return lineIndex % 2 === 0 ? "from-right-lateral-move" : "from-left-lateral-move";
     }
 
     export { text, isVisible };
@@ -28,7 +27,7 @@
 <section class="welcome">
     <div class="welcome-title" bind:this={element}>
         {#each text as line, index}
-            <div class={isVisible ? getLateralMoveClass(index) : ''}>
+            <div class={isVisible ? getLateralMoveClass(index) : ""}>
                 {#if index > 1}
                     <p class="outlined-text">{line}</p>
                 {:else}

@@ -4,10 +4,10 @@
     import StarRating from "./StarRating.svelte";
 
     type Item = {
-        rating: Rating
-        src: string
-        text: string
-    }
+        rating: Rating;
+        src: string;
+        text: string;
+    };
 
     export let items: Item[];
 </script>

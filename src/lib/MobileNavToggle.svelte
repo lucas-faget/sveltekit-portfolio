@@ -3,13 +3,15 @@
     export let isMobileNavOpen: boolean;
 </script>
 
-<div class={isColoredDark ? "mobile-nav-toggle color-dark" : "mobile-nav-toggle color-light"} aria-expanded={isMobileNavOpen}>
+<div
+    class={isColoredDark ? "mobile-nav-toggle color-dark" : "mobile-nav-toggle color-light"}
+    aria-expanded={isMobileNavOpen}
+>
     <div></div>
 </div>
 
 <style scoped>
-    .mobile-nav-toggle
-    {
+    .mobile-nav-toggle {
         position: relative;
         display: none;
         width: 30px;
@@ -19,45 +21,43 @@
         z-index: 1000;
     }
 
-    .mobile-nav-toggle.color-dark:before, .mobile-nav-toggle.color-dark:after, .mobile-nav-toggle.color-dark > div
-    {
+    .mobile-nav-toggle.color-dark:before,
+    .mobile-nav-toggle.color-dark:after,
+    .mobile-nav-toggle.color-dark > div {
         background-color: var(--color-dark);
     }
 
-    .mobile-nav-toggle.color-light:before, .mobile-nav-toggle.color-light:after, .mobile-nav-toggle.color-light > div
-    {
+    .mobile-nav-toggle.color-light:before,
+    .mobile-nav-toggle.color-light:after,
+    .mobile-nav-toggle.color-light > div {
         background-color: var(--color-light);
     }
 
-    .mobile-nav-toggle:before, .mobile-nav-toggle:after, .mobile-nav-toggle > div
-    {
-        content: '';
+    .mobile-nav-toggle:before,
+    .mobile-nav-toggle:after,
+    .mobile-nav-toggle > div {
+        content: "";
         display: block;
         height: 3px;
         margin: 8px 0;
         border-radius: 5px;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
-    .mobile-nav-toggle[aria-expanded="true"]:before
-    {
+    .mobile-nav-toggle[aria-expanded="true"]:before {
         transform: translateY(11px) rotate(135deg);
     }
-    
-    .mobile-nav-toggle[aria-expanded="true"]:after
-    {
+
+    .mobile-nav-toggle[aria-expanded="true"]:after {
         transform: translateY(-11px) rotate(-135deg);
     }
-    
-    .mobile-nav-toggle[aria-expanded="true"] > div
-    {
+
+    .mobile-nav-toggle[aria-expanded="true"] > div {
         transform: scale(0);
     }
 
-    @media (max-width: 900px)
-    {
-        .mobile-nav-toggle
-        {
+    @media (max-width: 900px) {
+        .mobile-nav-toggle {
             display: block;
         }
     }
