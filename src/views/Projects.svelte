@@ -176,50 +176,6 @@
             </div>
         </section>
 
-        <!-- Movue -->
-        <section class="article">
-            <div class="aside">
-                <Aside index="04." title="Movue" />
-            </div>
-            <div class="section">
-                <FromDownAnimation>
-                    <Paragraph
-                        text="A CRUD-based movie database written in Vue.js, containing a few locally stored movies about space."
-                    />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <ListWithImage
-                        items={[
-                            { src: Assets.Technology + "vuejs.svg", text: "Vue.js" },
-                            { src: Assets.Technology + "javascript.svg", text: "JavaScript" },
-                            { src: Assets.Icon + "flag/france.svg", text: "French" },
-                        ]}
-                    />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <a href="https://movue.lucas-faget.com">
-                        <CustomButton text="Visit the website" isContrasting={true} />
-                    </a>
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <a href="https://github.com/lucas-faget/vue-movies">
-                        <CustomButton text="GitHub repository" isContrasting={true} />
-                    </a>
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <Image src={Assets.Screen + "movue1.png"} description="Movue screenshot" />
-                </FromDownAnimation>
-
-                <FromDownAnimation>
-                    <Image src={Assets.Screen + "movue2.png"} description="Movue screenshot" />
-                </FromDownAnimation>
-            </div>
-        </section>
-
         <!-- Sokoban -->
         <section class="article">
             <div class="aside">
