@@ -1,86 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-    --color-white: #fff;
-    --color-light: hsl(0, 0%, 90%);
-    --color-light-gray: hsl(0, 0%, 65%);
-    --color-gray: hsl(0, 0%, 50%);
-    --color-dark-gray: hsl(0, 0%, 35%);
-    --color-dark: hsl(0, 0%, 20%);
-    --color-black: #000;
+    --color-dark: #2b2b2b;
+    --color-light: #e6e6dd;
+    --color-theme-1: #ff3e00;
+    --color-theme-2: #4075a6;
 
-    --welcome-font-size: clamp(3rem, 9vw, 9rem);
-    --paragraph-font-size: clamp(0.9rem, 1.2vw, 1.3rem);
-    --aside-font-size: clamp(1.8rem, 3vw, 3rem);
-    --footer-font-size: clamp(1.2rem, 2vw, 2rem);
-
-    --vertical-gap: 50px;
-    --horizontal-padding: 3vw;
+    color: var(--color-light);
+    background-color: var(--color-dark);
 }
 
 body {
-    width: max(500px, 100%);
-    padding: 0;
+    min-height: 100vh;
     margin: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    font-size: var(--paragraph-font-size);
-    font-family: Inter, sans-serif;
+    /* background-attachment: fixed;
+    background-color: var(--color-bg-3);
+    background-size: 100vw 100vh;
+    background-image: radial-gradient(
+            50% 50% at 50% 50%,
+            rgba(255, 255, 255, 0.75) 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%); */
 }
 
+.text-light {
+    color: var(--color-light);
+}
+
+.text-dark {
+    color: var(--color-dark);
+}
+
+.bg-light {
+    background-color: var(--color-light);
+}
+
+.bg-dark {
+    background-color: var(--color-dark);
+}
+
+.border-light {
+    border-color: var(--color-light);
+}
+
+.border-dark {
+    border-color: var(--color-dark);
+}
+
+h1,
+h2,
 p {
-    padding: 0;
-    margin: 0;
+    font-weight: 400;
 }
 
 a {
     text-decoration: none;
 }
 
-iframe {
-    border: none;
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+input,
+button {
+    font-size: inherit;
+    font-family: inherit;
 }
 
 ::-webkit-scrollbar {
     width: 10px;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--color-light-gray);
+    background: var(--color-light);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-gray);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--color-dark-gray);
-}
-
-.background-dark {
-    background-color: hsl(0, 0%, 10%);
-}
-
-.background-landscape1 {
-    background-image: url("/background/landscape1.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-y: top;
-    background-repeat: no-repeat;
-}
-
-.background-landscape2 {
-    background-image: url("/background/landscape2.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-y: top;
-    background-repeat: no-repeat;
-}
-
-.background-world-map {
-    background-image: url("/background/world-map.svg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
-    background-repeat: no-repeat;
+    background: var(--color-theme-1);
 }
