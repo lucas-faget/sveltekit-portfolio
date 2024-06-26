@@ -105,10 +105,10 @@
     "workExperience": [
         {
             "title": "Alternant développeur web",
+            "place": "Lormont (33310)",
             "companyName": "Simpliciti",
             "companyImageFile": "simpliciti.png",
             "date": "juil. 2022 - sept. 2023",
-            "place": "Lormont (33310)",
             "overview": "Développement de fonctionnalités et maintenance de EcoboxCarto: Application web d'optimisation de circuits de collecte\nSIG / PHP / JS / MySQL / PostgreSQL\nGestion de projet (SCRUM, Git, EasyRedmine)",
             "languages": [
                 {
@@ -131,10 +131,10 @@
         },
         {
             "title": "Stage en développement web",
+            "date": "juin 2021 - aout 2021",
             "companyName": "Audit Action plus",
             "companyImageFile": "audit_action_plus.png",
             "place": "Toulouse",
-            "date": "juin 2021 - aout 2021",
             "overview": "Développement d'un ERP\nPHP / JS / MySQL",
             "skills": [
                 {
@@ -155,22 +155,22 @@
     "education": [
         {
             "title": "Licence pro DAWIN en alternance",
+            "date": "2023",
             "schoolName": "IUT de Bordeaux",
             "imageFile": "collections/elegant-circle/global.svg",
-            "date": "2023",
             "overview": "Licence professionelle de développement web en alternance\nDAWIN = Développement en applications web et innovation numérique"
         },
         {
             "title": "DUT en Informatique",
+            "date": "2021",
             "schoolName": "IUT de Toulouse",
-            "imageFile": "collections/elegant-circle/computer.svg",
-            "date": "2021"
+            "imageFile": "collections/elegant-circle/computer.svg"
         },
         {
             "title": "Licence de Physique",
+            "date": "2019",
             "schoolName": "Université de Pau",
-            "imageFile": "collections/elegant-circle/genius.svg",
-            "date": "2019"
+            "imageFile": "collections/elegant-circle/genius.svg"
         }
     ]
 }

@@ -1,3 +1,20 @@
-// since there's no dynamic data here, we can prerender
-// it so that it gets served as a static asset in production
-export const prerender = true;
+import type { PageLoad } from "./$types";
+import {
+    PUBLIC_ASSETS_BASE_URL,
+    PUBLIC_ICONS_PATH,
+    PUBLIC_LOGOS_PATH,
+    PUBLIC_LANGUAGES_PATH,
+    PUBLIC_SCREENSHOTS_PATH,
+} from "$env/static/public";
+import data from "$lib/json/home.json";
+
+export const load: PageLoad = () => {
+    return {
+        assetsBaseUrl: PUBLIC_ASSETS_BASE_URL,
+        iconsPath: PUBLIC_ICONS_PATH,
+        logosPath: PUBLIC_LOGOS_PATH,
+        languagesPath: PUBLIC_LANGUAGES_PATH,
+        screenshotsPath: PUBLIC_SCREENSHOTS_PATH,
+        json: data,
+    };
+};

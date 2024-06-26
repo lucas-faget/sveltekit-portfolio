@@ -1,0 +1,37 @@
+{
+    "timeline": [
+        {
+            "title": "A été diplôme de la licence pro DAWIN",
+            "date": "sept. 2023",
+            "imageFile": "logos/université_bordeaux.svg",
+            "place": "IUT de Bordeaux",
+            "overview": "Licence professionelle en développement web réalisée en alternance"
+        },
+        {
+            "title": "A commencé une alternance en tant que développeur web chez Simpliciti",
+            "date": "juil. 2022",
+            "imageFile": "logos/simpliciti.png",
+            "place": "Lormont (33310)",
+            "overview": "Durée du contrat : 13 mois"
+        },
+        {
+            "title": "A été diplôme d'un DUT Informatique",
+            "date": "sept. 2021",
+            "imageFile": "logos/iut_toulouse.png",
+            "place": "IUT Paul Sabatier à Toulouse"
+        },
+        {
+            "title": "A commencé un stage de développement web chez Audit Action Plus",
+            "date": "juin 2021",
+            "imageFile": "logos/audit_action_plus.png",
+            "place": "Toulouse",
+            "overview": "Durée du stage : 2 mois"
+        },
+        {
+            "title": "A été diplôme d'une licence de Physique",
+            "date": "juin 2019",
+            "imageFile": "logos/uppa.svg",
+            "place": "Université de Pau"
+        }
+    ]
+}
