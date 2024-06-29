@@ -6,27 +6,27 @@
             "languages": [
                 {
                     "name": "Javascript",
-                    "imageFile": "javascript.svg",
+                    "imageFile": "languages/javascript.svg",
                     "rating": 3
                 },
                 {
                     "name": "Typescript",
-                    "imageFile": "typescript.svg",
+                    "imageFile": "languages/typescript.svg",
                     "rating": 3
                 },
                 {
                     "name": "Vue.js - Nuxt",
-                    "imageFile": "vuejs.svg",
+                    "imageFile": "languages/vuejs.svg",
                     "rating": 2
                 },
                 {
                     "name": "Svelte - SvelteKit",
-                    "imageFile": "svelte.svg",
+                    "imageFile": "languages/svelte.svg",
                     "rating": 2
                 },
                 {
                     "name": "React",
-                    "imageFile": "react.svg",
+                    "imageFile": "languages/react.svg",
                     "rating": 1
                 }
             ]
@@ -36,27 +36,27 @@
             "languages": [
                 {
                     "name": "PHP",
-                    "imageFile": "php.svg",
+                    "imageFile": "languages/php.svg",
                     "rating": 3
                 },
                 {
                     "name": "Symfony",
-                    "imageFile": "symfony.svg",
+                    "imageFile": "languages/symfony.svg",
                     "rating": 1
                 },
                 {
                     "name": "Laravel",
-                    "imageFile": "laravel.svg",
+                    "imageFile": "languages/laravel.svg",
                     "rating": 1
                 },
                 {
                     "name": "C# - ASP.Net Core",
-                    "imageFile": "c_sharp.svg",
+                    "imageFile": "languages/c_sharp.svg",
                     "rating": 1
                 },
                 {
                     "name": "Node.js",
-                    "imageFile": "nodejs-white.svg",
+                    "imageFile": "languages/nodejs-white.svg",
                     "rating": 1
                 }
             ]
@@ -66,17 +66,17 @@
             "languages": [
                 {
                     "name": "MySQL",
-                    "imageFile": "mysql.svg",
+                    "imageFile": "languages/mysql.svg",
                     "rating": 3
                 },
                 {
                     "name": "PostgreSQL",
-                    "imageFile": "postgresql.svg",
+                    "imageFile": "languages/postgresql.svg",
                     "rating": 2
                 },
                 {
                     "name": "MongoDB",
-                    "imageFile": "mongodb.svg",
+                    "imageFile": "languages/mongodb.svg",
                     "rating": 1
                 }
             ]
@@ -86,17 +86,17 @@
             "languages": [
                 {
                     "name": "Git",
-                    "imageFile": "git.svg",
+                    "imageFile": "languages/git.svg",
                     "rating": 3
                 },
                 {
                     "name": "Linux",
-                    "imageFile": "linux.svg",
+                    "imageFile": "languages/linux.svg",
                     "rating": 1
                 },
                 {
                     "name": "Docker",
-                    "imageFile": "docker.svg",
+                    "imageFile": "languages/docker.svg",
                     "rating": 1
                 }
             ]
@@ -107,25 +107,25 @@
             "title": "Alternant développeur web",
             "place": "Lormont (33310)",
             "companyName": "Simpliciti",
-            "companyImageFile": "simpliciti.png",
+            "companyImageFile": "logos/simpliciti.png",
             "date": "juil. 2022 - sept. 2023",
             "overview": "Développement de fonctionnalités et maintenance de EcoboxCarto: Application web d'optimisation de circuits de collecte\nSIG / PHP / JS / MySQL / PostgreSQL\nGestion de projet (SCRUM, Git, EasyRedmine)",
             "languages": [
                 {
                     "name": "PHP",
-                    "imageFile": "php.svg"
+                    "imageFile": "languages/php.svg"
                 },
                 {
                     "name": "Javascript",
-                    "imageFile": "javascript.svg"
+                    "imageFile": "languages/javascript.svg"
                 },
                 {
                     "name": "MySQL",
-                    "imageFile": "mysql.svg"
+                    "imageFile": "languages/mysql.svg"
                 },
                 {
                     "name": "PostgreSQL",
-                    "imageFile": "postgresql.svg"
+                    "imageFile": "languages/postgresql.svg"
                 }
             ]
         },
@@ -133,21 +133,21 @@
             "title": "Stage en développement web",
             "date": "juin 2021 - aout 2021",
             "companyName": "Audit Action plus",
-            "companyImageFile": "audit_action_plus.png",
+            "companyImageFile": "logos/audit_action_plus.png",
             "place": "Toulouse",
             "overview": "Développement d'un ERP\nPHP / JS / MySQL",
             "skills": [
                 {
                     "name": "PHP",
-                    "imageFile": "php.svg"
+                    "imageFile": "languages/php.svg"
                 },
                 {
                     "name": "Javascript",
-                    "imageFile": "javascript.svg"
+                    "imageFile": "languages/javascript.svg"
                 },
                 {
                     "name": "MySQL",
-                    "imageFile": "mysql.svg"
+                    "imageFile": "languages/mysql.svg"
                 }
             ]
         }
@@ -157,20 +157,20 @@
             "title": "Licence pro DAWIN en alternance",
             "date": "2023",
             "schoolName": "IUT de Bordeaux",
-            "imageFile": "collections/elegant-circle/global.svg",
+            "imageFile": "icons/collections/elegant-circle/global.svg",
             "overview": "Licence professionelle de développement web en alternance\nDAWIN = Développement en applications web et innovation numérique"
         },
         {
             "title": "DUT en Informatique",
             "date": "2021",
             "schoolName": "IUT de Toulouse",
-            "imageFile": "collections/elegant-circle/computer.svg"
+            "imageFile": "icons/collections/elegant-circle/computer.svg"
         },
         {
             "title": "Licence de Physique",
             "date": "2019",
             "schoolName": "Université de Pau",
-            "imageFile": "collections/elegant-circle/genius.svg"
+            "imageFile": "icons/collections/elegant-circle/genius.svg"
         }
     ]
 }

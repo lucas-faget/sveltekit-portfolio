@@ -44,7 +44,7 @@
                                 <div class="h-14 w-20 flex justify-center">
                                     <img
                                         class="h-full"
-                                        src={`${data.assetsBaseUrl}/${data.languagesPath}/${language.imageFile}`}
+                                        src={`${data.assetsBaseUrl}/${language.imageFile}`}
                                         alt={language.name}
                                     />
                                 </div>
@@ -60,10 +60,7 @@
 
             {#if project.screenshots}
                 {#each project.screenshots as screenshot}
-                    <img
-                        src={`${data.assetsBaseUrl}/${data.screenshotsPath}/${screenshot}`}
-                        alt={project.name}
-                    />
+                    <img src={`${data.assetsBaseUrl}/${screenshot}`} alt={project.name} />
                 {/each}
             {/if}
         </Chapter>

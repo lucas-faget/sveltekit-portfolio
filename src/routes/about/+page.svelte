@@ -42,7 +42,7 @@
                             <div class="h-14 w-20 flex justify-center">
                                 <img
                                     class="h-full"
-                                    src={`${data.assetsBaseUrl}/${data.languagesPath}/${language.imageFile}`}
+                                    src={`${data.assetsBaseUrl}/${language.imageFile}`}
                                     alt={language.name}
                                 />
                             </div>
@@ -65,7 +65,7 @@
                     label={item.date}
                     imageAlt={item.companyName}
                     imageSrc={item.companyImageFile
-                        ? `${data.assetsBaseUrl}/${data.logosPath}/${item.companyImageFile}`
+                        ? `${data.assetsBaseUrl}/${item.companyImageFile}`
                         : undefined}
                 >
                     <div class="flex flex-col gap-1">
@@ -89,7 +89,7 @@
                     label={item.date}
                     imageAlt={item.schoolName}
                     imageSrc={item.imageFile
-                        ? `${data.assetsBaseUrl}/${data.iconsPath}/${item.imageFile}`
+                        ? `${data.assetsBaseUrl}/${item.imageFile}`
                         : undefined}
                 >
                     <div class="flex flex-col gap-1">

@@ -33,5 +33,16 @@
             "imageFile": "logos/uppa.svg",
             "place": "Université de Pau"
         }
+    ],
+    "carousel": [
+        "screenshots/movue_1.png",
+        "screenshots/movue_2.png",
+        "screenshots/chess_1.png",
+        "screenshots/healthy_1.png",
+        "screenshots/healthy_3.png",
+        "screenshots/networth_1.png",
+        "screenshots/networth_2.png",
+        "screenshots/sokoban_1.png",
+        "screenshots/sokoban_2.png"
     ]
 }

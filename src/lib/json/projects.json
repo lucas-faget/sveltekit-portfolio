@@ -9,14 +9,14 @@
             "languages": [
                 {
                     "name": "Vue.js",
-                    "imageFile": "vuejs.svg"
+                    "imageFile": "languages/vuejs.svg"
                 },
                 {
                     "name": "Typescript",
-                    "imageFile": "typescript.svg"
+                    "imageFile": "languages/typescript.svg"
                 }
             ],
-            "screenshots": ["movue_1.png", "movue_2.png"]
+            "screenshots": ["screenshots/movue_1.png", "screenshots/movue_2.png"]
         },
         {
             "name": "Chess",
@@ -27,18 +27,18 @@
             "languages": [
                 {
                     "name": "Vue.js",
-                    "imageFile": "vuejs.svg"
+                    "imageFile": "languages/vuejs.svg"
                 },
                 {
                     "name": "Typescript",
-                    "imageFile": "typescript.svg"
+                    "imageFile": "languages/typescript.svg"
                 },
                 {
                     "name": "Three.js",
-                    "imageFile": "threejs.svg"
+                    "imageFile": "languages/threejs.svg"
                 }
             ],
-            "screenshots": ["chess_1.png", "chess_2.png"]
+            "screenshots": ["screenshots/chess_1.png", "screenshots/chess_2.png"]
         },
         {
             "name": "Healthy",
@@ -48,26 +48,31 @@
             "languages": [
                 {
                     "name": "Laravel",
-                    "imageFile": "laravel.svg"
+                    "imageFile": "languages/laravel.svg"
                 },
                 {
                     "name": "Svelte",
-                    "imageFile": "svelte.svg"
+                    "imageFile": "languages/svelte.svg"
                 },
                 {
                     "name": "Typescript",
-                    "imageFile": "typescript.svg"
+                    "imageFile": "languages/typescript.svg"
                 },
                 {
                     "name": "PostgreSQL",
-                    "imageFile": "postgresql.svg"
+                    "imageFile": "languages/postgresql.svg"
                 },
                 {
                     "name": "Docker",
-                    "imageFile": "docker.svg"
+                    "imageFile": "languages/docker.svg"
                 }
             ],
-            "screenshots": ["healthy_1.png", "healthy_2.png", "healthy_3.png", "healthy_4.png"]
+            "screenshots": [
+                "screenshots/healthy_1.png",
+                "screenshots/healthy_2.png",
+                "screenshots/healthy_3.png",
+                "screenshots/healthy_4.png"
+            ]
         },
         {
             "name": "Networth",
@@ -77,26 +82,26 @@
             "languages": [
                 {
                     "name": "Symfony",
-                    "imageFile": "symfony.svg"
+                    "imageFile": "languages/symfony.svg"
                 },
                 {
                     "name": "Vue.js",
-                    "imageFile": "vuejs.svg"
+                    "imageFile": "languages/vuejs.svg"
                 },
                 {
                     "name": "Typescript",
-                    "imageFile": "typescript.svg"
+                    "imageFile": "languages/typescript.svg"
                 },
                 {
                     "name": "MySQL",
-                    "imageFile": "mysql.svg"
+                    "imageFile": "languages/mysql.svg"
                 },
                 {
                     "name": "Docker",
-                    "imageFile": "docker.svg"
+                    "imageFile": "languages/docker.svg"
                 }
             ],
-            "screenshots": ["networth_1.png", "networth_2.png"]
+            "screenshots": ["screenshots/networth_1.png", "screenshots/networth_2.png"]
         },
         {
             "name": "Sokoban",
@@ -107,14 +112,14 @@
             "languages": [
                 {
                     "name": "Svelte",
-                    "imageFile": "svelte.svg"
+                    "imageFile": "languages/svelte.svg"
                 },
                 {
                     "name": "Typescript",
-                    "imageFile": "typescript.svg"
+                    "imageFile": "languages/typescript.svg"
                 }
             ],
-            "screenshots": ["sokoban_1.png", "sokoban_2.png"]
+            "screenshots": ["screenshots/sokoban_1.png", "screenshots/sokoban_2.png"]
         }
     ]
 }

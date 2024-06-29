@@ -2,10 +2,14 @@
     import type { PageData } from "./$types";
     import Welcome from "$lib/components/Welcome.svelte";
     import Chapter from "$lib/components/Chapter.svelte";
+    import Title from "$lib/components/Title.svelte";
     import Timeline from "$lib/components/Timeline.svelte";
     import TimelineItem from "$lib/components/TimelineItem.svelte";
+    import Carousel from "$lib/components/Carousel.svelte";
 
     export let data: PageData;
+
+    $: carouselImages = data.json.carousel.map((image) => `${data.assetsBaseUrl}/${image}`);
 </script>
 
 <svelte:head>
@@ -16,7 +20,14 @@
 <div>
     <Welcome text="Home" />
 
-    <Chapter index={1} title="Chronologie">
+    <Chapter title={"hello"} dark>
+        <Title title="Project overview"></Title>
+        <Carousel images={carouselImages} />
+    </Chapter>
+
+    <Chapter>
+        <Title title="Timeline"></Title>
+
         <Timeline>
             {#each data.json.timeline as item}
                 <TimelineItem
