@@ -32,7 +32,6 @@
     let currentIndex = 0;
 
     function next() {
-        console.log(currentIndex);
         currentIndex = (currentIndex + 1) % images.length;
     }
 
@@ -46,19 +45,25 @@
             images.length;
         return classList[relativeIndex] || "carousel-image-hidden";
     };
+
+    function handleClick(index: number) {
+        console.log("Clicked image index:", index);
+        currentIndex = index;
+    }
 </script>
 
 <div class="relative w-full h-96 overflow-hidden">
     {#each images as image, index}
-        <div
+        <button
             class={`image-container absolute top-0 left-1/2 h-full cursor-pointer ${imageClass(index)}`}
+            on:click|stopPropagation={() => (currentIndex = index)}
         >
             <img
                 src={image}
                 class="w-full h-full object-cover shrink-0"
                 alt={`carousel-image-${index}`}
             />
-        </div>
+        </button>
     {/each}
 
     <button
@@ -77,8 +82,7 @@
         transition:
             transform 0.5s ease,
             filter 0.5s ease,
-            opacity 0.5s ease,
-            z-index 0.5s ease;
+            opacity 0.5s ease;
     }
 
     .carousel-image-0 {
@@ -117,7 +121,7 @@
     }
 
     .carousel-image-hidden {
-        transform: translateX(-50%) scale(1);
+        transform: translateX(-50%) scale(0.6);
         filter: brightness(40%);
         opacity: 0;
         z-index: 0;
