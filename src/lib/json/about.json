@@ -136,7 +136,7 @@
             "companyImageFile": "logos/audit_action_plus.png",
             "place": "Toulouse",
             "overview": "Développement d'un ERP\nPHP / JS / MySQL",
-            "skills": [
+            "languages": [
                 {
                     "name": "PHP",
                     "imageFile": "languages/php.svg"

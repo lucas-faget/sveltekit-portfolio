@@ -1,4 +1,53 @@
 {
+    "carousel": [
+        "screenshots/movue_1.png",
+        "screenshots/movue_2.png",
+        "screenshots/chess_1.png",
+        "screenshots/healthy_1.png",
+        "screenshots/healthy_3.png",
+        "screenshots/networth_1.png",
+        "screenshots/networth_2.png",
+        "screenshots/sokoban_1.png",
+        "screenshots/sokoban_2.png"
+    ],
+    "skills": [
+        {
+            "name": "Javascript",
+            "imageFile": "languages/javascript.svg"
+        },
+        {
+            "name": "Typescript",
+            "imageFile": "languages/typescript.svg"
+        },
+        {
+            "name": "Vue.js",
+            "imageFile": "languages/vuejs.svg"
+        },
+        {
+            "name": "Svelte",
+            "imageFile": "languages/svelte.svg"
+        },
+        {
+            "name": "PHP",
+            "imageFile": "languages/php.svg"
+        },
+        {
+            "name": "C#",
+            "imageFile": "languages/c_sharp.svg"
+        },
+        {
+            "name": "MySQL",
+            "imageFile": "languages/mysql.svg"
+        },
+        {
+            "name": "PostgreSQL",
+            "imageFile": "languages/postgresql.svg"
+        },
+        {
+            "name": "Git",
+            "imageFile": "languages/git.svg"
+        }
+    ],
     "timeline": [
         {
             "title": "A été diplôme de la licence pro DAWIN",
@@ -33,16 +82,5 @@
             "imageFile": "logos/uppa.svg",
             "place": "Université de Pau"
         }
-    ],
-    "carousel": [
-        "screenshots/movue_1.png",
-        "screenshots/movue_2.png",
-        "screenshots/chess_1.png",
-        "screenshots/healthy_1.png",
-        "screenshots/healthy_3.png",
-        "screenshots/networth_1.png",
-        "screenshots/networth_2.png",
-        "screenshots/sokoban_1.png",
-        "screenshots/sokoban_2.png"
     ]
 }

@@ -10,6 +10,8 @@
     export let data: PageData;
 
     $: carouselImages = data.json.carousel.map((image) => `${data.assetsBaseUrl}/${image}`);
+
+    $: skillGridSize = Math.ceil(Math.sqrt(data.json.skills.length));
 </script>
 
 <svelte:head>
@@ -20,9 +22,36 @@
 <div>
     <Welcome text="Home" />
 
-    <Chapter title={"hello"} dark>
+    <Chapter>
         <Title title="Project overview"></Title>
         <Carousel images={carouselImages} />
+    </Chapter>
+
+    <Chapter dark>
+        <Title title="Main skills"></Title>
+        <div class={`grid grid-cols-${skillGridSize} gap-4`}>
+            {#each data.json.skills as skill}
+                <div
+                    class="group h-40 w-40 flex justify-center items-center bg-neutral-800 rounded-lg cursor-grab"
+                >
+                    <div
+                        class="flex flex-col items-center gap-4 group-hover:scale-110 transition duration-300 ease"
+                    >
+                        {#if skill.imageFile}
+                            <img
+                                class="h-14 max-w-20"
+                                src={`${data.assetsBaseUrl}/${skill.imageFile}`}
+                                alt={skill.name}
+                            />
+                        {/if}
+
+                        {#if skill.name}
+                            <p class="text-neutral-500">{skill.name}</p>
+                        {/if}
+                    </div>
+                </div>
+            {/each}
+        </div>
     </Chapter>
 
     <Chapter>

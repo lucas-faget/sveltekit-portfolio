@@ -67,11 +67,11 @@
     {/each}
 
     <button
-        class="absolute top-1/2 -translate-y-1/2 left-2 h-10 w-10 rounded-full bg-neutral-950 opacity-60 z-10"
+        class="absolute top-1/2 -translate-y-1/2 left-2 h-10 w-10 rounded-full bg-neutral-950 text-neutral-50 opacity-60 z-10"
         on:click={previous}>{"<"}</button
     >
     <button
-        class="absolute top-1/2 -translate-y-1/2 right-2 h-10 w-10 rounded-full bg-neutral-950 opacity-60 z-10"
+        class="absolute top-1/2 -translate-y-1/2 right-2 h-10 w-10 rounded-full bg-neutral-950 text-neutral-50 opacity-60 z-10"
         on:click={next}>{">"}</button
     >
 </div>
