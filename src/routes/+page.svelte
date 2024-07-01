@@ -9,9 +9,9 @@
 
     export let data: PageData;
 
-    $: carouselImages = data.json.carousel.map((image) => `${data.assetsBaseUrl}/${image}`);
+    $: carouselImages = data.json?.carousel.map((image) => `${data.assetsBaseUrl}/${image}`) ?? [];
 
-    $: skillGridSize = Math.ceil(Math.sqrt(data.json.skills.length));
+    $: skillGridSize = data.json?.skills ? Math.ceil(Math.sqrt(data.json.skills.length)) : 1;
 </script>
 
 <svelte:head>
