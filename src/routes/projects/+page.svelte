@@ -17,52 +17,54 @@
     <Welcome text="Projects" />
 
     {#each data.json.projects as project, index}
-        <Chapter index={index + 1} title={project.name} dark={index % 2 !== 0}>
-            <Title title={project.title} />
+        <div id={`project_${index + 1}`}>
+            <Chapter index={index + 1} title={project.name} dark={index % 2 !== 0}>
+                <Title title={project.title} />
 
-            {#if project.overview}
-                <p>{project.overview}</p>
-            {/if}
+                {#if project.overview}
+                    <p>{project.overview}</p>
+                {/if}
 
-            {#if project.websiteUrl}
-                <a href={project.websiteUrl}>
-                    <Button text={project.websiteUrl} dark={index % 2 !== 0} />
-                </a>
-            {/if}
+                {#if project.websiteUrl}
+                    <a href={project.websiteUrl}>
+                        <Button dark={index % 2 !== 0}>{project.websiteUrl}</Button>
+                    </a>
+                {/if}
 
-            {#if project.githubRepository}
-                <a href={project.githubRepository}>
-                    <Button text={project.githubRepository} dark={index % 2 !== 0} />
-                </a>
-            {/if}
+                {#if project.githubRepository}
+                    <a href={project.githubRepository}>
+                        <Button dark={index % 2 !== 0}>{project.githubRepository}</Button>
+                    </a>
+                {/if}
 
-            {#if project.languages}
-                <ul class="flex flex-col gap-8">
-                    {#each project.languages as language}
-                        <li class="flex items-center gap-8 text-lg">
-                            {#if language.imageFile}
-                                <div class="h-14 w-20 flex justify-center">
-                                    <img
-                                        class="h-full"
-                                        src={`${data.assetsBaseUrl}/${language.imageFile}`}
-                                        alt={language.name}
-                                    />
-                                </div>
-                            {/if}
+                {#if project.languages}
+                    <ul class="flex flex-col gap-8">
+                        {#each project.languages as language}
+                            <li class="flex items-center gap-8 text-lg">
+                                {#if language.imageFile}
+                                    <div class="h-14 w-20 flex justify-center">
+                                        <img
+                                            class="h-full"
+                                            src={`${data.assetsBaseUrl}/${language.imageFile}`}
+                                            alt={language.name}
+                                        />
+                                    </div>
+                                {/if}
 
-                            {#if language.name}
-                                <p>{language.name}</p>
-                            {/if}
-                        </li>
+                                {#if language.name}
+                                    <p>{language.name}</p>
+                                {/if}
+                            </li>
+                        {/each}
+                    </ul>
+                {/if}
+
+                {#if project.screenshots}
+                    {#each project.screenshots as screenshot}
+                        <img src={`${data.assetsBaseUrl}/${screenshot}`} alt={project.name} />
                     {/each}
-                </ul>
-            {/if}
-
-            {#if project.screenshots}
-                {#each project.screenshots as screenshot}
-                    <img src={`${data.assetsBaseUrl}/${screenshot}`} alt={project.name} />
-                {/each}
-            {/if}
-        </Chapter>
+                {/if}
+            </Chapter>
+        </div>
     {/each}
 </div>

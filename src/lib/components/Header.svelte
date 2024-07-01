@@ -13,17 +13,17 @@
         <ul class="flex gap-4">
             <li aria-current={$page.url.pathname === "/" ? "page" : undefined}>
                 <a href="/">
-                    <Button text="Home" rounded dark />
+                    <Button rounded dark>Home</Button>
                 </a>
             </li>
             <li aria-current={$page.url.pathname === "/about" ? "page" : undefined}>
                 <a href="/about">
-                    <Button text="About" rounded dark />
+                    <Button rounded dark>About</Button>
                 </a>
             </li>
             <li aria-current={$page.url.pathname === "/projects" ? "page" : undefined}>
                 <a href="/projects">
-                    <Button text="Projects" rounded dark />
+                    <Button rounded dark>Projects</Button>
                 </a>
             </li>
         </ul>

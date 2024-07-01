@@ -1,5 +1,4 @@
 <script lang="ts">
-    export let text: string;
     export let rounded: boolean = false;
     export let dark: boolean = false;
 </script>
@@ -11,15 +10,8 @@
     <div
         class={`${dark ? "bg-neutral-200" : "bg-neutral-800"} ${rounded ? "rounded-full " : ""} absolute top-0 left-[-100%] w-full h-full transition-left duration-500 ease group-hover:left-0`}
     ></div>
-    <span class={`relative z-20 transition-color duration-500 ease`}>{text}</span>
+
+    <div class="relative z-20 transition-color duration-500 ease">
+        <slot />
+    </div>
 </div>
-
-<style>
-    /* .button-dark:hover .text {
-        color: var(--color-dark);
-    }
-
-    .button-light:hover .text {
-        color: var(--color-light);
-    } */
-</style>

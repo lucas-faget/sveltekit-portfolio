@@ -6,6 +6,7 @@
     import Timeline from "$lib/components/Timeline.svelte";
     import TimelineItem from "$lib/components/TimelineItem.svelte";
     import Carousel from "$lib/components/Carousel.svelte";
+    import Button from "$lib/components/Button.svelte";
 
     export let data: PageData;
 
@@ -24,12 +25,18 @@
 
     <Chapter>
         <Title title="Project overview"></Title>
+
         <Carousel images={carouselImages} />
+
+        <a href="/projects#project_1">
+            <Button rounded>Tous les projects</Button>
+        </a>
     </Chapter>
 
     <Chapter dark>
         <Title title="Main skills"></Title>
-        <div class={`grid grid-cols-${skillGridSize} gap-4`}>
+
+        <div class="grid grid-cols-3 gap-4">
             {#each data.json.skills as skill}
                 <div
                     class="group h-40 w-40 flex justify-center items-center bg-neutral-800 rounded-lg cursor-grab"
@@ -52,6 +59,10 @@
                 </div>
             {/each}
         </div>
+
+        <a href="/about#skills">
+            <Button rounded dark>Voir plus</Button>
+        </a>
     </Chapter>
 
     <Chapter>
@@ -83,5 +94,9 @@
                 </TimelineItem>
             {/each}
         </Timeline>
+
+        <a href="/about#experience">
+            <Button rounded>Voir plus</Button>
+        </a>
     </Chapter>
 </div>
