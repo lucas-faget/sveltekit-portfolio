@@ -1,6 +1,5 @@
 <script lang="ts">
     import type { PageData } from "./$types";
-    import Welcome from "$lib/components/Welcome.svelte";
     import Chapter from "$lib/components/Chapter.svelte";
     import Title from "$lib/components/Title.svelte";
     import Headline from "$lib/components/Headline.svelte";
@@ -17,8 +16,6 @@
 </svelte:head>
 
 <div>
-    <Welcome text="About" />
-
     <div id="introduction">
         <Chapter index={1} title="Introduction">
             <Title title="Web developer" />

@@ -1,6 +1,5 @@
 <script lang="ts">
     import type { PageData } from "./$types";
-    import Welcome from "$lib/components/Welcome.svelte";
     import Chapter from "$lib/components/Chapter.svelte";
     import Title from "$lib/components/Title.svelte";
     import Button from "$lib/components/Button.svelte";
@@ -14,8 +13,6 @@
 </svelte:head>
 
 <div>
-    <Welcome text="Projects" />
-
     {#each data.json.projects as project, index}
         <div id={`project_${index + 1}`}>
             <Chapter index={index + 1} title={project.name} dark={index % 2 !== 0}>

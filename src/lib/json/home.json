@@ -46,10 +46,6 @@
         {
             "name": "Git",
             "imageFile": "languages/git.svg"
-        },
-        {
-            "name": "Git",
-            "imageFile": "languages/git.svg"
         }
     ],
     "timeline": [

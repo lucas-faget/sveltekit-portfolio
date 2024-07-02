@@ -11,27 +11,23 @@
 
     <nav>
         <ul class="flex gap-4">
-            <li aria-current={$page.url.pathname === "/" ? "page" : undefined}>
+            <li>
                 <a href="/">
-                    <Button rounded dark>Home</Button>
+                    <Button rounded dark border={$page.url.pathname === "/"}>Home</Button>
                 </a>
             </li>
-            <li aria-current={$page.url.pathname === "/about" ? "page" : undefined}>
+            <li>
                 <a href="/about">
-                    <Button rounded dark>About</Button>
+                    <Button rounded dark border={$page.url.pathname === "/about"}>About</Button>
                 </a>
             </li>
-            <li aria-current={$page.url.pathname === "/projects" ? "page" : undefined}>
+            <li>
                 <a href="/projects">
-                    <Button rounded dark>Projects</Button>
+                    <Button rounded dark border={$page.url.pathname === "/projects"}>
+                        Projects
+                    </Button>
                 </a>
             </li>
         </ul>
     </nav>
 </header>
-
-<style>
-    li[aria-current="page"] > a {
-        text-decoration: underline;
-    }
-</style>

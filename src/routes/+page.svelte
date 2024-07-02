@@ -1,6 +1,5 @@
 <script lang="ts">
     import type { PageData } from "./$types";
-    import Welcome from "$lib/components/Welcome.svelte";
     import Chapter from "$lib/components/Chapter.svelte";
     import Title from "$lib/components/Title.svelte";
     import Timeline from "$lib/components/Timeline.svelte";
@@ -21,8 +20,6 @@
 </svelte:head>
 
 <div>
-    <Welcome text="Home" />
-
     <Chapter>
         <Title title="Project overview"></Title>
 
