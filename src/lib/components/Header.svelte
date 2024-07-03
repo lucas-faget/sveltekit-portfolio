@@ -1,13 +1,12 @@
 <script>
     import { page } from "$app/stores";
-    import logo from "$lib/images/svelte-logo.svg";
     import Button from "./Button.svelte";
 </script>
 
 <header class="absolute top-0 left-0 h-20 w-full p-4 flex justify-between items-center">
-    <div class="h-12 w-12">
-        <img class="h-full w-full" src={logo} alt="SvelteKit" />
-    </div>
+    <a href="/">
+        <img class="h-12" src="https://assets.lucas-faget.com/logos/logo-dark.png" alt="Logo" />
+    </a>
 
     <nav>
         <ul class="flex gap-4">

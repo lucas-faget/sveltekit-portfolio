@@ -1,9 +1,12 @@
-<script>
+<script lang="ts">
+    import "../app.css";
     import { page } from "$app/stores";
+    import type { PageData } from "./$types";
     import Header from "$lib/components/Header.svelte";
     import Welcome from "$lib/components/Welcome.svelte";
     import Footer from "$lib/components/Footer.svelte";
-    import "../app.css";
+
+    export let data: PageData;
 
     $: welcomeText = (() => {
         switch ($page.url.pathname) {
@@ -27,5 +30,5 @@
         <slot />
     </main>
 
-    <Footer />
+    <Footer projectNames={data.projectNames} />
 </div>

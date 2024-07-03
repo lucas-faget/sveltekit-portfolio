@@ -14,7 +14,7 @@
 
 <div>
     {#each data.json.projects as project, index}
-        <div id={`project_${index + 1}`}>
+        <div id={project.name}>
             <Chapter index={index + 1} title={project.name} dark={index % 2 !== 0}>
                 <Title title={project.title} />
 
