@@ -2,10 +2,16 @@
     export let projectNames: string[] = [];
 </script>
 
-<footer class="p-8 flex flex-col items-center">
+<footer class="p-8 flex flex-col items-center bg-neutral-900">
     <div class="flex flex-col gap-12">
         <div class="flex justify-between flex-wrap gap-16">
-            <img class="h-16" src="https://assets.lucas-faget.com/logos/logo-dark.png" alt="Logo" />
+            <a href="/">
+                <img
+                    class="h-16"
+                    src="https://assets.lucas-faget.com/logos/logo-dark.png"
+                    alt="Logo"
+                />
+            </a>
 
             <div class="flex flex-wrap gap-16">
                 <ul class="flex flex-col gap-2">
