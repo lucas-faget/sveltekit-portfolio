@@ -1,22 +1,27 @@
 <script lang="ts">
     import { page } from "$app/stores";
     import { onDestroy, onMount } from "svelte";
+    import { browser } from "$app/environment";
     import Button from "./Button.svelte";
 
-    let scrollY: number = window.scrollY;
-
-    $: scrolled = scrollY > window.innerHeight / 2;
+    $: scrolled = false;
 
     function handleScroll() {
-        scrollY = window.scrollY;
+        if (browser) {
+            scrolled = window.scrollY > window.innerHeight / 2;
+        }
     }
 
     onMount(() => {
-        window.addEventListener("scroll", handleScroll);
+        if (browser) {
+            window.addEventListener("scroll", handleScroll);
+        }
     });
 
     onDestroy(() => {
-        window.removeEventListener("scroll", handleScroll);
+        if (browser) {
+            window.removeEventListener("scroll", handleScroll);
+        }
     });
 </script>
 
