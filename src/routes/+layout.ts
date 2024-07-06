@@ -1,8 +1,10 @@
 import type { PageLoad } from "./$types";
-import data from "$lib/json/projects.json";
+import projectsData from "$lib/json/projects.json";
+import contactData from "$lib/json/contact.json";
 
 export const load: PageLoad = () => {
     return {
-        projectNames: data.projects.map((project) => project.name),
+        projectNames: projectsData.projects.map((project) => project.name),
+        contact: contactData,
     };
 };

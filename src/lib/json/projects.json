@@ -8,12 +8,12 @@
             "githubRepository": "https://github.com/lucas-faget/nuxt-movue",
             "languages": [
                 {
-                    "name": "Vue.js",
-                    "imageFile": "languages/vuejs.svg"
+                    "name": "Nuxt",
+                    "iconName": "skill-icons:nuxtjs-dark"
                 },
                 {
                     "name": "Typescript",
-                    "imageFile": "languages/typescript.svg"
+                    "iconName": "logos:typescript-icon"
                 }
             ],
             "screenshots": ["screenshots/movue_1.png", "screenshots/movue_2.png"]
@@ -27,15 +27,15 @@
             "languages": [
                 {
                     "name": "Vue.js",
-                    "imageFile": "languages/vuejs.svg"
+                    "iconName": "logos:vue"
                 },
                 {
                     "name": "Typescript",
-                    "imageFile": "languages/typescript.svg"
+                    "iconName": "logos:typescript-icon"
                 },
                 {
                     "name": "Three.js",
-                    "imageFile": "languages/threejs.svg"
+                    "iconName": "skill-icons:threejs-light"
                 }
             ],
             "screenshots": ["screenshots/chess_1.png", "screenshots/chess_2.png"]
@@ -48,23 +48,23 @@
             "languages": [
                 {
                     "name": "Laravel",
-                    "imageFile": "languages/laravel.svg"
+                    "iconName": "logos:laravel"
                 },
                 {
                     "name": "Svelte",
-                    "imageFile": "languages/svelte.svg"
+                    "iconName": "logos:svelte-icon"
                 },
                 {
                     "name": "Typescript",
-                    "imageFile": "languages/typescript.svg"
+                    "iconName": "logos:typescript-icon"
                 },
                 {
                     "name": "PostgreSQL",
-                    "imageFile": "languages/postgresql.svg"
+                    "iconName": "logos:postgresql"
                 },
                 {
                     "name": "Docker",
-                    "imageFile": "languages/docker.svg"
+                    "iconName": "logos:docker-icon"
                 }
             ],
             "screenshots": [
@@ -82,23 +82,23 @@
             "languages": [
                 {
                     "name": "Symfony",
-                    "imageFile": "languages/symfony.svg"
+                    "iconName": "logos:symfony"
                 },
                 {
                     "name": "Vue.js",
-                    "imageFile": "languages/vuejs.svg"
+                    "iconName": "logos:vue"
                 },
                 {
                     "name": "Typescript",
-                    "imageFile": "languages/typescript.svg"
+                    "iconName": "logos:typescript-icon"
                 },
                 {
                     "name": "MySQL",
-                    "imageFile": "languages/mysql.svg"
+                    "iconName": "logos:mysql"
                 },
                 {
                     "name": "Docker",
-                    "imageFile": "languages/docker.svg"
+                    "iconName": "logos:docker-icon"
                 }
             ],
             "screenshots": ["screenshots/networth_1.png", "screenshots/networth_2.png"]
@@ -112,11 +112,11 @@
             "languages": [
                 {
                     "name": "Svelte",
-                    "imageFile": "languages/svelte.svg"
+                    "iconName": "logos:svelte-icon"
                 },
                 {
                     "name": "Typescript",
-                    "imageFile": "languages/typescript.svg"
+                    "iconName": "logos:typescript-icon"
                 }
             ],
             "screenshots": ["screenshots/sokoban_1.png", "screenshots/sokoban_2.png"]

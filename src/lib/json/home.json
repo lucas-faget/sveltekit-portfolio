@@ -13,39 +13,52 @@
     "skills": [
         {
             "name": "Javascript",
-            "imageFile": "languages/javascript.svg"
+            "iconName": "logos:javascript"
         },
         {
             "name": "Typescript",
-            "imageFile": "languages/typescript.svg"
-        },
-        {
-            "name": "Vue.js",
-            "imageFile": "languages/vuejs.svg"
-        },
-        {
-            "name": "Svelte",
-            "imageFile": "languages/svelte.svg"
+            "iconName": "logos:typescript-icon"
         },
         {
             "name": "PHP",
-            "imageFile": "languages/php.svg"
+            "iconName": "logos:php"
         },
         {
             "name": "C#",
-            "imageFile": "languages/c_sharp.svg"
+            "iconName": "devicon:csharp"
+        },
+        {
+            "name": "Vue.js",
+            "iconName": "logos:vue"
+        },
+        {
+            "name": "Nuxt",
+            "iconName": "vscode-icons:file-type-nuxt",
+            "rating": 2
+        },
+        {
+            "name": "Svelte",
+            "iconName": "logos:svelte-icon"
+        },
+        {
+            "name": "SvelteKit",
+            "iconName": "logos:svelte-kit"
+        },
+        {
+            "name": "Tailwind CSS",
+            "iconName": "devicon:tailwindcss"
         },
         {
             "name": "MySQL",
-            "imageFile": "languages/mysql.svg"
+            "iconName": "logos:mysql"
         },
         {
             "name": "PostgreSQL",
-            "imageFile": "languages/postgresql.svg"
+            "iconName": "logos:postgresql"
         },
         {
             "name": "Git",
-            "imageFile": "languages/git.svg"
+            "iconName": "devicon:git"
         }
     ],
     "timeline": [

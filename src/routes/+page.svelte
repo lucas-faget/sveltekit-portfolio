@@ -44,12 +44,8 @@
                         <div
                             class="flex flex-col items-center gap-4 group-hover:scale-110 transition duration-300 ease"
                         >
-                            {#if skill.imageFile}
-                                <img
-                                    class="h-14 max-w-20"
-                                    src={`${data.assetsBaseUrl}/${skill.imageFile}`}
-                                    alt={skill.name}
-                                />
+                            {#if skill.iconName}
+                                <iconify-icon icon={skill.iconName} width="90" height="60" />
                             {/if}
 
                             {#if skill.name}

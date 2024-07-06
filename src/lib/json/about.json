@@ -6,27 +6,27 @@
             "languages": [
                 {
                     "name": "Javascript",
-                    "imageFile": "languages/javascript.svg",
+                    "iconName": "logos:javascript",
                     "rating": 3
                 },
                 {
                     "name": "Typescript",
-                    "imageFile": "languages/typescript.svg",
+                    "iconName": "logos:typescript-icon",
                     "rating": 3
                 },
                 {
                     "name": "Vue.js - Nuxt",
-                    "imageFile": "languages/vuejs.svg",
+                    "iconName": "logos:vue",
                     "rating": 2
                 },
                 {
                     "name": "Svelte - SvelteKit",
-                    "imageFile": "languages/svelte.svg",
+                    "iconName": "logos:svelte-icon",
                     "rating": 2
                 },
                 {
                     "name": "React",
-                    "imageFile": "languages/react.svg",
+                    "iconName": "logos:react",
                     "rating": 1
                 }
             ]
@@ -36,27 +36,27 @@
             "languages": [
                 {
                     "name": "PHP",
-                    "imageFile": "languages/php.svg",
+                    "iconName": "logos:php",
                     "rating": 3
                 },
                 {
                     "name": "Symfony",
-                    "imageFile": "languages/symfony.svg",
+                    "iconName": "logos:symfony",
                     "rating": 1
                 },
                 {
                     "name": "Laravel",
-                    "imageFile": "languages/laravel.svg",
+                    "iconName": "logos:laravel",
                     "rating": 1
                 },
                 {
                     "name": "C# - ASP.Net Core",
-                    "imageFile": "languages/c_sharp.svg",
+                    "iconName": "devicon:csharp",
                     "rating": 1
                 },
                 {
                     "name": "Node.js",
-                    "imageFile": "languages/nodejs-white.svg",
+                    "iconName": "logos:nodejs",
                     "rating": 1
                 }
             ]
@@ -66,17 +66,17 @@
             "languages": [
                 {
                     "name": "MySQL",
-                    "imageFile": "languages/mysql.svg",
+                    "iconName": "logos:mysql",
                     "rating": 3
                 },
                 {
                     "name": "PostgreSQL",
-                    "imageFile": "languages/postgresql.svg",
+                    "iconName": "logos:postgresql",
                     "rating": 2
                 },
                 {
                     "name": "MongoDB",
-                    "imageFile": "languages/mongodb.svg",
+                    "iconName": "logos:mongodb-icon",
                     "rating": 1
                 }
             ]
@@ -86,17 +86,17 @@
             "languages": [
                 {
                     "name": "Git",
-                    "imageFile": "languages/git.svg",
+                    "iconName": "devicon:git",
                     "rating": 3
                 },
                 {
                     "name": "Linux",
-                    "imageFile": "languages/linux.svg",
+                    "iconName": "devicon:linux",
                     "rating": 1
                 },
                 {
                     "name": "Docker",
-                    "imageFile": "languages/docker.svg",
+                    "iconName": "logos:docker-icon",
                     "rating": 1
                 }
             ]
@@ -104,7 +104,7 @@
     ],
     "workExperience": [
         {
-            "title": "Alternant développeur web",
+            "title": "Développeur web en alternance",
             "place": "Lormont (33310)",
             "companyName": "Simpliciti",
             "companyImageFile": "logos/simpliciti.png",
@@ -113,19 +113,27 @@
             "languages": [
                 {
                     "name": "PHP",
-                    "imageFile": "languages/php.svg"
+                    "iconName": "logos:php"
                 },
                 {
                     "name": "Javascript",
-                    "imageFile": "languages/javascript.svg"
+                    "iconName": "logos:javascript"
+                },
+                {
+                    "name": "Leaflet",
+                    "iconName": "logos:leaflet"
                 },
                 {
                     "name": "MySQL",
-                    "imageFile": "languages/mysql.svg"
+                    "iconName": "logos:mysql"
                 },
                 {
                     "name": "PostgreSQL",
-                    "imageFile": "languages/postgresql.svg"
+                    "iconName": "logos:postgresql"
+                },
+                {
+                    "name": "Git",
+                    "iconName": "logos:git"
                 }
             ]
         },
@@ -139,15 +147,19 @@
             "languages": [
                 {
                     "name": "PHP",
-                    "imageFile": "languages/php.svg"
+                    "iconName": "logos:php"
                 },
                 {
                     "name": "Javascript",
-                    "imageFile": "languages/javascript.svg"
+                    "iconName": "logos:javascript"
                 },
                 {
                     "name": "MySQL",
-                    "imageFile": "languages/mysql.svg"
+                    "iconName": "logos:mysql"
+                },
+                {
+                    "name": "Git",
+                    "iconName": "logos:git"
                 }
             ]
         }

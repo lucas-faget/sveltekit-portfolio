@@ -30,5 +30,5 @@
         <slot />
     </main>
 
-    <Footer projectNames={data.projectNames} />
+    <Footer projectNames={data.projectNames} contact={data.contact} />
 </div>

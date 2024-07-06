@@ -55,13 +55,15 @@
 <div class="relative w-full h-96 overflow-hidden">
     {#each images as image, index}
         <button
-            class={`image-container absolute top-0 left-1/2 h-full cursor-pointer ${imageClass(index)}`}
+            class="image-container absolute top-0 left-1/2 h-full cursor-pointer {imageClass(
+                index
+            )}"
             on:click|stopPropagation={() => (currentIndex = index)}
         >
             <img
                 src={image}
                 class="w-full h-full object-cover shrink-0"
-                alt={`carousel-image-${index}`}
+                alt="carousel-image-{index}"
             />
         </button>
     {/each}

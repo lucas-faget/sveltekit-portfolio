@@ -26,7 +26,9 @@
 </script>
 
 <header
-    class={`${scrolled ? "fixed bg-neutral-900 -translate-y-full down-animation" : "absolute"} top-0 left-0 h-20 w-full p-4 flex justify-between items-center z-50`}
+    class="{scrolled
+        ? 'fixed bg-neutral-900 -translate-y-full down-animation'
+        : 'absolute'} top-0 left-0 h-20 w-full p-4 flex justify-between items-center z-50"
 >
     <a href="/">
         <img class="h-12" src="https://assets.lucas-faget.com/logos/logo-dark.png" alt="Logo" />

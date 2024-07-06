@@ -1,5 +1,6 @@
 <script lang="ts">
     export let projectNames: string[] = [];
+    export let contact: any = {};
 </script>
 
 <footer class="p-8 flex flex-col items-center bg-neutral-900">
@@ -17,13 +18,13 @@
                 <ul class="flex flex-col gap-2">
                     <li class="font-bold">Home</li>
 
-                    <a href={`/#projects`} class="hover:underline">
+                    <a href="/#projects" class="hover:underline decoration-neutral-400">
                         <li class="text-neutral-400">Project overview</li>
                     </a>
-                    <a href={`/#skills`} class="hover:underline">
+                    <a href="/#skills" class="hover:underline decoration-neutral-400">
                         <li class="text-neutral-400">Skills overview</li>
                     </a>
-                    <a href={`/#timeline`} class="hover:underline">
+                    <a href="/#timeline" class="hover:underline decoration-neutral-400">
                         <li class="text-neutral-400">Timeline</li>
                     </a>
                 </ul>
@@ -31,16 +32,16 @@
                 <ul class="flex flex-col gap-2">
                     <li class="font-bold">About</li>
 
-                    <a href={`/about#introduction`} class="hover:underline">
+                    <a href="/about#introduction" class="hover:underline decoration-neutral-400">
                         <li class="text-neutral-400">Introduction</li>
                     </a>
-                    <a href={`/about#skills`} class="hover:underline">
+                    <a href="/about#skills" class="hover:underline decoration-neutral-400">
                         <li class="text-neutral-400">Skills</li>
                     </a>
-                    <a href={`/about#experience`} class="hover:underline">
+                    <a href="/about#experience" class="hover:underline decoration-neutral-400">
                         <li class="text-neutral-400">Work experience</li>
                     </a>
-                    <a href={`/about#education`} class="hover:underline">
+                    <a href="/about#education" class="hover:underline decoration-neutral-400">
                         <li class="text-neutral-400">Education</li>
                     </a>
                 </ul>
@@ -50,7 +51,10 @@
                         <li class="font-bold">Projects</li>
 
                         {#each projectNames as projectName}
-                            <a href={`/projects#${projectName}`} class="hover:underline">
+                            <a
+                                href="projects#{projectName}"
+                                class="hover:underline decoration-neutral-400"
+                            >
                                 <li class="text-neutral-400">{projectName}</li>
                             </a>
                         {/each}
@@ -61,8 +65,31 @@
 
         <div class="flex justify-between items-center text-neutral-400">
             <p>Copyright © 2023-2024 Lucas Faget</p>
-            <div class="flex gap-4">
-                <!-- Social media icon links -->
+            <div class="flex items-center gap-4">
+                <a href={contact.githubUrl} target="_blank">
+                    <iconify-icon
+                        icon="mdi:github"
+                        width="30"
+                        height="30"
+                        class="text-neutral-400 hover:text-neutral-100 cursor-pointer"
+                    />
+                </a>
+                <a href={contact.linkedinUrl} target="_blank">
+                    <iconify-icon
+                        icon="mdi:linkedin"
+                        width="30"
+                        height="30"
+                        class="text-neutral-400 hover:text-neutral-100 cursor-pointer"
+                    />
+                </a>
+                <a href="mailto:{contact.mail}">
+                    <iconify-icon
+                        icon="mdi:email"
+                        width="30"
+                        height="30"
+                        class="text-neutral-400 hover:text-neutral-100 cursor-pointer"
+                    />
+                </a>
             </div>
         </div>
     </div>

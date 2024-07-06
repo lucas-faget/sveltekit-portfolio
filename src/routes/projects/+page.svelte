@@ -38,14 +38,8 @@
                     <ul class="flex flex-col gap-8">
                         {#each project.languages as language}
                             <li class="flex items-center gap-8 text-lg">
-                                {#if language.imageFile}
-                                    <div class="h-14 w-20 flex justify-center">
-                                        <img
-                                            class="h-full"
-                                            src={`${data.assetsBaseUrl}/${language.imageFile}`}
-                                            alt={language.name}
-                                        />
-                                    </div>
+                                {#if language.iconName}
+                                    <iconify-icon icon={language.iconName} width="90" height="60" />
                                 {/if}
 
                                 {#if language.name}
@@ -58,7 +52,7 @@
 
                 {#if project.screenshots}
                     {#each project.screenshots as screenshot}
-                        <img src={`${data.assetsBaseUrl}/${screenshot}`} alt={project.name} />
+                        <img src="{data.assetsBaseUrl}/{screenshot}" alt={project.name} />
                     {/each}
                 {/if}
             </Chapter>

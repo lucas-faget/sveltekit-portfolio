@@ -38,14 +38,8 @@
                                 <StarRating rating={language.rating} />
                             {/if}
 
-                            {#if language.imageFile}
-                                <div class="h-14 w-20 flex justify-center">
-                                    <img
-                                        class="h-full"
-                                        src={`${data.assetsBaseUrl}/${language.imageFile}`}
-                                        alt={language.name}
-                                    />
-                                </div>
+                            {#if language.iconName}
+                                <iconify-icon icon={language.iconName} width="90" height="60" />
                             {/if}
 
                             {#if language.name}
@@ -71,13 +65,23 @@
                             : undefined}
                     >
                         <div class="flex flex-col gap-1">
-                            <p class="font-bold">{`${item.companyName} - ${item.place}`}</p>
+                            <p class="font-bold">{item.companyName} - {item.place}</p>
                             <ul>
                                 {#each item.overview.split("\n") as line}
                                     <li>{line}</li>
                                 {/each}
                             </ul>
                         </div>
+
+                        {#if item.languages.length > 0}
+                            <div class="flex flex-wrap gap-4 mt-4">
+                                {#each item.languages as language}
+                                    {#if language.iconName}
+                                        <iconify-icon icon={language.iconName} height="40" />
+                                    {/if}
+                                {/each}
+                            </div>
+                        {/if}
                     </TimelineItem>
                 {/each}
             </Timeline>
@@ -97,7 +101,7 @@
                             : undefined}
                     >
                         <div class="flex flex-col gap-1">
-                            <p class="font-bold">{`${item.schoolName}`}</p>
+                            <p class="font-bold">{item.schoolName}</p>
                             {#if item.overview}
                                 <ul>
                                     {#each item.overview.split("\n") as line}

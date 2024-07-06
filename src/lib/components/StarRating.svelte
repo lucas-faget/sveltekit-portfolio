@@ -1,33 +1,30 @@
 <script lang="ts">
     import { Rating } from "$lib/types/Rating";
 
-    const assetsURL = "https://assets.lucas-faget.com";
-
     export let rating: Rating = Rating.ZeroStar;
 </script>
 
 <div class="flex gap-2">
-    <img
-        class="h-6 w-6"
-        src={`${assetsURL}/icons/${
-            rating !== Rating.ZeroStar ? "star-gold.svg" : "star-black.svg"
-        }`}
-        alt="star"
-    />
-    <img
-        class="h-6 w-6"
-        src={`${assetsURL}/icons/${
-            rating === Rating.TwoStars || rating === Rating.ThreeStars
-                ? "star-gold.svg"
-                : "star-black.svg"
-        }`}
-        alt="star"
-    />
-    <img
-        class="h-6 w-6"
-        src={`${assetsURL}/icons/${
-            rating === Rating.ThreeStars ? "star-gold.svg" : "star-black.svg"
-        }`}
-        alt="star"
-    />
+    <iconify-icon
+        icon="material-symbols:star"
+        width="30"
+        height="30"
+        class={rating !== Rating.ZeroStar ? "text-amber-100" : "text-neutral-900"}
+    ></iconify-icon>
+
+    <iconify-icon
+        icon="material-symbols:star"
+        width="30"
+        height="30"
+        class={rating === Rating.TwoStars || rating === Rating.ThreeStars
+            ? "text-amber-100"
+            : "text-neutral-900"}
+    ></iconify-icon>
+
+    <iconify-icon
+        icon="material-symbols:star"
+        width="30"
+        height="30"
+        class={rating === Rating.ThreeStars ? "text-amber-100" : "text-neutral-900"}
+    ></iconify-icon>
 </div>

@@ -9,9 +9,11 @@
 </script>
 
 <div class="flex flex-col">
-    <div class={`${dark ? "linear-gradient-end" : "linear-gradient-start"} w-full h-4 z-20`}></div>
+    <div class="{dark ? 'linear-gradient-end' : 'linear-gradient-start'} w-full h-4 z-20"></div>
     <div
-        class={`${dark ? "bg-dark text-light border-light" : "bg-light text-dark border-dark"} relative min-h-screen py-12 flex max-md:flex-col max-md:gap-12`}
+        class="{dark
+            ? 'bg-dark text-light border-light'
+            : 'bg-light text-dark border-dark'} relative min-h-screen py-12 flex max-md:flex-col max-md:gap-12"
     >
         {#if hasAside}
             <aside class="md:w-1/3 w-full px-8" style="font-family: 'Dosis">
@@ -23,7 +25,9 @@
         {/if}
 
         <section
-            class={`w-full px-8 flex flex-col md:justify-center gap-12 ${hasAside ? "md:w-2/3" : "items-center"}`}
+            class="w-full px-8 flex flex-col md:justify-center gap-12 {hasAside
+                ? 'md:w-2/3'
+                : 'items-center'}"
         >
             <slot />
         </section>
