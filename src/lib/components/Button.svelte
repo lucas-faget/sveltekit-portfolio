@@ -15,8 +15,7 @@
             : 'border-neutral-800'
         : dark
           ? 'border-neutral-800'
-          : 'border-neutral-400'} group relative z-10 px-6 py-3 overflow-hidden uppercase tracking-[0.15rem] cursor-pointer"
-    style="font-family: 'Dosis', sans-serif;"
+          : 'border-neutral-400'} group relative z-10 px-6 py-3 overflow-hidden uppercase tracking-[0.15rem] cursor-pointer font-2"
 >
     <div
         class="{dark ? 'bg-neutral-200' : 'bg-neutral-800'} {rounded

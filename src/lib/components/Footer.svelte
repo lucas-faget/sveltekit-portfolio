@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <div class="flex justify-between items-center text-neutral-400">
+        <div class="flex justify-between items-center gap-8 flex-wrap text-neutral-400">
             <p>Copyright © 2023-2024 Lucas Faget</p>
             <div class="flex items-center gap-4">
                 <a href={contact.githubUrl} target="_blank">

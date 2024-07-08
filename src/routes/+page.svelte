@@ -36,7 +36,7 @@
         <Chapter dark>
             <Title title="Main skills"></Title>
 
-            <div class="grid grid-cols-3 gap-4">
+            <div class="w-full max-w-[32rem] flex flex-wrap gap-4 justify-center">
                 {#each data.json.skills as skill}
                     <div
                         class="group h-40 w-40 flex justify-center items-center bg-neutral-800 rounded-lg cursor-grab"

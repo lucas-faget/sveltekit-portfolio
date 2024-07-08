@@ -16,7 +16,7 @@
             : 'bg-light text-dark border-dark'} relative min-h-screen py-12 flex max-md:flex-col max-md:gap-12"
     >
         {#if hasAside}
-            <aside class="md:w-1/3 w-full px-8" style="font-family: 'Dosis">
+            <aside class="md:w-1/3 w-full px-8 font-2">
                 <div class="sticky top-16 flex flex-col gap-8 text-4xl">
                     <span>{formattedIndex}</span>
                     <span>{title}</span>

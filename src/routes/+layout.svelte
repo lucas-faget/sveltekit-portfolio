@@ -22,7 +22,7 @@
 </script>
 
 <div class="flex flex-col min-h-screen">
-    <Header />
+    <Header contact={data.contact} />
 
     <Welcome text={welcomeText} />
 

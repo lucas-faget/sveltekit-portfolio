@@ -2,7 +2,7 @@
     export let text: string;
 </script>
 
-<div class="flex items-center gap-2" style="font-family: 'Dosis">
+<div class="flex items-center gap-2 font-2">
     <div class="flex-1 border-t-[1px]"></div>
     <div class="flex">
         <div class="w-6 flex flex-col justify-center items-center">

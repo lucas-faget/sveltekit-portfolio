@@ -68,6 +68,14 @@ button {
     font-family: inherit;
 }
 
+.font-1 {
+    font-family: "Anton", sans-serif;
+}
+
+.font-2 {
+    font-family: "Dosis", sans-serif;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     border-radius: 100px;

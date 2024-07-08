@@ -47,7 +47,6 @@
     };
 
     function handleClick(index: number) {
-        console.log("Clicked image index:", index);
         currentIndex = index;
     }
 </script>
