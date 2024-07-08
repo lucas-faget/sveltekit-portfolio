@@ -37,13 +37,24 @@
                 {#if project.languages}
                     <ul class="flex flex-col gap-8">
                         {#each project.languages as language}
-                            <li class="flex items-center gap-8 text-lg">
+                            <li class="flex items-center max-sm:gap-4 gap-6">
                                 {#if language.iconName}
-                                    <iconify-icon icon={language.iconName} width="90" height="60" />
+                                    <iconify-icon
+                                        icon={language.iconName}
+                                        width="90"
+                                        height="60"
+                                        class="max-sm:hidden"
+                                    />
+                                    <iconify-icon
+                                        icon={language.iconName}
+                                        width="60"
+                                        height="40"
+                                        class="sm:hidden"
+                                    />
                                 {/if}
 
                                 {#if language.name}
-                                    <p>{language.name}</p>
+                                    <p class="sm:text-lg">{language.name}</p>
                                 {/if}
                             </li>
                         {/each}
