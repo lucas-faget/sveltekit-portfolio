@@ -23,7 +23,7 @@
             <div
                 class="h-20 sm:w-20 sm:-translate-y-6 sm:absolute left-0 inline-flex items-center justify-center max-sm:my-2"
             >
-                <img class="max-h-full max-w-full" src={imageSrc} alt={imageAlt} />
+                <img class="w-full max-h-full" src={imageSrc} alt={imageAlt} />
             </div>
         {/if}
     </div>

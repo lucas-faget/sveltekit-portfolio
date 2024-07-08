@@ -41,13 +41,13 @@
                             {#if language.iconName}
                                 <iconify-icon
                                     icon={language.iconName}
-                                    width="90"
+                                    width="60"
                                     height="60"
                                     class="max-sm:hidden"
                                 />
                                 <iconify-icon
                                     icon={language.iconName}
-                                    width="60"
+                                    width="40"
                                     height="40"
                                     class="sm:hidden"
                                 />
@@ -88,7 +88,16 @@
                             <div class="flex flex-wrap gap-4 mt-4">
                                 {#each item.languages as language}
                                     {#if language.iconName}
-                                        <iconify-icon icon={language.iconName} height="40" />
+                                        <iconify-icon
+                                            icon={language.iconName}
+                                            height="40"
+                                            class="max-sm:hidden"
+                                        />
+                                        <iconify-icon
+                                            icon={language.iconName}
+                                            height="30"
+                                            class="sm:hidden"
+                                        />
                                     {/if}
                                 {/each}
                             </div>

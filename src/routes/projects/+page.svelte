@@ -41,13 +41,13 @@
                                 {#if language.iconName}
                                     <iconify-icon
                                         icon={language.iconName}
-                                        width="90"
+                                        width="60"
                                         height="60"
                                         class="max-sm:hidden"
                                     />
                                     <iconify-icon
                                         icon={language.iconName}
-                                        width="60"
+                                        width="40"
                                         height="40"
                                         class="sm:hidden"
                                     />

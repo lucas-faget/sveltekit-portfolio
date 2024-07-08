@@ -10,7 +10,7 @@
             <div class="flex-1 w-[1.2px] border-[1px] skew-minus-45"></div>
         </div>
         <div
-            class="h-12 px-6 border-y-[1px] flex items-center text-lg uppercase tracking-[0.15rem]"
+            class="h-12 px-6 border-y-[1px] flex items-center md:text-lg uppercase tracking-[0.15rem]"
         >
             {text}
         </div>
