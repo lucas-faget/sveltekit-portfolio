@@ -13,7 +13,7 @@
     <div
         class="{dark
             ? 'bg-dark text-light border-light'
-            : 'bg-light text-dark border-dark'} relative min-h-screen py-12 flex max-md:flex-col max-md:gap-12"
+            : 'bg-light text-dark border-dark'} relative min-h-lvh py-12 flex max-md:flex-col max-md:gap-12"
     >
         {#if hasAside}
             <aside class="md:w-1/3 w-full px-8 font-2">
