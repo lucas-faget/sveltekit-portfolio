@@ -71,7 +71,7 @@
     <div
         class="{isMenuOpen
             ? 'md:hidden'
-            : 'hidden'} fixed bg-neutral-300 w-[calc(100%-1rem)] h-[calc(100%-1rem)] top-2 left-2 rounded-xl z-50"
+            : 'hidden'} fixed bg-neutral-300 w-[calc(100%-1rem)] h-[calc(100svh-1rem)] top-2 left-2 rounded-xl z-50"
     >
         <div class="w-full h-full flex flex-col justify-between p-8 text-neutral-500">
             <div class="flex flex-col gap-16">

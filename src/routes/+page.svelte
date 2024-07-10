@@ -22,7 +22,7 @@
 <div>
     <div id="projects">
         <Chapter>
-            <Title title="Project overview"></Title>
+            <Title title={"Apercu\ndes projets"}></Title>
 
             <Carousel images={carouselImages} />
 
@@ -34,7 +34,7 @@
 
     <div id="skills">
         <Chapter dark>
-            <Title title="Main skills"></Title>
+            <Title title={"Compétences\nprincipales"}></Title>
 
             <div class="w-full max-w-[32rem] flex flex-wrap gap-4 justify-center">
                 {#each data.json.skills as skill}
@@ -64,7 +64,7 @@
 
     <div id="timeline">
         <Chapter>
-            <Title title="Timeline"></Title>
+            <Title title={"Chronologie"}></Title>
 
             <Timeline>
                 {#each data.json.timeline as item}

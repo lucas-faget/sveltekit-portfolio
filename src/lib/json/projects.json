@@ -2,8 +2,8 @@
     "projects": [
         {
             "name": "Movue",
-            "title": "Movie database",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.",
+            "title": "Movie\ndatabase",
+            "overview": "Bienvenue sur Movue, votre base de données de films. Movue est un site web, développé avec Nuxt et TypeScript, qui vous permet de découvrir des films populaires, les sorties récentes et les sorties à venir, les films les mieux notés et de rechercher nimporte quel film grâce à une barre de recherche. Les données sont fournies par l'API de The Movie Database (TMDB).",
             "websiteUrl": "https://movue.lucas-faget.com",
             "githubRepository": "https://github.com/lucas-faget/nuxt-movue",
             "languages": [
@@ -12,16 +12,20 @@
                     "iconName": "skill-icons:nuxtjs-dark"
                 },
                 {
-                    "name": "Typescript",
+                    "name": "TypeScript",
                     "iconName": "logos:typescript-icon"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "iconName": "devicon:tailwindcss"
                 }
             ],
             "screenshots": ["screenshots/movue_1.png", "screenshots/movue_2.png"]
         },
         {
             "name": "Chess",
-            "title": "Play chess",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.",
+            "title": "Play\nchess",
+            "overview": "Je vous présente une application réalisée avec Vue.js et TypeScript qui offre aux passionnés d'échecs la possibilité de jouer des parties d'échecs avec différentes variantes du jeu (Fischer Random, Fog of War, Echecs à 4 joueurs) sans oublier les parties classiques. L'utilisation de Three.js permet aux utilisateurs de jouer des parties d'échecs en 3D avec des modèles 3D créés à la main.\nUn backend en ASP.NET Core et C# est aen cours de développement, et sera bientôt disponible afin de jouer des parties en ligne grâce à l'utilisation de la bibliothèque SignalR qui fournit des WebSockets.",
             "websiteUrl": "https://chess.lucas-faget.com",
             "githubRepository": "https://github.com/lucas-faget/vue-chess",
             "languages": [
@@ -30,20 +34,24 @@
                     "iconName": "logos:vue"
                 },
                 {
-                    "name": "Typescript",
+                    "name": "TypeScript",
                     "iconName": "logos:typescript-icon"
                 },
                 {
                     "name": "Three.js",
                     "iconName": "skill-icons:threejs-light"
+                },
+                {
+                    "name": "C# - ASP.Net Core",
+                    "iconName": "devicon:csharp"
                 }
             ],
             "screenshots": ["screenshots/chess_1.png", "screenshots/chess_2.png"]
         },
         {
             "name": "Healthy",
-            "title": "Food database",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.",
+            "title": "Food\ndatabase",
+            "overview": "Healthy est une base de données de produits alimentaires, alimentée par les données de l'USDA FoodData Central. Vous y trouverez une liste exhaustive de produits alimentaires que vous pouvez consulter en détail. Le site offre la possibilité d'enregistrer vos produits favoris pour un accès rapide. En outre, vous pouvez enregistrer votre consommation alimentaire quotidienne afin de de compter vos calories.`\nLe backend est propulsé par une API développée avec Laravel et PostgreSQL et dont la base de donnée est dockerisé. Le frontend, quand à lui, est conçu avec Svelte et TypeScript.",
             "githubRepository": "https://github.com/lucas-faget/laravel-svelte-healthy",
             "languages": [
                 {
@@ -55,7 +63,7 @@
                     "iconName": "logos:svelte-icon"
                 },
                 {
-                    "name": "Typescript",
+                    "name": "TypeScript",
                     "iconName": "logos:typescript-icon"
                 },
                 {
@@ -76,8 +84,8 @@
         },
         {
             "name": "Networth",
-            "title": "Social network",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.",
+            "title": "Your\nnetwork",
+            "overview": "Site en construction",
             "githubRepository": "https://github.com/lucas-faget/symfony-vue-networth",
             "languages": [
                 {
@@ -89,7 +97,7 @@
                     "iconName": "logos:vue"
                 },
                 {
-                    "name": "Typescript",
+                    "name": "TypeScript",
                     "iconName": "logos:typescript-icon"
                 },
                 {
@@ -105,8 +113,8 @@
         },
         {
             "name": "Sokoban",
-            "title": "Play sokoban",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.",
+            "title": "Play\nsokoban",
+            "overview": "Sokoban est un projet web basé sur Svelte et TypeScript, permettant de jouer au célèbre jeu Sokoban. L'apparence du plateau de jeu est entièrement personnalisable.",
             "websiteUrl": "https://sokoban.lucas-faget.com",
             "githubRepository": "https://github.com/lucas-faget/svelte-sokoban",
             "languages": [
@@ -115,7 +123,7 @@
                     "iconName": "logos:svelte-icon"
                 },
                 {
-                    "name": "Typescript",
+                    "name": "TypeScript",
                     "iconName": "logos:typescript-icon"
                 }
             ],

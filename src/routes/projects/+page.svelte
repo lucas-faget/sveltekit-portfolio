@@ -19,18 +19,34 @@
                 <Title title={project.title} />
 
                 {#if project.overview}
-                    <p>{project.overview}</p>
+                    <div class="flex flex-col gap-6">
+                        {#each project.overview.split("\n") as paragraph}
+                            <p>{paragraph}</p>
+                        {/each}
+                    </div>
                 {/if}
 
                 {#if project.websiteUrl}
                     <a href={project.websiteUrl}>
-                        <Button dark={index % 2 !== 0}>{project.websiteUrl}</Button>
+                        <Button dark={index % 2 !== 0} rounded
+                            ><div class="flex gap-4 items-center">
+                                <iconify-icon icon="bi:globe2" height="30" width="30"
+                                ></iconify-icon>
+                                <span>Visiter le site web</span>
+                            </div></Button
+                        >
                     </a>
                 {/if}
 
                 {#if project.githubRepository}
                     <a href={project.githubRepository}>
-                        <Button dark={index % 2 !== 0}>{project.githubRepository}</Button>
+                        <Button dark={index % 2 !== 0} rounded>
+                            <div class="flex gap-4 items-center">
+                                <iconify-icon icon="bi:github" height="30" width="30"
+                                ></iconify-icon>
+                                <span>Voir le dépôt github</span>
+                            </div>
+                        </Button>
                     </a>
                 {/if}
 

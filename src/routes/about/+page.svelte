@@ -18,7 +18,7 @@
 <div>
     <div id="introduction">
         <Chapter index={1} title="Introduction">
-            <Title title="Web developer" />
+            <Title title={"Développeur\nweb"} />
 
             {#each data.json.overview.split("\n") as paragraph}
                 <p>{paragraph}</p>

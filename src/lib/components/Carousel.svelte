@@ -68,13 +68,20 @@
     {/each}
 
     <button
-        class="absolute top-1/2 -translate-y-1/2 left-2 h-10 w-10 rounded-full bg-neutral-950 text-neutral-50 opacity-60 z-10"
-        on:click={previous}>{"<"}</button
+        class="absolute top-1/2 -translate-y-1/2 left-2 h-10 w-10 rounded-full bg-neutral-950 text-neutral-50 opacity-60 z-10 flex justify-center items-center"
+        on:click={previous}
     >
+        <iconify-icon icon="material-symbols:keyboard-arrow-left" width="20" height="20"
+        ></iconify-icon>
+    </button>
+
     <button
-        class="absolute top-1/2 -translate-y-1/2 right-2 h-10 w-10 rounded-full bg-neutral-950 text-neutral-50 opacity-60 z-10"
-        on:click={next}>{">"}</button
+        class="absolute top-1/2 -translate-y-1/2 right-2 h-10 w-10 rounded-full bg-neutral-950 text-neutral-50 opacity-60 z-10 flex justify-center items-center"
+        on:click={next}
     >
+        <iconify-icon icon="material-symbols:keyboard-arrow-right" width="20" height="20"
+        ></iconify-icon>
+    </button>
 </div>
 
 <style>
