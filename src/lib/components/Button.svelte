@@ -15,7 +15,7 @@
             : 'border-neutral-800'
         : dark
           ? 'border-neutral-800'
-          : 'border-neutral-400'} group relative z-10 px-6 py-3 overflow-hidden uppercase tracking-[0.15rem] cursor-pointer font-2"
+          : 'border-neutral-400'} group relative z-10 px-6 max-sm:px-4 py-3 max-sm:py-2 overflow-hidden uppercase tracking-[0.15rem] cursor-pointer font-2"
 >
     <div
         class="{dark ? 'bg-neutral-200' : 'bg-neutral-800'} {rounded
@@ -23,7 +23,7 @@
             : ''} absolute top-0 left-[-100%] w-full h-full transition-left duration-500 ease group-hover:left-0 overflow-hidden"
     ></div>
 
-    <div class="relative z-20 transition-color duration-500 ease">
+    <div class="relative z-20 transition-color duration-500 ease max-sm:text-sm">
         <slot />
     </div>
 </div>

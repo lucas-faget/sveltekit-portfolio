@@ -30,7 +30,17 @@
                     <a href={project.websiteUrl}>
                         <Button dark={index % 2 !== 0} rounded
                             ><div class="flex gap-4 items-center">
-                                <iconify-icon icon="bi:globe2" height="30" width="30"
+                                <iconify-icon
+                                    icon="bi:globe2"
+                                    height="30"
+                                    width="30"
+                                    class="max-sm:hidden"
+                                ></iconify-icon>
+                                <iconify-icon
+                                    icon="bi:globe2"
+                                    height="20"
+                                    width="20"
+                                    class="sm:hidden"
                                 ></iconify-icon>
                                 <span>Visiter le site web</span>
                             </div></Button
@@ -42,7 +52,17 @@
                     <a href={project.githubRepository}>
                         <Button dark={index % 2 !== 0} rounded>
                             <div class="flex gap-4 items-center">
-                                <iconify-icon icon="bi:github" height="30" width="30"
+                                <iconify-icon
+                                    icon="bi:github"
+                                    height="30"
+                                    width="30"
+                                    class="max-sm:hidden"
+                                ></iconify-icon>
+                                <iconify-icon
+                                    icon="bi:github"
+                                    height="20"
+                                    width="20"
+                                    class="sm:hidden"
                                 ></iconify-icon>
                                 <span>Voir le dépôt github</span>
                             </div>
