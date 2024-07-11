@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { PageData } from "./$types";
+    import { isSmallScreen } from "$lib/stores/mediaQuery";
     import Chapter from "$lib/components/Chapter.svelte";
     import Title from "$lib/components/Title.svelte";
     import Button from "$lib/components/Button.svelte";
@@ -28,23 +29,12 @@
 
                 {#if project.websiteUrl}
                     <a href={project.websiteUrl}>
-                        <Button dark={index % 2 !== 0} rounded
-                            ><div class="flex gap-4 items-center">
-                                <iconify-icon
-                                    icon="bi:globe2"
-                                    height="30"
-                                    width="30"
-                                    class="max-sm:hidden"
-                                ></iconify-icon>
-                                <iconify-icon
-                                    icon="bi:globe2"
-                                    height="20"
-                                    width="20"
-                                    class="sm:hidden"
-                                ></iconify-icon>
+                        <Button dark={index % 2 !== 0} rounded>
+                            <div class="flex gap-4 items-center">
+                                <iconify-icon icon="bi:globe2" class="max-sm:text-xl text-3xl" />
                                 <span>Visiter le site web</span>
-                            </div></Button
-                        >
+                            </div>
+                        </Button>
                     </a>
                 {/if}
 
@@ -52,18 +42,7 @@
                     <a href={project.githubRepository}>
                         <Button dark={index % 2 !== 0} rounded>
                             <div class="flex gap-4 items-center">
-                                <iconify-icon
-                                    icon="bi:github"
-                                    height="30"
-                                    width="30"
-                                    class="max-sm:hidden"
-                                ></iconify-icon>
-                                <iconify-icon
-                                    icon="bi:github"
-                                    height="20"
-                                    width="20"
-                                    class="sm:hidden"
-                                ></iconify-icon>
+                                <iconify-icon icon="bi:github" class="max-sm:text-xl text-3xl" />
                                 <span>Voir le dépôt github</span>
                             </div>
                         </Button>
@@ -77,15 +56,8 @@
                                 {#if language.iconName}
                                     <iconify-icon
                                         icon={language.iconName}
-                                        width="60"
-                                        height="60"
-                                        class="max-sm:hidden"
-                                    />
-                                    <iconify-icon
-                                        icon={language.iconName}
-                                        width="40"
-                                        height="40"
-                                        class="sm:hidden"
+                                        width={$isSmallScreen ? 40 : 60}
+                                        height={$isSmallScreen ? 40 : 60}
                                     />
                                 {/if}
 

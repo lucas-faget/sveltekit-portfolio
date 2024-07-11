@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { PageData } from "./$types";
+    import { isSmallScreen } from "$lib/stores/mediaQuery";
     import Chapter from "$lib/components/Chapter.svelte";
     import Title from "$lib/components/Title.svelte";
     import Headline from "$lib/components/Headline.svelte";
@@ -41,15 +42,8 @@
                             {#if language.iconName}
                                 <iconify-icon
                                     icon={language.iconName}
-                                    width="60"
-                                    height="60"
-                                    class="max-sm:hidden"
-                                />
-                                <iconify-icon
-                                    icon={language.iconName}
-                                    width="40"
-                                    height="40"
-                                    class="sm:hidden"
+                                    width={$isSmallScreen ? 40 : 60}
+                                    height={$isSmallScreen ? 40 : 60}
                                 />
                             {/if}
 
@@ -90,13 +84,7 @@
                                     {#if language.iconName}
                                         <iconify-icon
                                             icon={language.iconName}
-                                            height="40"
-                                            class="max-sm:hidden"
-                                        />
-                                        <iconify-icon
-                                            icon={language.iconName}
-                                            height="30"
-                                            class="sm:hidden"
+                                            height={$isSmallScreen ? 30 : 40}
                                         />
                                     {/if}
                                 {/each}
