@@ -9,9 +9,12 @@
 
     export let data: PageData;
 
-    $: carouselImages = data.json?.carousel.map((image) => `${data.assetsBaseUrl}/${image}`) ?? [];
+    $: carouselImages =
+        data.homeData?.carousel.map((image) => `${data.assetsBaseUrl}/${image}`) ?? [];
 
-    $: skillGridSize = data.json?.skills ? Math.ceil(Math.sqrt(data.json.skills.length)) : 1;
+    $: skillGridSize = data.homeData?.skills
+        ? Math.ceil(Math.sqrt(data.homeData.skills.length))
+        : 1;
 </script>
 
 <svelte:head>
@@ -37,7 +40,7 @@
             <Title title={"Compétences\nprincipales"}></Title>
 
             <div class="w-full max-w-[32rem] flex flex-wrap gap-4 justify-center">
-                {#each data.json.skills as skill}
+                {#each data.homeData.skills as skill}
                     <div
                         class="group h-40 w-40 flex justify-center items-center bg-neutral-800 rounded-lg cursor-grab"
                     >
@@ -67,7 +70,7 @@
             <Title title={"Chronologie"}></Title>
 
             <Timeline>
-                {#each data.json.timeline as item}
+                {#each data.homeData.timeline as item}
                     <TimelineItem
                         title={item.title}
                         label={item.date}

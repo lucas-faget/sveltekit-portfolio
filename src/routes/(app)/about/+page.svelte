@@ -21,7 +21,7 @@
         <Chapter index={1} title="Introduction">
             <Title title={"Développeur\nweb"} />
 
-            {#each data.json.overview.split("\n") as paragraph}
+            {#each data.aboutData.overview.split("\n") as paragraph}
                 <p>{paragraph}</p>
             {/each}
         </Chapter>
@@ -29,8 +29,8 @@
 
     <div id="skills">
         <Chapter index={2} title="Langages" dark>
-            {#each data.json.skills as skillGroup}
-                <Headline text={skillGroup.headline} />
+            {#each data.aboutData.skills as skillGroup}
+                <Headline>{skillGroup.headline}</Headline>
 
                 <ul class="flex flex-col gap-8">
                     {#each skillGroup.languages as language}
@@ -60,7 +60,7 @@
     <div id="experience">
         <Chapter index={3} title="Expériences">
             <Timeline>
-                {#each data.json.workExperience as item}
+                {#each data.aboutData.workExperience as item}
                     <TimelineItem
                         title={item.title}
                         label={item.date}
@@ -99,7 +99,7 @@
     <div id="education">
         <Chapter index={4} title="Formation" dark>
             <Timeline>
-                {#each data.json.education as item}
+                {#each data.aboutData.education as item}
                     <TimelineItem
                         title={item.title}
                         label={item.date}

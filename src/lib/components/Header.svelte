@@ -49,11 +49,6 @@
 
         <ul class="flex gap-4 max-md:hidden">
             <li>
-                <a href="/">
-                    <Button rounded dark border={$page.url.pathname === "/"}>Home</Button>
-                </a>
-            </li>
-            <li>
                 <a href="/about">
                     <Button rounded dark border={$page.url.pathname === "/about"}>About</Button>
                 </a>
@@ -63,6 +58,11 @@
                     <Button rounded dark border={$page.url.pathname === "/projects"}>
                         Projects
                     </Button>
+                </a>
+            </li>
+            <li>
+                <a href="/cv">
+                    <Button rounded dark border={$page.url.pathname === "/cv"}>CV</Button>
                 </a>
             </li>
         </ul>
@@ -85,11 +85,6 @@
 
                 <ul class="flex flex-col gap-6 font-2 text-4xl">
                     <li>
-                        <a href="/" on:click={closeMenu}>
-                            <span class="hover:text-neutral-900">Home</span>
-                        </a>
-                    </li>
-                    <li>
                         <a href="/about" on:click={closeMenu}>
                             <span class="hover:text-neutral-900">About</span>
                         </a>
@@ -97,6 +92,11 @@
                     <li>
                         <a href="/projects" on:click={closeMenu}>
                             <span class="hover:text-neutral-900">Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/cv" on:click={closeMenu}>
+                            <span class="hover:text-neutral-900">CV</span>
                         </a>
                     </li>
                 </ul>

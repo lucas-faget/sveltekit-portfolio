@@ -1,5 +1,5 @@
 <script lang="ts">
-    import "../app.css";
+    import "../../app.css";
     import { page } from "$app/stores";
     import type { PageData } from "./$types";
     import Header from "$lib/components/Header.svelte";
@@ -14,6 +14,8 @@
                 return "About";
             case "/projects":
                 return "Projects";
+            case "/cv":
+                return "CV";
             case "/":
             default:
                 return "";

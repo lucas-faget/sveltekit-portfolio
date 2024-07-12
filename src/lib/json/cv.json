@@ -1,0 +1,144 @@
+{
+    "website": {
+        "name": "lucas-faget.com",
+        "url": "https://lucas-faget.com"
+    },
+    "github": {
+        "name": "github.com/lucas-faget",
+        "url": "https://github.com/lucas-faget"
+    },
+    "linkedin": {
+        "name": "linkedin.com/in/lucas-faget",
+        "url": "https://www.linkedin.com/in/lucas-faget/"
+    },
+    "mail": "contact@lucas-faget.com",
+    "phoneNumber": "06 02 38 07 36",
+    "langues": [
+        {
+            "iconName": "circle-flags:uk",
+            "level": "Intermédiaire"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Code",
+            "iconName": "mdi:code"
+        },
+        {
+            "name": "Jeux vidéos",
+            "iconName": "mdi:controller"
+        },
+        {
+            "name": "Vélo",
+            "iconName": "mdi:bike"
+        },
+        {
+            "name": "Echecs",
+            "iconName": "mdi:chess-pawn"
+        }
+    ],
+    "workExperience": [
+        {
+            "title": "Développeur web en alternance",
+            "place": "Lormont (33310)",
+            "companyName": "Simpliciti",
+            "companyImageFile": "logos/simpliciti.png",
+            "date": "juil. 2022 - sept. 2023",
+            "overview": "Développement de fonctionnalités et maintenance de EcoboxCarto: Application web d'optimisation de circuits de collecte\nSIG / PHP / JS / MySQL / PostgreSQL\nGestion de projet (SCRUM, Git, EasyRedmine)"
+        },
+        {
+            "title": "Stage en développement web",
+            "date": "juin 2021 - aout 2021",
+            "companyName": "Audit Action plus",
+            "companyImageFile": "logos/audit_action_plus.png",
+            "place": "Toulouse",
+            "overview": "Développement d'un ERP\nPHP / JS / MySQL"
+        }
+    ],
+    "education": [
+        {
+            "title": "Licence pro DAWIN en alternance",
+            "date": "2023",
+            "schoolName": "IUT de Bordeaux",
+            "imageFile": "logos/université_bordeaux.svg",
+            "overview": "Licence professionelle spécialisée en développement web et réalisée en alternance chez Simpliciti"
+        },
+        {
+            "title": "DUT en Informatique",
+            "date": "2021",
+            "imageFile": "logos/iut_toulouse.png",
+            "schoolName": "IUT de Toulouse"
+        },
+        {
+            "title": "Licence de Physique",
+            "date": "2019",
+            "schoolName": "Université de Pau",
+            "imageFile": "logos/uppa.svg"
+        }
+    ],
+    "skills": [
+        {
+            "headline": "Front-end",
+            "languages": [
+                {
+                    "name": "JavaScript",
+                    "iconName": "logos:javascript"
+                },
+                {
+                    "name": "TypeScript",
+                    "iconName": "logos:typescript-icon"
+                },
+                {
+                    "name": "Vue.js",
+                    "iconName": "logos:vue"
+                },
+                {
+                    "name": "Svelte",
+                    "iconName": "logos:svelte-icon"
+                },
+                {
+                    "name": "React",
+                    "iconName": "logos:react"
+                }
+            ]
+        },
+        {
+            "headline": "Back-end",
+            "languages": [
+                {
+                    "name": "PHP",
+                    "iconName": "logos:php"
+                },
+                {
+                    "name": "Symfony",
+                    "iconName": "logos:symfony"
+                },
+                {
+                    "name": "Laravel",
+                    "iconName": "logos:laravel"
+                },
+                {
+                    "name": "C#",
+                    "iconName": "devicon:csharp"
+                }
+            ]
+        },
+        {
+            "headline": "Autres outils",
+            "languages": [
+                {
+                    "name": "Git",
+                    "iconName": "devicon:git"
+                },
+                {
+                    "name": "Linux",
+                    "iconName": "devicon:linux"
+                },
+                {
+                    "name": "Docker",
+                    "iconName": "logos:docker-icon"
+                }
+            ]
+        }
+    ]
+}

@@ -6,6 +6,8 @@
     import Button from "$lib/components/Button.svelte";
 
     export let data: PageData;
+
+    console.log(data);
 </script>
 
 <svelte:head>
@@ -14,7 +16,7 @@
 </svelte:head>
 
 <div>
-    {#each data.json.projects as project, index}
+    {#each data.projectData.projects as project, index}
         <div id={project.name}>
             <Chapter index={index + 1} title={project.name} dark={index % 2 !== 0}>
                 <Title title={project.title} />
