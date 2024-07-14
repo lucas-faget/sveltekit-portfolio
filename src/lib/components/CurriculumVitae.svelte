@@ -4,7 +4,7 @@
     import TimelineItem from "./TimelineItem.svelte";
 
     export let assetsBaseUrl: string;
-    export let json: any;
+    export let cvData: any;
 </script>
 
 <div class="relative w-[210mm] h-[297mm] bg-white text-dark flex flex-col overflow-hidden">
@@ -17,10 +17,10 @@
     </div>
     <div class="pt-4 pr-4 ml-64">
         <div class="flex flex-col gap-4">
-            <Headline dark small>Expérience</Headline>
+            <Headline small>Expérience</Headline>
 
             <Timeline small>
-                {#each json.workExperience as item}
+                {#each cvData.workExperience as item}
                     <TimelineItem
                         title={item.title}
                         label={item.date}
@@ -42,10 +42,10 @@
                 {/each}
             </Timeline>
 
-            <Headline dark small>Formation</Headline>
+            <Headline small>Formation</Headline>
 
             <Timeline small>
-                {#each json.education as item}
+                {#each cvData.education as item}
                     <TimelineItem
                         title={item.title}
                         label={item.date}
@@ -67,15 +67,15 @@
                 {/each}
             </Timeline>
 
-            <Headline dark small>Compétences</Headline>
+            <Headline small>Compétences</Headline>
 
             <div class="flex flex-col gap-4 mt-2">
-                {#each json.skills as skillGroup}
+                {#each cvData.skills as skillGroup}
                     <div class="flex items-center">
                         <div class="w-32">
                             <p class="text-base font-2 uppercase">{skillGroup.headline}</p>
                         </div>
-                        <div class="flex gap-6">
+                        <div class="flex gap-4">
                             {#each skillGroup.languages as language}
                                 <iconify-icon
                                     icon={language.iconName}
@@ -106,46 +106,46 @@
         </div>
 
         <div class="flex flex-col gap-4 text-sm">
-            {#if json.website}
+            {#if cvData.website}
                 <div class="flex flex-col items-center gap-1">
                     <iconify-icon icon="mdi:web" class="text-3xl" noobserver />
-                    <a href={json.website.url}>
-                        <span>{json.website.name}</span>
+                    <a href={cvData.website.url}>
+                        <span>{cvData.website.name}</span>
                     </a>
                 </div>
             {/if}
 
-            {#if json.github}
+            {#if cvData.github}
                 <div class="flex flex-col items-center gap-1">
                     <iconify-icon icon="mdi:github" class="text-3xl" noobserver />
-                    <a href={json.github.url}>
-                        <span>{json.github.name}</span>
+                    <a href={cvData.github.url}>
+                        <span>{cvData.github.name}</span>
                     </a>
                 </div>
             {/if}
 
-            {#if json.linkedin}
+            {#if cvData.linkedin}
                 <div class="flex flex-col items-center gap-1">
                     <iconify-icon icon="mdi:linkedin" class="text-3xl" noobserver />
-                    <a href={json.linkedin.url}>
-                        <span>{json.linkedin.name}</span>
+                    <a href={cvData.linkedin.url}>
+                        <span>{cvData.linkedin.name}</span>
                     </a>
                 </div>
             {/if}
 
-            {#if json.mail}
+            {#if cvData.mail}
                 <div class="flex flex-col items-center gap-1">
                     <iconify-icon icon="mdi:email" class="text-3xl" noobserver />
-                    <a href="mailto:{json.mail}">
-                        <span>{json.mail}</span>
+                    <a href="mailto:{cvData.mail}">
+                        <span>{cvData.mail}</span>
                     </a>
                 </div>
             {/if}
 
-            {#if json.phoneNumber}
+            {#if cvData.phoneNumber}
                 <div class="flex flex-col items-center gap-1">
                     <iconify-icon icon="mdi:phone" class="text-3xl" noobserver />
-                    <span>{json.phoneNumber}</span>
+                    <span>{cvData.phoneNumber}</span>
                 </div>
             {/if}
         </div>
@@ -154,7 +154,7 @@
             <span class="text-2xl font-2 uppercase">Langues</span>
         </div>
 
-        {#each json.langues as langue}
+        {#each cvData.langues as langue}
             <div class="flex items-center gap-4">
                 <iconify-icon icon={langue.iconName} class="text-4xl" noobserver />
                 <span>{langue.level}</span>
@@ -166,7 +166,7 @@
         </div>
 
         <div class="w-1/2 flex justify-center items-center gap-4 flex-wrap">
-            {#each json.interests as interest}
+            {#each cvData.interests as interest}
                 <iconify-icon icon={interest.iconName} class="text-4xl" noobserver />
             {/each}
         </div>
@@ -174,13 +174,6 @@
 </div>
 
 <style>
-    .printable {
-        width: 100%;
-        border: 1px solid #000;
-        padding: 20px;
-        margin: 20px 0;
-    }
-
     @media print {
         @page {
             size: A4;

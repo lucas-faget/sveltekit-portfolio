@@ -7,10 +7,11 @@ export const load: PageLoad = () => {
     return {
         assetsBaseUrl: PUBLIC_ASSETS_BASE_URL,
         projectNames: projectData.projects.map((project) => project.name),
-        contact: {
-            githubUrl: cvData.github.url,
-            linkedinUrl: cvData.linkedin.url,
+        socialMedias: {
+            github: cvData.github.url,
+            linkedin: cvData.linkedin.url,
             mail: cvData.mail,
         },
+        cvFileName: cvData.fileName,
     };
 };

@@ -1,20 +1,23 @@
 import { readable } from "svelte/store";
+import { browser } from "$app/environment";
 
 function createMediaQueryStore(mediaQueryString: string) {
     return readable(false, (set) => {
-        const mediaQueryList = window.matchMedia(mediaQueryString);
+        if (browser) {
+            const mediaQueryList = window.matchMedia(mediaQueryString);
 
-        const updateMediaQuery = (event: MediaQueryListEvent) => {
-            set(event.matches);
-        };
+            const updateMediaQuery = (event: MediaQueryListEvent) => {
+                set(event.matches);
+            };
 
-        mediaQueryList.addEventListener("change", updateMediaQuery);
+            mediaQueryList.addEventListener("change", updateMediaQuery);
 
-        set(mediaQueryList.matches);
+            set(mediaQueryList.matches);
 
-        return () => {
-            mediaQueryList.removeEventListener("change", updateMediaQuery);
-        };
+            return () => {
+                mediaQueryList.removeEventListener("change", updateMediaQuery);
+            };
+        }
     });
 }
 

@@ -11,5 +11,5 @@
 </svelte:head>
 
 <div class="flex justify-center items-center">
-    <CurriculumVitae assetsBaseUrl={data.assetsBaseUrl} json={data.json} />
+    <CurriculumVitae assetsBaseUrl={data.assetsBaseUrl} cvData={data.cvData} />
 </div>

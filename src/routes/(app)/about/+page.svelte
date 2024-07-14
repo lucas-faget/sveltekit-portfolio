@@ -3,6 +3,8 @@
     import { isSmallScreen } from "$lib/stores/mediaQuery";
     import Chapter from "$lib/components/Chapter.svelte";
     import Title from "$lib/components/Title.svelte";
+    import Button from "$lib/components/Button.svelte";
+    import SocialMediaLinks from "$lib/components/SocialMediaLinks.svelte";
     import Headline from "$lib/components/Headline.svelte";
     import StarRating from "$lib/components/StarRating.svelte";
     import Timeline from "$lib/components/Timeline.svelte";
@@ -21,16 +23,22 @@
         <Chapter index={1} title="Introduction">
             <Title title={"Développeur\nweb"} />
 
+            <a href="{data.assetsBaseUrl}/{data.cvFileName}" download class="flex">
+                <Button rounded>Curriculum Vitae</Button>
+            </a>
+
             {#each data.aboutData.overview.split("\n") as paragraph}
                 <p>{paragraph}</p>
             {/each}
+
+            <SocialMediaLinks socialMedias={data.socialMedias} />
         </Chapter>
     </div>
 
     <div id="skills">
         <Chapter index={2} title="Langages" dark>
             {#each data.aboutData.skills as skillGroup}
-                <Headline>{skillGroup.headline}</Headline>
+                <Headline small={$isSmallScreen} dark>{skillGroup.headline}</Headline>
 
                 <ul class="flex flex-col gap-8">
                     {#each skillGroup.languages as language}

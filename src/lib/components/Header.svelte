@@ -1,10 +1,12 @@
 <script lang="ts">
+    import type { SocialMedias } from "$lib/types/SocialMedias";
     import { page } from "$app/stores";
     import { onDestroy, onMount } from "svelte";
     import { browser } from "$app/environment";
     import Button from "./Button.svelte";
+    import SocialMediaLinks from "./SocialMediaLinks.svelte";
 
-    export let contact: any = {};
+    export let socialMedias: SocialMedias;
 
     let isMenuOpen: boolean = false;
 
@@ -104,32 +106,7 @@
 
             <div class="flex justify-between items-center gap-8 flex-wrap">
                 <p>© 2023-2024 Lucas Faget</p>
-                <div class="flex items-center gap-4">
-                    <a href={contact.githubUrl} target="_blank">
-                        <iconify-icon
-                            icon="mdi:github"
-                            width="30"
-                            height="30"
-                            class="hover:text-neutral-900 cursor-pointer"
-                        />
-                    </a>
-                    <a href={contact.linkedinUrl} target="_blank">
-                        <iconify-icon
-                            icon="mdi:linkedin"
-                            width="30"
-                            height="30"
-                            class="hover:text-neutral-900 cursor-pointer"
-                        />
-                    </a>
-                    <a href="mailto:{contact.mail}">
-                        <iconify-icon
-                            icon="mdi:email"
-                            width="30"
-                            height="30"
-                            class="hover:text-neutral-900 cursor-pointer"
-                        />
-                    </a>
-                </div>
+                <SocialMediaLinks {socialMedias} />
             </div>
         </div>
     </div>

@@ -1,6 +1,9 @@
 <script lang="ts">
+    import type { SocialMedias } from "$lib/types/SocialMedias";
+    import SocialMediaLinks from "./SocialMediaLinks.svelte";
+
     export let projectNames: string[] = [];
-    export let contact: any = {};
+    export let socialMedias: SocialMedias;
 </script>
 
 <footer class="p-8 flex flex-col items-center bg-neutral-900">
@@ -65,32 +68,7 @@
 
         <div class="flex justify-between items-center gap-8 flex-wrap text-neutral-400">
             <p>Copyright © 2023-2024 Lucas Faget</p>
-            <div class="flex items-center gap-4">
-                <a href={contact.githubUrl} target="_blank">
-                    <iconify-icon
-                        icon="mdi:github"
-                        width="30"
-                        height="30"
-                        class="text-neutral-400 hover:text-neutral-100 cursor-pointer"
-                    />
-                </a>
-                <a href={contact.linkedinUrl} target="_blank">
-                    <iconify-icon
-                        icon="mdi:linkedin"
-                        width="30"
-                        height="30"
-                        class="text-neutral-400 hover:text-neutral-100 cursor-pointer"
-                    />
-                </a>
-                <a href="mailto:{contact.mail}">
-                    <iconify-icon
-                        icon="mdi:email"
-                        width="30"
-                        height="30"
-                        class="text-neutral-400 hover:text-neutral-100 cursor-pointer"
-                    />
-                </a>
-            </div>
+            <SocialMediaLinks {socialMedias} dark />
         </div>
     </div>
 </footer>

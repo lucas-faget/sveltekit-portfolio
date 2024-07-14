@@ -24,7 +24,7 @@
 </script>
 
 <div class="flex flex-col min-h-screen">
-    <Header contact={data.contact} />
+    <Header socialMedias={data.socialMedias} />
 
     <Welcome text={welcomeText} />
 
@@ -32,5 +32,5 @@
         <slot />
     </main>
 
-    <Footer projectNames={data.projectNames} contact={data.contact} />
+    <Footer projectNames={data.projectNames} socialMedias={data.socialMedias} />
 </div>

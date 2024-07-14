@@ -27,7 +27,7 @@
             : 'sm:after:ml-[6.5rem]'} after:-translate-x-1/2 after:translate-y-1.5"
     >
         {#if title}
-            <div class="{small ? 'text-base' : 'text-xl'} font-bold">
+            <div class="{small ? 'text-base' : 'text-lg sm:text-xl'} font-bold">
                 {title}
             </div>
         {/if}
