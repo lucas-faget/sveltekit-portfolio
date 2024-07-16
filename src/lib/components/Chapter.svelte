@@ -17,7 +17,7 @@
     >
         {#if hasAside}
             <aside class="md:w-1/3 w-full px-8 font-2">
-                <div class="sticky top-16 flex flex-col gap-8 text-4xl">
+                <div class="sticky top-28 flex flex-col gap-8 text-4xl">
                     <span>{formattedIndex}</span>
                     <span>{title}</span>
                 </div>

@@ -1,5 +1,8 @@
 {
-    "overview": "Bienvenue sur mon site web ! Je suis Lucas Faget, un développeur web passionné de 26 ans, diplômé de la licence professionnelle DAWIN, réalisée en alternance. Cette formation spécialisée en développement web m'a permis d'acquérir des bases solides dans tous les aspects du développement, de l'intégration front-end à la conception back-end.\nJe travaille principalement avec des technologies telles que HTML, CSS, TypeScript et PHP, ainsi que des frameworks modernes comme Vue.js et Svelte. Avec ces technologies, je suis capable de créer des sites web performants avec des interfaces intuitives et des APIs REST.\nDans ce portfolio, vous découvrirez une sélection de mes projets qui illustrent mes compétences techniques, mais aussi mon engagement dans l'apprentissage autodidacte pour rester à jour sur les dernières technologies.",
+    "introduction": {
+        "title": "Développeur\nweb",
+        "overview": "Bienvenue sur mon site web ! Je suis Lucas Faget, un développeur web passionné de 26 ans, diplômé de la licence professionnelle DAWIN, réalisée en alternance. Cette formation spécialisée en développement web m'a permis d'acquérir des bases solides dans tous les aspects du développement, de l'intégration front-end à la conception back-end.\nJe travaille principalement avec des technologies telles que HTML, CSS, TypeScript et PHP, ainsi que des frameworks modernes comme Vue.js et Svelte. Avec ces technologies, je suis capable de créer des sites web performants avec des interfaces intuitives et des APIs REST.\nDans ce portfolio, vous découvrirez une sélection de mes projets qui illustrent mes compétences techniques, mais aussi mon engagement dans l'apprentissage autodidacte pour rester à jour sur les dernières technologies."
+    },
     "skills": [
         {
             "headline": "front-end",

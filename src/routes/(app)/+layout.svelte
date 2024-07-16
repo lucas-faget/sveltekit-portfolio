@@ -8,14 +8,14 @@
 
     export let data: PageData;
 
-    $: welcomeText = (() => {
+    $: welcomeTitle = (() => {
         switch ($page.url.pathname) {
             case "/about":
                 return "About";
             case "/projects":
                 return "Projects";
             case "/cv":
-                return "CV";
+                return "Curriculum Vitae";
             case "/":
             default:
                 return "";
@@ -26,7 +26,7 @@
 <div class="flex flex-col min-h-screen">
     <Header socialMedias={data.socialMedias} />
 
-    <Welcome text={welcomeText} />
+    <Welcome title={welcomeTitle} background />
 
     <main class="flex-1 box-border">
         <slot />

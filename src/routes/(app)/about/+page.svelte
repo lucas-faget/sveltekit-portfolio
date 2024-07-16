@@ -21,13 +21,13 @@
 <div>
     <div id="introduction">
         <Chapter index={1} title="Introduction">
-            <Title title={"Développeur\nweb"} />
+            <Title title={data.aboutData.introduction.title} />
 
             <a href="{data.assetsBaseUrl}/{data.cvFileName}" download class="flex">
                 <Button rounded>Curriculum Vitae</Button>
             </a>
 
-            {#each data.aboutData.overview.split("\n") as paragraph}
+            {#each data.aboutData.introduction.overview.split("\n") as paragraph}
                 <p>{paragraph}</p>
             {/each}
 
@@ -36,7 +36,7 @@
     </div>
 
     <div id="skills">
-        <Chapter index={2} title="Langages" dark>
+        <Chapter index={2} title="Compétences" dark>
             {#each data.aboutData.skills as skillGroup}
                 <Headline small={$isSmallScreen} dark>{skillGroup.headline}</Headline>
 
@@ -66,7 +66,7 @@
     </div>
 
     <div id="experience">
-        <Chapter index={3} title="Expériences">
+        <Chapter index={3} title="Expérience">
             <Timeline>
                 {#each data.aboutData.workExperience as item}
                     <TimelineItem
