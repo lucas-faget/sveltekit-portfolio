@@ -25,7 +25,7 @@
         {/if}
 
         <section
-            class="w-full px-8 flex flex-col md:justify-center gap-12 {hasAside
+            class="w-full sm:px-8 px-4 flex flex-col md:justify-center gap-12 {hasAside
                 ? 'md:w-2/3'
                 : 'items-center'}"
         >

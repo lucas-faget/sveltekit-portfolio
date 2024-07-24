@@ -26,7 +26,7 @@
 <div class="flex flex-col min-h-screen">
     <Header socialMedias={data.socialMedias} />
 
-    <Welcome title={welcomeTitle} background />
+    <Welcome title={welcomeTitle} socialMedias={data.socialMedias} background />
 
     <main class="flex-1 box-border">
         <slot />
