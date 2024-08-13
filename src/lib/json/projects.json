@@ -20,7 +20,7 @@
                     "iconName": "devicon:tailwindcss"
                 }
             ],
-            "screenshots": ["screenshots/movue_1.png", "screenshots/movue_2.png"]
+            "screenshots": ["images/screenshots/movue_1.png", "images/screenshots/movue_2.png"]
         },
         {
             "name": "Chess",
@@ -46,7 +46,7 @@
                     "iconName": "devicon:csharp"
                 }
             ],
-            "screenshots": ["screenshots/chess_1.png", "screenshots/chess_2.png"]
+            "screenshots": ["images/screenshots/chess_1.png", "images/screenshots/chess_2.png"]
         },
         {
             "name": "Healthy",
@@ -76,15 +76,15 @@
                 }
             ],
             "screenshots": [
-                "screenshots/healthy_1.png",
-                "screenshots/healthy_2.png",
-                "screenshots/healthy_3.png",
-                "screenshots/healthy_4.png"
+                "images/screenshots/healthy_1.png",
+                "images/screenshots/healthy_2.png",
+                "images/screenshots/healthy_3.png",
+                "images/screenshots/healthy_4.png"
             ]
         },
         {
             "name": "Networth",
-            "title": "Your\nnetwork",
+            "title": "Social\nnetwork",
             "overview": "Site en construction",
             "githubRepository": "https://github.com/lucas-faget/symfony-vue-networth",
             "languages": [
@@ -109,7 +109,10 @@
                     "iconName": "logos:docker-icon"
                 }
             ],
-            "screenshots": ["screenshots/networth_1.png", "screenshots/networth_2.png"]
+            "screenshots": [
+                "images/screenshots/networth_1.png",
+                "images/screenshots/networth_2.png"
+            ]
         },
         {
             "name": "Sokoban",
@@ -127,7 +130,7 @@
                     "iconName": "logos:typescript-icon"
                 }
             ],
-            "screenshots": ["screenshots/sokoban_1.png", "screenshots/sokoban_2.png"]
+            "screenshots": ["images/screenshots/sokoban_1.png", "images/screenshots/sokoban_2.png"]
         }
     ]
 }

@@ -24,7 +24,7 @@
 </script>
 
 <div class="flex flex-col min-h-screen">
-    <Header socialMedias={data.socialMedias} />
+    <Header assetsBaseUrl={data.assetsBaseUrl} socialMedias={data.socialMedias} />
 
     <Welcome title={welcomeTitle} socialMedias={data.socialMedias} background />
 
@@ -32,5 +32,9 @@
         <slot />
     </main>
 
-    <Footer projectNames={data.projectNames} socialMedias={data.socialMedias} />
+    <Footer
+        assetsBaseUrl={data.assetsBaseUrl}
+        projectNames={data.projectNames}
+        socialMedias={data.socialMedias}
+    />
 </div>

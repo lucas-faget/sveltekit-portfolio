@@ -6,6 +6,7 @@
     import Button from "./Button.svelte";
     import SocialMediaLinks from "./SocialMediaLinks.svelte";
 
+    export let assetsBaseUrl: string;
     export let socialMedias: SocialMedias;
 
     let isMenuOpen: boolean = false;
@@ -46,7 +47,7 @@
             : 'absolute'} top-0 left-0 h-20 w-full p-4 flex justify-between items-center z-40"
     >
         <a href="/" class={isMenuOpen ? "max-md:hidden" : ""}>
-            <img class="h-12" src="https://assets.lucas-faget.com/logos/logo-dark.png" alt="Logo" />
+            <img class="h-12" src="{assetsBaseUrl}/images/logos/logo-dark.png" alt="Logo" />
         </a>
 
         <ul class="flex gap-4 max-md:hidden">
@@ -80,7 +81,7 @@
                 <a href="/">
                     <img
                         class="h-12"
-                        src="https://assets.lucas-faget.com/logos/logo-light.png"
+                        src="{assetsBaseUrl}/images/logos/logo-light.png"
                         alt="Logo"
                     />
                 </a>

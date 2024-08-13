@@ -1,14 +1,14 @@
 {
     "carousel": [
-        "screenshots/movue_1.png",
-        "screenshots/movue_2.png",
-        "screenshots/chess_1.png",
-        "screenshots/healthy_1.png",
-        "screenshots/healthy_3.png",
-        "screenshots/networth_1.png",
-        "screenshots/networth_2.png",
-        "screenshots/sokoban_1.png",
-        "screenshots/sokoban_2.png"
+        "images/screenshots/movue_1.png",
+        "images/screenshots/movue_2.png",
+        "images/screenshots/chess_1.png",
+        "images/screenshots/healthy_1.png",
+        "images/screenshots/healthy_3.png",
+        "images/screenshots/networth_1.png",
+        "images/screenshots/networth_2.png",
+        "images/screenshots/sokoban_1.png",
+        "images/screenshots/sokoban_2.png"
     ],
     "skills": [
         {
@@ -64,34 +64,34 @@
         {
             "title": "A été diplôme de la licence pro DAWIN",
             "date": "sept. 2023",
-            "imageFile": "logos/université_bordeaux.svg",
+            "imageFile": "images/logos/université_bordeaux.svg",
             "place": "IUT de Bordeaux",
             "overview": "Licence professionelle spécialisée en développement web et réalisée en alternance chez Simpliciti"
         },
         {
             "title": "A commencé une alternance en tant que développeur web chez Simpliciti",
             "date": "juil. 2022",
-            "imageFile": "logos/simpliciti.png",
+            "imageFile": "images/logos/simpliciti.png",
             "place": "Lormont (33310)",
             "overview": "Durée du contrat : 13 mois"
         },
         {
             "title": "A été diplôme d'un DUT Informatique",
             "date": "sept. 2021",
-            "imageFile": "logos/iut_toulouse.png",
+            "imageFile": "images/logos/iut_toulouse.png",
             "place": "IUT Paul Sabatier à Toulouse"
         },
         {
             "title": "A commencé un stage de développement web chez Audit Action Plus",
             "date": "juin 2021",
-            "imageFile": "logos/audit_action_plus.png",
+            "imageFile": "images/logos/audit_action_plus.png",
             "place": "Toulouse",
             "overview": "Durée du stage : 2 mois"
         },
         {
             "title": "A été diplôme d'une licence de Physique",
             "date": "juin 2019",
-            "imageFile": "logos/uppa.svg",
+            "imageFile": "images/logos/uppa.svg",
             "place": "Université de Pau"
         }
     ]

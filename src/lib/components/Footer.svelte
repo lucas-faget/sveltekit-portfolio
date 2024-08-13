@@ -2,6 +2,7 @@
     import type { SocialMedias } from "$lib/types/SocialMedias";
     import SocialMediaLinks from "./SocialMediaLinks.svelte";
 
+    export let assetsBaseUrl: string;
     export let projectNames: string[] = [];
     export let socialMedias: SocialMedias;
 </script>
@@ -10,11 +11,7 @@
     <div class="flex flex-col gap-12">
         <div class="flex justify-between flex-wrap gap-16">
             <a href="/">
-                <img
-                    class="h-16"
-                    src="https://assets.lucas-faget.com/logos/logo-dark.png"
-                    alt="Logo"
-                />
+                <img class="h-16" src="{assetsBaseUrl}/images/logos/logo-dark.png" alt="Logo" />
             </a>
 
             <div class="flex flex-wrap gap-16">

@@ -110,7 +110,7 @@
             "title": "Développeur web en alternance",
             "place": "Lormont (33310)",
             "companyName": "Simpliciti",
-            "companyImageFile": "logos/simpliciti.png",
+            "companyImageFile": "images/logos/simpliciti.png",
             "date": "juil. 2022 - sept. 2023",
             "overview": "Développement de fonctionnalités et maintenance de EcoboxCarto: Application web d'optimisation de circuits de collecte\nSIG / PHP / JS / MySQL / PostgreSQL\nGestion de projet (SCRUM, Git, EasyRedmine)",
             "languages": [
@@ -144,7 +144,7 @@
             "title": "Stage en développement web",
             "date": "juin 2021 - aout 2021",
             "companyName": "Audit Action plus",
-            "companyImageFile": "logos/audit_action_plus.png",
+            "companyImageFile": "images/logos/audit_action_plus.png",
             "place": "Toulouse",
             "overview": "Développement d'un ERP\nPHP / JS / MySQL",
             "languages": [
@@ -172,20 +172,20 @@
             "title": "Licence pro DAWIN en alternance",
             "date": "2023",
             "schoolName": "IUT de Bordeaux",
-            "imageFile": "icons/collections/elegant-circle/global.svg",
+            "imageFile": "images/icons/collections/elegant-circle/global.svg",
             "overview": "Licence professionelle en développement web en alternance\nDAWIN = Développement en applications web et innovation numérique"
         },
         {
             "title": "DUT en Informatique",
             "date": "2021",
             "schoolName": "IUT de Toulouse",
-            "imageFile": "icons/collections/elegant-circle/computer.svg"
+            "imageFile": "images/icons/collections/elegant-circle/computer.svg"
         },
         {
             "title": "Licence de Physique",
             "date": "2019",
             "schoolName": "Université de Pau",
-            "imageFile": "icons/collections/elegant-circle/genius.svg"
+            "imageFile": "images/icons/collections/elegant-circle/genius.svg"
         }
     ]
 }
