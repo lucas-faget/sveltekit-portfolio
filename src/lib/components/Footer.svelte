@@ -1,13 +1,13 @@
 <script lang="ts">
-    import type { SocialMedias } from "$lib/types/SocialMedias";
-    import SocialMediaLinks from "./SocialMediaLinks.svelte";
+    import type { SocialMediaLink } from "$lib/types/SocialMediaLink";
+    import SocialMedias from "./SocialMedias.svelte";
 
     export let assetsBaseUrl: string;
     export let projectNames: string[] = [];
-    export let socialMedias: SocialMedias;
+    export let socialMediaLinks: SocialMediaLink[];
 </script>
 
-<footer class="p-8 flex flex-col items-center bg-neutral-900">
+<footer class="dark p-8 flex flex-col items-center bg-neutral-900">
     <div class="flex flex-col gap-12">
         <div class="flex justify-between flex-wrap gap-16">
             <a href="/">
@@ -65,7 +65,7 @@
 
         <div class="flex justify-between items-center gap-8 flex-wrap text-neutral-400">
             <p>Copyright © 2023-2024 Lucas Faget</p>
-            <SocialMediaLinks {socialMedias} dark />
+            <SocialMedias links={socialMediaLinks} />
         </div>
     </div>
 </footer>

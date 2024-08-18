@@ -1,5 +1,7 @@
 {
     "fileName": "cv/CV_FAGET_Lucas.pdf",
+    "pictureFileName": "images/cv/picture.jpg",
+    "bannerFileName": "images/cv/banner-light.png",
     "website": {
         "name": "lucas-faget.com",
         "url": "https://lucas-faget.com"
@@ -43,7 +45,7 @@
             "title": "Développeur web en alternance",
             "place": "Lormont (33310)",
             "companyName": "Simpliciti",
-            "companyImageFile": "logos/simpliciti.png",
+            "companyImageFile": "images/logos/simpliciti.png",
             "date": "juil. 2022 - sept. 2023",
             "overview": "Développement de fonctionnalités et maintenance de EcoboxCarto: Application web d'optimisation de circuits de collecte\nSIG / PHP / JS / MySQL / PostgreSQL\nGestion de projet (SCRUM, Git, EasyRedmine)"
         },
@@ -51,7 +53,7 @@
             "title": "Stage en développement web",
             "date": "juin 2021 - aout 2021",
             "companyName": "Audit Action plus",
-            "companyImageFile": "logos/audit_action_plus.png",
+            "companyImageFile": "images/logos/audit_action_plus.png",
             "place": "Toulouse",
             "overview": "Développement d'un ERP\nPHP / JS / MySQL"
         }
@@ -61,20 +63,20 @@
             "title": "Licence pro DAWIN en alternance",
             "date": "2023",
             "schoolName": "IUT de Bordeaux",
-            "imageFile": "logos/université_bordeaux.svg",
+            "imageFile": "images/logos/université_bordeaux.svg",
             "overview": "Licence professionelle spécialisée en développement web et réalisée en alternance chez Simpliciti"
         },
         {
             "title": "DUT en Informatique",
             "date": "2021",
-            "imageFile": "logos/iut_toulouse.png",
+            "imageFile": "images/logos/iut_toulouse.png",
             "schoolName": "IUT de Toulouse"
         },
         {
             "title": "Licence de Physique",
             "date": "2019",
             "schoolName": "Université de Pau",
-            "imageFile": "logos/uppa.svg"
+            "imageFile": "images/logos/uppa.svg"
         }
     ],
     "skills": [

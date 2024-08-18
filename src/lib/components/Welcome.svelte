@@ -1,18 +1,18 @@
 <script lang="ts">
     import backgroundImage from "$lib/images/desk-background.jpg";
-    import type { SocialMedias } from "$lib/types/SocialMedias";
-    import SocialMediaLinks from "./SocialMediaLinks.svelte";
+    import type { SocialMediaLink } from "$lib/types/SocialMediaLink";
+    import SocialMedias from "./SocialMedias.svelte";
 
     export let background: boolean = false;
     export let title: string = "";
-    export let socialMedias: SocialMedias;
+    export let socialMediaLinks: SocialMediaLink[];
 
     $: backgroundStyle = background
         ? `background-size: cover; background-position: center; background-repeat: no-repeat; background-image: url(${backgroundImage});`
         : "";
 </script>
 
-<section class="relative min-h-svh w-full flex justify-center items-center">
+<section class="dark relative min-h-svh w-full flex justify-center items-center">
     {#if background}
         <div class="absolute inset-0 h-full w-full blur-sm" style={backgroundStyle}></div>
     {/if}
@@ -25,8 +25,8 @@
                 Lucas Faget
             </span>
 
-            <div>
-                <SocialMediaLinks {socialMedias} dark />
+            <div class="z-10">
+                <SocialMedias links={socialMediaLinks} />
             </div>
         </div>
 

@@ -1,9 +1,9 @@
 <script lang="ts">
     import type { PageData } from "./$types";
-    import { isSmallScreen } from "$lib/stores/mediaQuery";
+    import { isLargeScreen } from "$lib/stores/mediaQuery";
     import Chapter from "$lib/components/Chapter.svelte";
     import Title from "$lib/components/Title.svelte";
-    import Button from "$lib/components/Button.svelte";
+    import SocialMedias from "$lib/components/SocialMedias.svelte";
 
     export let data: PageData;
 </script>
@@ -16,58 +16,28 @@
 <div>
     {#each data.projectData.projects as project, index}
         <div id={project.name}>
-            <Chapter index={index + 1} title={project.name} dark={index % 2 !== 0}>
-                <Title title={project.title} />
+            <Chapter aside dark={index % 2 !== 0}>
+                <div class="flex flex-col gap-6" slot="aside">
+                    <Title title={project.title} small />
 
-                {#if project.overview}
-                    <div class="flex flex-col gap-6">
-                        {#each project.overview.split("\n") as paragraph}
-                            <p>{paragraph}</p>
-                        {/each}
-                    </div>
-                {/if}
+                    {#if project.socialMediaLinks.length > 0}
+                        <SocialMedias links={project.socialMediaLinks} />
+                    {/if}
 
-                {#if project.websiteUrl}
-                    <a href={project.websiteUrl}>
-                        <Button dark={index % 2 !== 0} rounded>
-                            <div class="flex gap-4 items-center">
-                                <iconify-icon icon="bi:globe2" class="max-sm:text-xl text-3xl" />
-                                <span>Visiter le site web</span>
-                            </div>
-                        </Button>
-                    </a>
-                {/if}
-
-                {#if project.githubRepository}
-                    <a href={project.githubRepository}>
-                        <Button dark={index % 2 !== 0} rounded>
-                            <div class="flex gap-4 items-center">
-                                <iconify-icon icon="bi:github" class="max-sm:text-xl text-3xl" />
-                                <span>Voir le dépôt github</span>
-                            </div>
-                        </Button>
-                    </a>
-                {/if}
-
-                {#if project.languages}
-                    <ul class="flex flex-col gap-8">
-                        {#each project.languages as language}
-                            <li class="flex items-center max-sm:gap-4 gap-6">
+                    {#if project.languages}
+                        <div class="flex flex-wrap gap-3 md:gap-4">
+                            {#each project.languages as language}
                                 {#if language.iconName}
                                     <iconify-icon
                                         icon={language.iconName}
-                                        width={$isSmallScreen ? 40 : 60}
-                                        height={$isSmallScreen ? 40 : 60}
+                                        width={$isLargeScreen ? 50 : 40}
+                                        height={$isLargeScreen ? 50 : 40}
                                     />
                                 {/if}
-
-                                {#if language.name}
-                                    <p class="sm:text-lg">{language.name}</p>
-                                {/if}
-                            </li>
-                        {/each}
-                    </ul>
-                {/if}
+                            {/each}
+                        </div>
+                    {/if}
+                </div>
 
                 {#if project.screenshots}
                     {#each project.screenshots as screenshot}

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -76,10 +75,6 @@ button {
 
 .font-3 {
     font-family: "Anton SC", sans-serif;
-}
-
-.font-4 {
-    font-family: "Monoton", sans-serif;
 }
 
 ::-webkit-scrollbar {

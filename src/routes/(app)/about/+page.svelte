@@ -1,16 +1,37 @@
 <script lang="ts">
     import type { PageData } from "./$types";
-    import { isSmallScreen } from "$lib/stores/mediaQuery";
+    import { isMediumScreen } from "$lib/stores/mediaQuery";
+    import type { MenuItem } from "$lib/types/MenuItem";
     import Chapter from "$lib/components/Chapter.svelte";
+    import VerticalMenu from "$lib/components/VerticalMenu.svelte";
     import Title from "$lib/components/Title.svelte";
     import Button from "$lib/components/Button.svelte";
-    import SocialMediaLinks from "$lib/components/SocialMediaLinks.svelte";
+    import SocialMedias from "$lib/components/SocialMedias.svelte";
     import Headline from "$lib/components/Headline.svelte";
     import StarRating from "$lib/components/StarRating.svelte";
     import Timeline from "$lib/components/Timeline.svelte";
     import TimelineItem from "$lib/components/TimelineItem.svelte";
 
     export let data: PageData;
+
+    const menuItems: MenuItem[] = [
+        {
+            id: "introduction",
+            label: "Introduction",
+        },
+        {
+            id: "skills",
+            label: "Compétences",
+        },
+        {
+            id: "experience",
+            label: "Expérience",
+        },
+        {
+            id: "education",
+            label: "Formation",
+        },
+    ];
 </script>
 
 <svelte:head>
@@ -20,7 +41,12 @@
 
 <div>
     <div id="introduction">
-        <Chapter index={1} title="Introduction">
+        <Chapter aside>
+            <div slot="aside">
+                <VerticalMenu items={menuItems} id="introduction" />
+                <!-- <span class="text-4xl leading-none capitalize font-3">Introduction</span> -->
+            </div>
+
             <Title title={data.aboutData.introduction.title} />
 
             <a href="{data.assetsBaseUrl}/{data.cvFileName}" download class="flex">
@@ -31,14 +57,18 @@
                 <p>{paragraph}</p>
             {/each}
 
-            <SocialMediaLinks socialMedias={data.socialMedias} />
+            <SocialMedias links={data.socialMediaLinks} />
         </Chapter>
     </div>
 
     <div id="skills">
-        <Chapter index={2} title="Compétences" dark>
+        <Chapter aside dark>
+            <div slot="aside">
+                <VerticalMenu items={menuItems} id="skills" />
+            </div>
+
             {#each data.aboutData.skills as skillGroup}
-                <Headline small={$isSmallScreen} dark>{skillGroup.headline}</Headline>
+                <Headline small={!$isMediumScreen}>{skillGroup.headline}</Headline>
 
                 <ul class="flex flex-col gap-8">
                     {#each skillGroup.languages as language}
@@ -50,13 +80,13 @@
                             {#if language.iconName}
                                 <iconify-icon
                                     icon={language.iconName}
-                                    width={$isSmallScreen ? 40 : 60}
-                                    height={$isSmallScreen ? 40 : 60}
+                                    width={$isMediumScreen ? 60 : 40}
+                                    height={$isMediumScreen ? 60 : 40}
                                 />
                             {/if}
 
                             {#if language.name}
-                                <p class="sm:text-lg">{language.name}</p>
+                                <p>{language.name}</p>
                             {/if}
                         </li>
                     {/each}
@@ -66,7 +96,11 @@
     </div>
 
     <div id="experience">
-        <Chapter index={3} title="Expérience">
+        <Chapter aside>
+            <div slot="aside">
+                <VerticalMenu items={menuItems} id="experience" />
+            </div>
+
             <Timeline>
                 {#each data.aboutData.workExperience as item}
                     <TimelineItem
@@ -92,7 +126,7 @@
                                     {#if language.iconName}
                                         <iconify-icon
                                             icon={language.iconName}
-                                            height={$isSmallScreen ? 30 : 40}
+                                            height={$isMediumScreen ? 40 : 30}
                                         />
                                     {/if}
                                 {/each}
@@ -105,7 +139,11 @@
     </div>
 
     <div id="education">
-        <Chapter index={4} title="Formation" dark>
+        <Chapter aside dark>
+            <div slot="aside">
+                <VerticalMenu items={menuItems} id="education" />
+            </div>
+
             <Timeline>
                 {#each data.aboutData.education as item}
                     <TimelineItem

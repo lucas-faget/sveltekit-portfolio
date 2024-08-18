@@ -1,12 +1,5 @@
 <script lang="ts">
-    export let images: string[] = [
-        "https://lucidar.me/fr/web-dev/files/img0.svg",
-        "https://lucidar.me/fr/web-dev/files/img1.svg",
-        "https://lucidar.me/fr/web-dev/files/img2.svg",
-        "https://lucidar.me/fr/web-dev/files/img3.svg",
-        "https://lucidar.me/fr/web-dev/files/img4.svg",
-        "https://lucidar.me/fr/web-dev/files/img5.svg",
-    ];
+    export let images: string[] = [];
 
     $: classList = (() => {
         switch (images.length) {

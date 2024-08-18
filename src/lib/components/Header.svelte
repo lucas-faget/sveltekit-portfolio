@@ -1,13 +1,13 @@
 <script lang="ts">
-    import type { SocialMedias } from "$lib/types/SocialMedias";
+    import type { SocialMediaLink } from "$lib/types/SocialMediaLink";
     import { page } from "$app/stores";
     import { onDestroy, onMount } from "svelte";
     import { browser } from "$app/environment";
     import Button from "./Button.svelte";
-    import SocialMediaLinks from "./SocialMediaLinks.svelte";
+    import SocialMedias from "./SocialMedias.svelte";
 
     export let assetsBaseUrl: string;
-    export let socialMedias: SocialMedias;
+    export let socialMediaLinks: SocialMediaLink[];
 
     let isMenuOpen: boolean = false;
 
@@ -42,7 +42,7 @@
 
 <header>
     <nav
-        class="{scrolled
+        class="dark {scrolled
             ? 'fixed bg-neutral-900 -translate-y-full down-animation'
             : 'absolute'} top-0 left-0 h-20 w-full p-4 flex justify-between items-center z-40"
     >
@@ -53,19 +53,17 @@
         <ul class="flex gap-4 max-md:hidden">
             <li>
                 <a href="/about">
-                    <Button rounded dark border={$page.url.pathname === "/about"}>About</Button>
+                    <Button rounded border={$page.url.pathname === "/about"}>About</Button>
                 </a>
             </li>
             <li>
                 <a href="/projects">
-                    <Button rounded dark border={$page.url.pathname === "/projects"}>
-                        Projects
-                    </Button>
+                    <Button rounded border={$page.url.pathname === "/projects"}>Projects</Button>
                 </a>
             </li>
             <li>
                 <a href="/cv">
-                    <Button rounded dark border={$page.url.pathname === "/cv"}>CV</Button>
+                    <Button rounded border={$page.url.pathname === "/cv"}>CV</Button>
                 </a>
             </li>
         </ul>
@@ -107,7 +105,7 @@
 
             <div class="flex justify-between items-center gap-8 flex-wrap">
                 <p>© 2023-2024 Lucas Faget</p>
-                <SocialMediaLinks {socialMedias} />
+                <SocialMedias links={socialMediaLinks} />
             </div>
         </div>
     </div>

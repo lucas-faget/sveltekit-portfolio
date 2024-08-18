@@ -21,4 +21,6 @@ function createMediaQueryStore(mediaQueryString: string) {
     });
 }
 
-export const isSmallScreen = createMediaQueryStore("(max-width: 640px)");
+export const isSmallScreen = createMediaQueryStore("(min-width: 640px)");
+export const isMediumScreen = createMediaQueryStore("(min-width: 768px)");
+export const isLargeScreen = createMediaQueryStore("(min-width: 1024px)");

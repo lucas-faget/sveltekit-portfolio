@@ -11,7 +11,7 @@
     <div class="w-full h-36">
         <img
             class="w-full h-full object-cover"
-            src="{assetsBaseUrl}/cv/banner-light.png"
+            src="{assetsBaseUrl}/{cvData.bannerFileName}"
             alt="Banner"
         />
     </div>
@@ -96,7 +96,7 @@
         <div class="w-52 h-52 mt-2 rounded-full">
             <img
                 class="h-full w-full object-cover rounded-full"
-                src="{assetsBaseUrl}/cv/picture.jpg"
+                src="{assetsBaseUrl}/{cvData.pictureFileName}"
                 alt="Profile"
             />
         </div>

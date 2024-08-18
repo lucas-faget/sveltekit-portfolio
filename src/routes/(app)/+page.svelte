@@ -60,7 +60,7 @@
             </div>
 
             <a href="/about#skills">
-                <Button rounded dark>Voir plus</Button>
+                <Button rounded>Voir plus</Button>
             </a>
         </Chapter>
     </div>
