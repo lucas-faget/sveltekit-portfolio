@@ -3,7 +3,7 @@
     export let small: boolean = false;
 </script>
 
-<div class="flex flex-col {small ? '' : 'lg:text-7xl'} text-5xl leading-none capitalize font-3">
+<div class="flex flex-col {small ? '' : 'md:text-7xl'} text-5xl leading-none capitalize font-4">
     {#each title.split("\n") as word, index}
         {#if index % 2 === 0}
             <span>{word}</span>

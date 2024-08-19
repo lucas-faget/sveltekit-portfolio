@@ -44,7 +44,6 @@
         <Chapter aside>
             <div slot="aside">
                 <VerticalMenu items={menuItems} id="introduction" />
-                <!-- <span class="text-4xl leading-none capitalize font-3">Introduction</span> -->
             </div>
 
             <Title title={data.aboutData.introduction.title} />

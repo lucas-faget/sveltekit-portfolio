@@ -6,11 +6,11 @@
 </script>
 
 <div>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col">
         {#each items as item}
             <a href="about#{item.id}">
                 <span
-                    class="text-4xl leading-none capitalize font-3 {id === item.id
+                    class="text-5xl leading-none capitalize font-3 {id === item.id
                         ? ''
                         : 'text-neutral-400 hover:text-neutral-500 dark:text-neutral-600 hover:dark:text-neutral-500'}"
                 >
