@@ -1,16 +1,17 @@
 <script lang="ts">
     import type { PageData } from "./$types";
+    import { browser } from "$app/environment";
     import Chapter from "$lib/components/Chapter.svelte";
     import Title from "$lib/components/Title.svelte";
     import Timeline from "$lib/components/Timeline.svelte";
     import TimelineItem from "$lib/components/TimelineItem.svelte";
-    import Carousel from "$lib/components/Carousel.svelte";
     import Button from "$lib/components/Button.svelte";
+    import Carousel from "svelte-carousel";
 
     export let data: PageData;
 
     $: carouselImages =
-        data.homeData?.carousel.map((image) => `${data.assetsBaseUrl}/${image}`) ?? [];
+        data.homeData?.carouselImages.map((image) => `${data.assetsBaseUrl}/${image}`) ?? [];
 
     $: skillGridSize = data.homeData?.skills
         ? Math.ceil(Math.sqrt(data.homeData.skills.length))
@@ -27,7 +28,39 @@
         <Chapter>
             <Title title={"Apercu\ndes projets"}></Title>
 
-            <Carousel images={carouselImages} />
+            {#if data.homeData.carouselImages}
+                <div class="relative w-full max-w-[64rem]">
+                    <div
+                        class="absolute w-[83.6%] top-[2.8%] left-1/2 -translate-x-1/2 aspect-video z-20"
+                    >
+                        {#if browser}
+                            <Carousel
+                                autoplayDuration={2000}
+                                duration={2000}
+                                autoplay
+                                timingFunction="ease"
+                                dots={false}
+                                arrows={false}
+                                swiping={false}
+                            >
+                                {#each data.homeData.carouselImages as image}
+                                    <img
+                                        class="w-full h-full object-cover"
+                                        src="{data.assetsBaseUrl}/{image}"
+                                        alt={image}
+                                        draggable="false"
+                                    />
+                                {/each}
+                            </Carousel>
+                        {/if}
+                    </div>
+                    <img
+                        class="relative w-full z-10"
+                        src="{data.assetsBaseUrl}/images/mockup/laptop.png"
+                        alt="Laptop frame"
+                    />
+                </div>
+            {/if}
 
             <a href="/projects#project_1">
                 <Button rounded>Tous les projects</Button>

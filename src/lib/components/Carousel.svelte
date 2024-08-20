@@ -38,10 +38,6 @@
             images.length;
         return classList[relativeIndex] || "carousel-image-hidden";
     };
-
-    function handleClick(index: number) {
-        currentIndex = index;
-    }
 </script>
 
 <div class="relative w-full h-96 overflow-hidden">

@@ -1,9 +1,11 @@
 <script lang="ts">
     import type { PageData } from "./$types";
     import { isLargeScreen } from "$lib/stores/mediaQuery";
+    import { browser } from "$app/environment";
     import Chapter from "$lib/components/Chapter.svelte";
     import Title from "$lib/components/Title.svelte";
     import SocialMedias from "$lib/components/SocialMedias.svelte";
+    import Carousel from "svelte-carousel";
 
     export let data: PageData;
 </script>
@@ -42,18 +44,33 @@
                 {#if project.screenshots}
                     <div class="relative">
                         <div
-                            class="absolute top-[4.2%] left-1/2 -translate-x-1/2 w-[72.5%] aspect-video z-20"
+                            class="absolute w-[83.6%] top-[2.8%] left-1/2 -translate-x-1/2 aspect-video z-20"
                         >
-                            <img
-                                class="w-full h-full object-cover"
-                                src="{data.assetsBaseUrl}/{project.screenshots[0]}"
-                                alt={project.name}
-                            />
+                            {#if browser}
+                                <Carousel
+                                    autoplayDuration={2000}
+                                    duration={2000}
+                                    autoplay
+                                    timingFunction="ease"
+                                    dots={false}
+                                    arrows={false}
+                                    swiping={false}
+                                >
+                                    {#each project.screenshots as screenshot}
+                                        <img
+                                            class="w-full h-full object-cover"
+                                            src="{data.assetsBaseUrl}/{screenshot}"
+                                            alt={project.name}
+                                            draggable="false"
+                                        />
+                                    {/each}
+                                </Carousel>
+                            {/if}
                         </div>
                         <img
                             class="relative w-full z-10"
-                            src="{data.assetsBaseUrl}/images/mockup/laptop.svg"
-                            alt="Laptop mockup"
+                            src="{data.assetsBaseUrl}/images/mockup/laptop.png"
+                            alt="Laptop frame"
                         />
                     </div>
                 {/if}
