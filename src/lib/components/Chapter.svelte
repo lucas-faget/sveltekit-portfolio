@@ -19,7 +19,7 @@
         {/if}
 
         <section
-            class="w-full md:px-8 px-4 flex flex-col lg:justify-center gap-12 {aside
+            class="w-full md:px-8 px-4 flex flex-col lg:justify-center gap-8 md:gap-12 {aside
                 ? 'lg:w-2/3'
                 : 'items-center'}"
         >

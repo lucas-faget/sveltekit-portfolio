@@ -52,9 +52,13 @@
                 <Button rounded>Curriculum Vitae</Button>
             </a>
 
-            {#each data.aboutData.introduction.overview.split("\n") as paragraph}
-                <p>{paragraph}</p>
-            {/each}
+            {#if data.aboutData.introduction.overview}
+                <div class="flex flex-col gap-6">
+                    {#each data.aboutData.introduction.overview.split("\n") as paragraph}
+                        <p>{paragraph}</p>
+                    {/each}
+                </div>
+            {/if}
 
             <SocialMedias links={data.socialMediaLinks} />
         </Chapter>

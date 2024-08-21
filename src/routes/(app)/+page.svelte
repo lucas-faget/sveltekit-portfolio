@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { PageData } from "./$types";
+    import { isSmallScreen } from "$lib/stores/mediaQuery";
     import { browser } from "$app/environment";
     import Chapter from "$lib/components/Chapter.svelte";
     import Title from "$lib/components/Title.svelte";
@@ -75,17 +76,21 @@
             <div class="w-full max-w-[32rem] flex flex-wrap gap-4 justify-center">
                 {#each data.homeData.skills as skill}
                     <div
-                        class="group h-40 w-40 flex justify-center items-center bg-neutral-800 rounded-lg cursor-grab"
+                        class="group h-28 w-28 sm:h-40 sm:w-40 flex justify-center items-center bg-neutral-800 rounded-lg cursor-grab"
                     >
                         <div
-                            class="flex flex-col items-center gap-4 group-hover:scale-110 transition duration-300 ease"
+                            class="flex flex-col items-center sm:gap-4 gap-3 group-hover:scale-110 transition duration-300 ease"
                         >
                             {#if skill.iconName}
-                                <iconify-icon icon={skill.iconName} width="90" height="60" />
+                                <iconify-icon
+                                    icon={skill.iconName}
+                                    width={$isSmallScreen ? 90 : 60}
+                                    height={$isSmallScreen ? 60 : 40}
+                                />
                             {/if}
 
                             {#if skill.name}
-                                <p class="text-neutral-500">{skill.name}</p>
+                                <p class="text-neutral-500 sm:text-base text-sm">{skill.name}</p>
                             {/if}
                         </div>
                     </div>

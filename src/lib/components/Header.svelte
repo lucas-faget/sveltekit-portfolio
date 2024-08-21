@@ -74,8 +74,8 @@
             ? 'md:hidden'
             : 'hidden'} fixed bg-neutral-300 w-[calc(100%-1rem)] h-[calc(100svh-1rem)] top-2 left-2 rounded-xl z-50"
     >
-        <div class="w-full h-full flex flex-col justify-between p-8 text-neutral-500">
-            <div class="flex flex-col gap-16">
+        <div class="w-full h-full flex flex-col justify-between p-4 text-neutral-500">
+            <div class="flex flex-col gap-12">
                 <a href="/">
                     <img
                         class="h-12"
@@ -84,7 +84,7 @@
                     />
                 </a>
 
-                <ul class="flex flex-col gap-6 font-2 text-4xl">
+                <ul class="flex flex-col gap-1 text-6xl font-3 leading-none">
                     <li>
                         <a href="/about" on:click={closeMenu}>
                             <span class="hover:text-neutral-900">About</span>
@@ -103,7 +103,7 @@
                 </ul>
             </div>
 
-            <div class="flex justify-between items-center gap-8 flex-wrap">
+            <div class="flex justify-between items-center gap-4 flex-wrap">
                 <p>© 2023-2024 Lucas Faget</p>
                 <SocialMedias links={socialMediaLinks} />
             </div>

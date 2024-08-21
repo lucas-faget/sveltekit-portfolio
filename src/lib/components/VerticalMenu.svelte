@@ -8,7 +8,7 @@
 <div>
     <div class="flex flex-col">
         {#each items as item}
-            <a href="about#{item.id}">
+            <a href="about#{item.id}" class="self-start">
                 <span
                     class="text-5xl leading-none capitalize font-3 {id === item.id
                         ? ''
