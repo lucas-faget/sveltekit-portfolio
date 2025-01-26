@@ -8,7 +8,7 @@
     <div
         class="{dark
             ? 'bg-dark text-light'
-            : 'bg-light text-dark'} relative min-h-lvh py-12 flex max-lg:flex-col max-lg:gap-12"
+            : 'bg-light text-dark'} relative md:min-h-lvh py-12 flex max-lg:flex-col max-lg:gap-12"
     >
         {#if aside}
             <aside class="lg:w-1/3 w-full md:px-8 px-4">

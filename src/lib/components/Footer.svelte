@@ -8,14 +8,14 @@
 </script>
 
 <footer class="dark p-8 flex flex-col items-center bg-neutral-900">
-    <div class="flex flex-col gap-12">
-        <div class="flex justify-between flex-wrap gap-16">
+    <div class="flex flex-col sm:gap-12 gap-8">
+        <div class="flex justify-between flex-wrap sm:gap-12 gap-8">
             <a href="/">
                 <img class="h-16" src="{assetsBaseUrl}/images/logos/logo-dark.png" alt="Logo" />
             </a>
 
-            <div class="flex flex-wrap gap-16">
-                <ul class="flex flex-col gap-2">
+            <div class="flex flex-wrap sm:gap-12 gap-8">
+                <ul class="flex flex-col gap-1">
                     <li class="font-bold">Home</li>
 
                     <a href="/#projects" class="hover:underline decoration-neutral-400">
@@ -29,7 +29,7 @@
                     </a>
                 </ul>
 
-                <ul class="flex flex-col gap-2">
+                <ul class="flex flex-col gap-1">
                     <li class="font-bold">About</li>
 
                     <a href="/about#introduction" class="hover:underline decoration-neutral-400">
@@ -47,7 +47,7 @@
                 </ul>
 
                 {#if projectNames.length > 0}
-                    <ul class="flex flex-col gap-2">
+                    <ul class="flex flex-col gap-1">
                         <li class="font-bold">Projects</li>
 
                         {#each projectNames as projectName}
@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <div class="flex justify-between items-center gap-8 flex-wrap text-neutral-400">
+        <div class="flex justify-between items-center gap-4 flex-wrap text-neutral-400">
             <p>Copyright © 2023-2024 Lucas Faget</p>
             <SocialMedias links={socialMediaLinks} />
         </div>
